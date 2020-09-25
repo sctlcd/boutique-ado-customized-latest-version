@@ -2,3 +2,9 @@ core.Microsoft*
 env.py
 __pycache__/
 *.py[cod]
+.theia
+.gitpod.dockerfile
+.gitpod.yml
+env
+*.sqlite3
+*.pyc
