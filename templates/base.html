@@ -1,0 +1,198 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% block meta %}
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% endblock %}
+
+  {% block extra_meta %}
+  {% endblock %}
+
+  {% block corecss %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  {% endblock %}
+
+  {% block extra_css %}
+  {% endblock %}
+
+  {% block corejs %}
+  <script src="https://kit.fontawesome.com/e576f39845.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="static/js/script.js" crossorigin="anonymous"></script>
+  {% endblock %}
+
+  {% block extra_js %}
+  {% endblock %}
+
+  <title>Boutique Ado {% block extra_title %}{% endblock %}</title>
+</head>
+
+<body>
+  <header class="container">
+    <!-- navbar -->
+    <nav class="navbar is-translucent is-fixed-top" role="navigation" aria-label="main navigation">
+      <!-- navbar-brand -->
+      <div class="navbar-brand has-text-centered has-text-left-desktop py-3 mx-4">
+        <a class="navbar-item is-arrowless main-logo-link" href="{% url 'home' %}">
+          <h2 class="logo-font is-size-4 has-text-info has-text-weight-bold has-text-centered my-0">Boutique <br />Ado</h2>
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-mobile">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <!-- navbar-mobile -->
+      <div id="navbar-mobile" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <form method="GET" action="">
+              <div class="field has-addons">
+                <div class="control is-expanded">
+                  <input class="input" type="text" name="q" placeholder="Search our site">
+                </div>
+                <div class="control">
+                  <a class="button is-dark">
+                    <span class="icon">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="py-5 mx-4">
+            <ul class="has-text-centered">
+              <li class="navbar-item has-dropdown is-hoverable">
+                <a class="has-text-black navbar-link is-arrowless" href="#" id="user-options" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-user-options">
+                  <div class="text-center">
+                    <div><i class="fas fa-user fa-lg"></i></div>
+                    <p class="my-0">My Account</p>
+                  </div>
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  {% if request.user.is_authenticated %}
+                  {% if request.user.is_superuser %}
+                  <a href="#" class="navbar-item">Product Management</a>
+                  <hr class="navbar-divider">
+                  {% endif %}
+                  <a href="#" class="navbar-item">My Profile</a>
+                  <hr class="navbar-divider">
+                  <a href="{% url 'account_logout' %}" class="navbar-item">Logout</a>
+                  <hr class="navbar-divider">
+                  {% else %}
+                  <a href="{% url 'account_signup' %}" class="navbar-item">Register</a>
+                  <hr class="navbar-divider">
+                  <a href="{% url 'account_login' %}" class="navbar-item">Login</a>
+                  {% endif %}
+                </div>
+              </li>
+              <li class="mx-1 mx-0-medium">
+                <a class="{% if grand_total %}has-text-primary has-text-weight-bold{% else %}has-text-black{% endif %} navbar-link is-arrowless" href="">
+                  <div class="has-text-centered">
+                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                    <p class="my-0">
+                      {% if grand_total %}
+                      ${{ grand_total|floatformat:2 }}
+                      {% else %}
+                      $0.00
+                      {% endif %}
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- navbar-desktop -->
+      <div id="navbar-desktop" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <form method="GET" action="">
+              <div class="field has-addons">
+                <div class="control is-expanded">
+                  <input class="input" type="text" name="q" placeholder="Search our site">
+                </div>
+                <div class="control">
+                  <a class="button is-dark">
+                    <span class="icon">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="py-5 mx-4">
+            <ul class="has-text-centered">
+              <li class="navbar-item has-dropdown is-hoverable" style="display:inline-block;">
+                <a class="has-text-black navbar-link is-arrowless" href="#" id="user-options" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-user-options">
+                  <div class="text-center">
+                    <div><i class="fas fa-user fa-lg"></i></div>
+                    <p class="my-0">My Account</p>
+                  </div>
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  {% if request.user.is_authenticated %}
+                  {% if request.user.is_superuser %}
+                  <a href="#" class="navbar-item">Product Management</a>
+                  <hr class="navbar-divider">
+                  {% endif %}
+                  <a href="#" class="navbar-item">My Profile</a>
+                  <hr class="navbar-divider">
+                  <a href="{% url 'account_logout' %}" class="navbar-item">Logout</a>
+                  <hr class="navbar-divider">
+                  {% else %}
+                  <a href="{% url 'account_signup' %}" class="navbar-item">Register</a>
+                  <hr class="navbar-divider">
+                  <a href="{% url 'account_login' %}" class="navbar-item">Login</a>
+                  {% endif %}
+                </div>
+              </li>
+              <li class="mx-1 mx-0-medium" style="display:inline-block">
+                <a class="{% if grand_total %}has-text-primary has-text-weight-bold{% else %}has-text-black{% endif %} navbar-link is-arrowless" href="">
+                  <div class="has-text-centered">
+                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                    <p class="my-0">
+                      {% if grand_total %}
+                      ${{ grand_total|floatformat:2 }}
+                      {% else %}
+                      $0.00
+                      {% endif %}
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  {% if messages %}
+  <div class="message-container"></div>
+  {% endif %}
+
+  {% block page_header %}
+  {% endblock %}
+
+
+  {% block content %}
+  {% endblock %}
+
+  {% block postloadjs %}
+  {% endblock %}
+</body>
+
+</html>
