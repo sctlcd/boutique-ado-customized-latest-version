@@ -2,9 +2,26 @@
 {% load static %}
 
 {% block page_header %}
-
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block content %}
-  <h1 class="display-4 text-success">It works!</h1>
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class=" col-5 offset-6 col-sm-6 offset-sm-6 col-md-5 offset-md-7 col-lg-4 offset-lg-7 col-xl-4 offset-xl-8 my-auto text-right">
+                <h1 class="display-4 logo-font text-black">
+                    The new collections are here
+                </h1>
+                <div class="my-xl-4 my-lg-4 my-md-3 my-sm-2">
+                    <h4>
+                        <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-1 py-sm-1 py-md-2 py-lg-3 py-xl-3">Shop Now</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
