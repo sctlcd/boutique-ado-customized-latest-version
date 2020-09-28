@@ -30,7 +30,7 @@ body {
 .shop-now-button {
     background: black;
     color: white;
-    min-width: 260px;
+    min-width: 16rem;
 }
 
 .btn-black {
@@ -174,15 +174,6 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
-
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -265,34 +256,124 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* -------------------------------- Media Queries */
 
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
+@media only screen and (max-width: 575px) {
+	.header-container {
+			padding-top: 116px;
+	}
 
-    .header-container {
-        padding-top: 164px;
-    }
+	body {
+			height: calc(100vh - 116px);
+	}
+
+	.nav-link {
+			padding: 0.15rem;
+	}
+
+	.nav-link i.fa-lg {
+			font-size: 1rem;
+	}
+
+	.navbar-toggler {
+			padding: .6rem .6rem;
+			font-size: 1rem;
+	}
+
+	#delivery-banner h4 {
+			font-size: .9rem;
+	}
+
+	.btn.btn-outline-black.rounded-0,
+	.btn.btn-black.rounded-0 {
+			padding: .375rem .375rem;
+	}
+
+	.btn.btn-outline-black.rounded-0.btn-lg,
+	.btn.btn-black.rounded-0.btn-lg {
+			padding: .375rem .375rem;
+			font-size: .75rem;
+	}
+
+	.increment-qty, .decrement-qty {
+			padding: .25rem .5rem !important;
+	}
+
+	.display-4.logo-font.text-black {
+			font-size: 1.5rem;
+	}
+
+	.shop-now-button {
+			min-width: 3rem;
+	}
+
+	.btn-lg {
+	font-size: 0.8rem;
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	.header-container {
+			padding-top: 116px;
+	}
+
+	body {
+			height: calc(100vh - 116px);
+	}
+
+	.nav-link {
+			padding: 0.15rem;
+	}
+
+	.nav-link i.fa-lg {
+			font-size: 1rem;
+	}
+
+	.navbar-toggler {
+			padding: .6rem .6rem;
+			font-size: 1rem;
+	}
+
+	#delivery-banner h4 {
+			font-size: .9rem;
+	}
+
+	.btn.btn-outline-black.rounded-0,
+	.btn.btn-black.rounded-0 {
+			padding: .375rem .375rem;
+	}
+
+	.btn.btn-outline-black.rounded-0.btn-lg,
+	.btn.btn-black.rounded-0.btn-lg {
+			padding: .375rem .375rem;
+			font-size: .75rem;
+	}
+
+	.increment-qty, .decrement-qty {
+			padding: .25rem .5rem !important;
+	}
+
+	.display-4.logo-font.text-black {
+			font-size: 2rem;
+	}
+
+	.shop-now-button {
+			min-width: 6rem;
+	}
+
+	.btn-lg {
+	font-size: 1rem;
+	}
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 991px) {
+@media only screen and (min-width: 768px) {
     .header-container {
         padding-top: 116px;
     }
 
     body {
         height: calc(100vh - 116px);
-    }
-
-    .display-4.logo-font.text-black {
-        font-size: 2rem;
     }
 
     .nav-link {
@@ -326,10 +407,74 @@ input[name='q']::placeholder {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
+		.display-4.logo-font.text-black {
+        font-size: 2.5rem;
+    }
+
+		.shop-now-button {
+		    min-width: 8rem;
+		}
+
+		.btn-lg {
+    font-size: 1.2rem;
+		}
 }
 
-@media (max-width: 767px) {
-	body {
-	    background: url('/media/homepage-background-1280-min.jpg') no-repeat center center fixed;
+/* fixed top navbar only on medium and up */
+@media only screen and (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+
+		.display-4.logo-font.text-black {
+        font-size: 3rem;
+    }
+
+		.shop-now-button {
+		    min-width: 10rem;
 		}
+
+		.btn-lg {
+    font-size: 1.4rem;
+		}
+}
+
+/* Slightly larger container on xl screens */
+@media only screen and (min-width: 1200px) {
+	.fixed-top-desktop-only {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 1030;
+	}
+
+	.header-container {
+			padding-top: 164px;
+	}
+
+  .container {
+    max-width: 80%;
+  }
+
+	.display-4 {
+			font-size: 3.5rem;
+	}
+
+	.shop-now-button {
+			min-width: 12rem;
+	}
+
+	.btn-lg {
+	font-size: 1.6rem;
+	}
 }
