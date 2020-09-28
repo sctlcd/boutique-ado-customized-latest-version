@@ -327,3 +327,9 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 }
+
+@media (max-width: 767px) {
+	body {
+	    background: url('/media/homepage-background-1280-min.jpg') no-repeat center center fixed;
+		}
+}
