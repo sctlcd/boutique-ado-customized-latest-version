@@ -112,6 +112,7 @@ input[name='q']::placeholder {
     position: fixed;
     top: 72px;
     right: 15px;
+		/* high Z index to assure it's always on top of everything else. */
     z-index: 99999999999;
 }
 
