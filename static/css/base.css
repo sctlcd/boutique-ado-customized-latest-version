@@ -38,10 +38,21 @@ body {
     color: white;
 }
 
+.btn-skyblue {
+    background: #68c6e6;
+    color: white;
+}
+
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
+}
+
+.btn-outline-skyblue {
+    background: white;
+    color: #68c6e6 !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #68c6e6;
 }
 
 .btn-outline-black:hover,
@@ -51,26 +62,59 @@ body {
     color: white !important;
 }
 
+.btn-outline-skyblue:hover,
+.btn-outline-skyblue:active,
+.btn-outline-skyblue:focus {
+    background: #68c6e6;
+    color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
-.shop-now-button:focus,
+.shop-now-button:focus {
+	background: #84c99c; /* #222 */
+	color: white;
+	border: 1px solid #84c99c;
+}
+
+.btn-skyblue:hover,
+.btn-skyblue:active,
+.btn-skyblue:focus {
+    background: #68c6e6d1; /* #222 */
+    color: white;
+		border: 1px solid #68c6e6;
+}
+
 .btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-skyblue:active,
+.btn-skyblue:focus {
     background: #222;
     color: white;
+		border: 1px solid #222;
 }
 
 .text-black {
     color: #000 !important;
 }
 
+.text-skyblue {
+    color: #68c6e6 !important;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
 
-.bg-black {
+.border-skyblue {
+    border: 1px solid #68c6e6 !important;
+}
+
+/* .bg-black {
     background: #000 !important;
+} */
+
+.bg-skyblue {
+    background: #68c6e6!important;
 }
 
 .overlay {
