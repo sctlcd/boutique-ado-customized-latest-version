@@ -27,6 +27,12 @@ body {
     width: fit-content;
 }
 
+.main-logo-link img {
+	height: 30px;
+  width: 30px;
+  margin: 0px 10px 15px 10px;
+}
+
 .shop-now-button {
     background: black;
     color: white;
