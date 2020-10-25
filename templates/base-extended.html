@@ -17,7 +17,7 @@
   {% block corecss %}
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base-extented.css' %}">
   <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}" />
   {% endblock %}
 
@@ -40,7 +40,7 @@
 </head>
 
 <body>
-  <header class="container-fluid bg-transparent bg-hover-white fixed-top">
+  <header class="container-fluid fixed-top bg-white bg-hover-white">
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-skyblue text-white">
         <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
@@ -52,15 +52,15 @@
       <div class="col-12 col-lg-6 my-auto py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link ">
           <img src="{% static 'images/boutique.png' %}" alt="Boutique Ado" class="d-inline">
-          <h2 class="d-inline logo-font text-white my-0"><strong>Boutique</strong> Ado</h2>
+          <h2 class="d-inline logo-font text-skyblue my-0"><strong>Boutique</strong> Ado</h2>
         </a>
       </div>
       <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
         <form method="GET" action="{% url 'products' %}">
           <div class="input-group w-100">
-            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+            <input class="form-control border border-skyblue rounded-0" type="text" name="q" placeholder="Search our site">
             <div class="input-group-append">
-              <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+              <button class="form-control btn btn-skyblue border border-skyblue rounded-0" type="submit">
                 <span class="icon">
                   <i class="fas fa-search"></i>
                 </span>
@@ -72,10 +72,10 @@
       <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
           <li class="list-inline-item dropdown">
-            <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="text-skyblue nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="text-center">
-                <div><i class="fas fa-user fa-lg text-white"></i></div>
-                <p class="my-0">My Account</p>
+                <div><i class="fas fa-user fa-lg text-skyblue"></i></div>
+                <p class="my-0 text-black">My Account</p>
               </div>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -92,10 +92,10 @@
             </div>
           </li>
           <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-skyblue{% endif %} nav-link" href="{% url 'view_bag' %}">
               <div class="text-center">
-                <div><i class="fas fa-shopping-bag fa-lg text-white"></i></div>
-                <p class="my-0">
+                <div><i class="fas fa-shopping-bag fa-lg text-skyblue"></i></div>
+                <p class="my-0 text-black">
                   {% if grand_total %}
                   ${{ grand_total|floatformat:2 }}
                   {% else %}
@@ -113,8 +113,8 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        {% include 'includes/mobile-top-header-base.html' %}
-        {% include 'includes/main-nav-base.html' %}
+        {% include 'includes/mobile-top-header-base-extended.html' %}
+        {% include 'includes/main-nav-base-extended.html' %}
       </nav>
     </div>
   </header>
