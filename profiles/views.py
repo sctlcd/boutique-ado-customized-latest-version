@@ -13,7 +13,9 @@ def profile(request):
 
     template = 'profiles/profile.html'
     context = {
-        'profile': profile,
+        # 'profile': profile,
+        # 'orders': orders,
+        'form': form,
         'orders': orders,
     }
 
