@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '71596b3c96be.ngrok.io']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '35050b44b263.ngrok.io']
 
 
 # Application definition
