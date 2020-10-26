@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}" />
+  <script src="https://kit.fontawesome.com/e576f39845.js" crossorigin="anonymous"></script>
   {% endblock %}
 
   {% block extra_css %}
@@ -110,7 +111,7 @@
     </div>
     <div class="row">
       <nav class="navbar navbar-expand-lg navbar-light w-100">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         {% include 'includes/mobile-top-header-base.html' %}

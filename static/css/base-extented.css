@@ -34,6 +34,14 @@ body {
   margin: 0px 10px 16px 10px;
 }
 
+ #mobile-home i {
+		color: #68c6e6!important;
+}
+/*
+#mobile-home  p {
+		color: black!important;
+} */
+
 .shop-now-button {
     background: black;
     color: white;
@@ -64,7 +72,8 @@ body {
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
-.btn-outline-black:focus {
+.btn-outline-black:focus,
+.btn-outline-black:hover i {
     background: black;
     color: white !important;
 }
@@ -94,7 +103,8 @@ body {
 
 .btn-black:hover,
 .btn-skyblue:active,
-.btn-skyblue:focus {
+.btn-skyblue:focus,
+.btn-black:hover i {
     background: #222;
     color: white;
 		border: 1px solid #222;
@@ -200,6 +210,11 @@ a.category-badge > span.badge:hover {
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: .2rem;
+    margin-left: .2rem;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -369,7 +384,15 @@ input[name='q']::placeholder {
 	}
 
 	.nav-link i.fa-lg {
-			font-size: 1rem;
+			font-size: 0.9rem;
+	}
+
+	.nav-link p {
+			font-size: 0.6rem;
+	}
+
+	.dropdown-menu a, .nav-item a {
+		font-size: 0.7rem;
 	}
 
 	.navbar-toggler {
