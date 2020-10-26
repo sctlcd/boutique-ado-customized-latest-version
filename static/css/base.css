@@ -1,4 +1,4 @@
-html {
+68c6e6html {
     height: 100%;
 }
 
@@ -29,9 +29,13 @@ body {
 }
 
 .main-logo-link img {
-	height: 30px;
-  width: 30px;
-  margin: 0px 10px 16px 10px;
+		height: 30px;
+	  width: 30px;
+	  margin: 0px 10px 16px 10px;
+}
+
+#mobile-home {
+		color: white!important;
 }
 
 .shop-now-button {
@@ -112,6 +116,10 @@ body {
     color: #68c6e6 !important;
 }
 
+.text-info {
+    color: #fff!important;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
@@ -166,15 +174,35 @@ body {
 }
 
 .bg-hover-white:hover nav li a i {
-	 color: #68c6e6 !important;
+		color: #68c6e6 !important;
 }
 
 .bg-hover-white:hover nav li a p {
-	 color: black !important;
+		color: black !important;
 }
 
 .navbar-toggler {
+    background-color: transparent;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  	border-color: rgb(255,255,255);
+}
+
+.bg-hover-white:hover .navbar-toggler {
     background-color: #fff;
+}
+
+.bg-hover-white:hover .custom-toggler .navbar-toggler-icon {
+  	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bg-hover-white:hover .custom-toggler.navbar-toggler {
+  	border-color: rgba(0,0,0, 0.2);
 }
 
 .overlay {
@@ -330,7 +358,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #17a2b8; /*  text-info */
 }
 
 /* Product Form */
@@ -377,7 +405,15 @@ input[name='q']::placeholder {
 	}
 
 	.nav-link i.fa-lg {
-			font-size: 1rem;
+			font-size: 0.9rem;
+	}
+
+	.nav-link p {
+			font-size: 0.6rem;
+	}
+
+	.dropdown-menu a, .nav-item a {
+		font-size: 0.7rem;
 	}
 
 	.navbar-toggler {
