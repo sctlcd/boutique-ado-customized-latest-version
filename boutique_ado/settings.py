@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'f9197f79960d.ngrok.io']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '25b5fa9c1718.ngrok.io']
 
 
 # Application definition
@@ -180,3 +180,4 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
