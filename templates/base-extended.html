@@ -41,7 +41,7 @@
 </head>
 
 <body>
-  <header class="container-fluid fixed-top bg-white bg-hover-white">
+  <header class="container-fluid bg-white bg-hover-white">
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-skyblue text-white">
         <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
@@ -144,8 +144,63 @@
   {% block content %}
   {% endblock %}
 
+  <footer class="footer bg-light bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2 menu-items">
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">About us</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">Contact us</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">Shipping</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">Refund Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Lucinda Souchet 2020</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0 social-links">
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x fa-fw text-skyblue"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-twitter-square fa-2x fa-fw text-skyblue"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x fa-fw text-skyblue"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   {% block postloadjs %}
   <script type="text/javascript">
+    // Display a bottom border in the fixed navbar when scroll down
+    $(window).scroll(function(){
+      if ($(this).scrollTop() == 0) {
+        $('header').removeClass('fixed-top');
+      }else {
+        $('header').addClass('fixed-top');
+      }
+    });
+
     $('.toast').toast('show');
   </script>
   {% endblock %}

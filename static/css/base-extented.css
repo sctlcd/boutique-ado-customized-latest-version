@@ -37,10 +37,6 @@ body {
  #mobile-home i {
 		color: #68c6e6!important;
 }
-/*
-#mobile-home  p {
-		color: black!important;
-} */
 
 .shop-now-button {
     background: black;
@@ -88,15 +84,15 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus {
-	background: #84c99c; /* #222 */
+	background: #68c6e6;
 	color: white;
-	border: 1px solid #84c99c;
+	border: 1px solid #68c6e6;
 }
 
 .btn-skyblue:hover,
 .btn-skyblue:active,
 .btn-skyblue:focus {
-    background: #68c6e6d1; /* #222 */
+    background: #68c6e6c7;
     color: white;
 		border: 1px solid #68c6e6;
 }
@@ -130,12 +126,12 @@ body {
     border: 1px solid #68c6e6 !important;
 }
 
-/* .bg-black {
-    background: #000 !important;
-} */
-
 .bg-skyblue {
     background: #68c6e6!important;
+}
+
+.bg-white {
+    background: white!important;
 }
 
 .bg-transparent {
@@ -150,7 +146,8 @@ body {
     background: #fff !important;
 }
 
-.bg-hover-white:hover h2, .bg-hover-white:hover ul a i {
+.bg-hover-white:hover h2,
+.bg-hover-white:hover ul a i {
 		color: #68c6e6 !important;
     /* color: #68c6e6 !important; */
 }
@@ -159,7 +156,8 @@ body {
 		color: black !important;
 }
 
-.bg-hover-white:hover form input, .bg-hover-white:hover form button {
+.bg-hover-white:hover form input,
+.bg-hover-white:hover form button {
 		border: 1px solid #68c6e6 !important;
 }
 
@@ -172,10 +170,6 @@ body {
 }
 
 .fixed-top {
-	box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
-}
-
-.test {
 	box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
 }
 
@@ -217,6 +211,17 @@ input[name='q']::placeholder {
     margin-left: .2rem;
 }
 
+footer.footer {
+	margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+	box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
+}
+
+.footer .menu-items a:hover,
+.footer .social-links i:hover {
+	color: #adb5bd!important;
+}
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
