@@ -2,26 +2,238 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-8 offset-3 col-sm-6 offset-sm-6 col-md-5 offset-md-7 col-lg-5 offset-lg-7 col-xl-5 offset-xl-7 my-auto text-right">
-                <h1 class="display-4 logo-font text-black">
-                    The new collections are here
-                </h1>
-                <div class="my-xl-4 my-lg-4 my-md-3 my-sm-2">
-                    <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-1 py-sm-1 py-md-2 py-lg-3 py-xl-3">Shop Now</a>
-                    </h4>
-                </div>
-            </div>
+<!-- hero image -->
+<section class="hero-image h-100">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-8 offset-3 col-sm-6 offset-sm-6 col-md-5 offset-md-7 col-lg-5 offset-lg-7 col-xl-5 offset-xl-7 my-auto text-right">
+        <h1 class="display-4 logo-font text-black">
+          The new collections are here
+        </h1>
+        <div class="my-xl-4 my-lg-4 my-md-3 my-sm-2">
+          <h4>
+            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-1 py-sm-1 py-md-2 py-lg-3 py-xl-3">Shop Now</a>
+          </h4>
         </div>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- icons grid -->
+<section class="features-icons bg-white text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <i class="fas fa-shipping-fast m-auto text-skyblue"></i>
+          </div>
+          <h3>Free shipping & return</h3>
+          <p class="mb-0">Free Shipping over $100</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <i class="fas fa-hand-holding-usd m-auto text-skyblue"></i>
+          </div>
+          <h3>Money back guarantee</h3>
+          <p class="mb-0">30 Days Money Back Guarantee</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <i class="far fa-credit-card m-auto text-skyblue"></i>
+          </div>
+          <h3>Secured payment guarantee</h3>
+          <p class="mb-0">SSL Encrypted credit card payments</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image Showcases -->
+<section class="showcase bg-white">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../../../static/images/image-showcases/pexels-lucas-da-miranda-1967902-min.jpg');"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2 class="text-uppercase text-center">Women</h2>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 text-white showcase-img" style="background-image: url('../../../static/images/image-showcases/pexels-omar-lópez-1182825-min.jpg');"></div>
+      <div class="col-lg-6 my-auto showcase-text">
+        <h2 class="text-uppercase text-center">Men</h2>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../../../static/images/image-showcases/pexels-mentatdgt-1174170-min.jpg');"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2 class="text-uppercase text-center">Kids</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials text-center bg-white">
+  <div class="container">
+    <h2 class="mb-5 text-skyblue text-bold">What people are saying...</h2>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="../../../static/images/testimonials/pexels-daniel-xavier-1239291-min.jpg" alt="Martina R. picture">
+          <h5>Martina R.</h5>
+          <p class="font-weight-light mb-0">"The products are always good quality and true sizes. I totally recommend this shopping site."</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="../../../static/images/testimonials/pexels-tim-savage-903661-min.jpg" alt="Noah A. picture">
+          <h5>Noah A.</h5>
+          <p class="font-weight-light mb-0">"Good tracked delivery service. The products fit well. I'm satisfied!"</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="../../../static/images/testimonials/pexels-andrea-piacquadio-712521-min.jpg" alt="Vera P. picture">
+          <h5>Vera P.</h5>
+          <p class="font-weight-light mb-0">"Good customer service: Friendly and helpful people help me to solve my issue. Thank you so much!"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- carousel -->
+<section class="share-style text-center bg-white">
+  <div class="container-fluid ">
+  <!--carousel wrapper-->
+    <h2 class="mb-5 text-skyblue text-bold">Share with us your own custom fashion style...</h2>
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--controls-->
+      <div class="controls-top">
+        <a class="btn-floating btn btn-circle btn-sm" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left text-white"></i></a>
+        <a class="btn-floating btn btn-circle btn-sm" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right text-white"></i></a>
+      </div>
+      <!--/.controls-->
+
+      <!--indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="2"></li>
+      </ol>
+      <!--/.indicators-->
+
+      <!--slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--first slide-->
+        <div class="carousel-item active">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="../../../static/images/share-style/pexels-godisable-jacob-871494-min.jpg"
+                  alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="../../../static/images/share-style/pexels-andrea-piacquadio-3824771-min.jpg"
+                  alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="../../../static/images/share-style/pexels-lucas-pezeta-2529375-min.jpg"
+                  alt="Card image cap">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.first slide-->
+
+        <!--second slide-->
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="../../../static/images/share-style/pexels-andrea-piacquadio-788567-min.jpg"
+                  alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="../../../static/images/share-style/pexels-elle-hughes-1680172-min.jpg"
+                  alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="../../../static/images/share-style/pexels-joshua-abner-3605015-min.jpg"
+                  alt="Card image cap">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.second slide-->
+
+        <!--third slide-->
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="../../../static/images/share-style/pexels-heitor-verdi-2529456-min.jpg"
+                  alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="../../../static/images/share-style/pexels-abhishek-gaurav-829552-min.jpg"
+                  alt="Card image cap">
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="../../../static/images/share-style/pexels-godisable-jacob-923210-min.jpg"
+                  alt="Card image cap">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.third slide-->
+
+      </div>
+      <!--/.slides-->
+
+    </div>
+    <!--/.carousel wrapper-->
+    </div>
+</section>
 {% endblock %}
