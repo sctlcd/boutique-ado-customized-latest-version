@@ -49,13 +49,13 @@
     </div>
 
     <div id="topnav" class="row overlay-home-page pt-lg-2 d-none d-lg-flex">
-      <div class="col-12 col-lg-6 my-auto py-1 py-lg-0 text-center text-lg-left">
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link ">
           <img src="{% static 'images/boutique-min.png' %}" alt="Boutique Ado" class="d-inline">
           <h2 class="d-inline logo-font text-skyblue my-0"><strong>Boutique</strong> Ado</h2>
         </a>
       </div>
-      <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <form method="GET" action="{% url 'products' %}">
           <div class="input-group w-100">
             <input class="form-control border border-skyblue rounded-0" type="text" name="q" placeholder="Search our site">
@@ -69,12 +69,22 @@
           </div>
         </form>
       </div>
-      <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+          <li class="list-inline-item">
+            <a class="text-white nav-link" href="#">
+              <div class="text-center">
+                <div><i class="far fa-images fa-lg text-skyblue"></i></div>
+                <p class="my-0 text-black">
+                  Gallery
+                </p>
+              </div>
+            </a>
+          </li>
           <li class="list-inline-item dropdown">
             <a class="text-skyblue nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="text-center">
-                <div><i class="fas fa-user fa-lg text-skyblue"></i></div>
+                <div><i class="far fa-user fa-lg text-skyblue"></i></div>
                 <p class="my-0 text-black">My Account</p>
               </div>
             </a>
@@ -143,10 +153,10 @@
   {% block content %}
   {% endblock %}
 
-  <footer class="footer bg-light bg-white">
+  <footer class="footer bg-white">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+        <div class="col-lg-9 h-100 text-center text-lg-left my-auto">
           <ul class="list-inline mb-2 menu-items">
             <li class="list-inline-item">
               <a href="#" class="text-skyblue">About us</a>
@@ -161,12 +171,24 @@
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
+              <a href="#" class="text-skyblue">Return</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
               <a href="#" class="text-skyblue">Refund Policy</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">Terms of use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">Privacy Policy</a>
             </li>
           </ul>
           <p class="text-muted small mb-4 mb-lg-0">&copy; Lucinda Souchet 2020</p>
         </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+        <div class="col-lg-3 h-100 text-center text-lg-right my-auto">
           <ul class="list-inline mb-0 social-links">
             <li class="list-inline-item mr-3">
               <a href="#">

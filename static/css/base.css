@@ -52,7 +52,10 @@ body {
 
 .shop-now-button:hover,
 .shop-now-button:active,
-.shop-now-button:focus {
+.shop-now-button:focus,
+.share-button:hover,
+.share-button:active,
+.share-button:focus {
 	background: #68c6e6;
 	color: #fafafa;
 	border: 1px solid #68c6e6;
@@ -286,26 +289,47 @@ input[name='q']::placeholder {
 	  background-size: cover;
 }
 
-/* ------------------------------- testimonials */
+.showcase-img {
+		max-width: 100%;
+	  height: auto;
+		background-repeat: no-repeat;
+  	background-size: cover;
+		background-position: center center;
+}
 
-.testimonials {
+/* ------------------------------- testimonial */
+
+.testimonial {
 	  padding-top: 7rem;
 	  padding-bottom: 7rem;
 }
 
-.testimonials .testimonial-item {
+.testimonial-header {
+	  padding-bottom: 4rem;
+}
+
+.testimonial .testimonial-item {
 	  max-width: 18rem;
 }
 
-.testimonials .testimonial-item img {
+.testimonial .testimonial-item img {
 	  max-width: 12rem;
 	  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+/* .share-style-header .fa-images, */
+.testimonial .fa-comments {
+	padding-right: 1rem;
 }
 
 /* ------------------------------- share style */
 
 .share-style {
-		padding-bottom: 4rem;
+		/* padding-bottom: 4rem; */
+		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/static/images/share-style/pexels-jessica-lewis-593325.jpg') no-repeat left top fixed;
+    background-size: cover;
+		color: #555;
+		/* height: 50vh; */
 }
 
 .controls-top {
@@ -336,12 +360,23 @@ input[name='q']::placeholder {
   border-radius: 1rem;
 }
 
+.share-button {
+    background: black;
+    color: #fafafa;
+    min-width: 6rem;
+}
+
 /* ------------------------------- footer */
 
 footer.footer {
-	  padding-top: 4rem;
-	  padding-bottom: 4rem;
-		box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+	box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
+  height: 13rem;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
 }
 
 .footer .menu-items a:hover,
@@ -503,13 +538,6 @@ footer.footer {
 /* -------------------------------- Media Queries */
 
 @media only screen and (max-width: 575px) {
-	/* .header-container {
-			padding-top: 116px;
-	}
-
-	body {
-			height: calc(100vh - 116px);
-	} */
 
 	.nav-link {
 			padding: 0.15rem;
@@ -562,16 +590,17 @@ footer.footer {
 	.btn-lg {
 			font-size: 0.8rem;
 	}
+
+	.share-style h2 {
+			font-size: 1.6rem;
+	}
+
+	footer.footer {
+		height: 16rem;
+	}
 }
 
 @media only screen and (min-width: 576px) {
-	/* .header-container {
-			padding-top: 116px;
-	}
-
-	body {
-			height: calc(100vh - 116px);
-	} */
 
 	.nav-link {
 			padding: 0.15rem;
@@ -616,17 +645,18 @@ footer.footer {
 	.btn-lg {
 			font-size: 1rem;
 	}
+
+	.share-style h2 {
+			font-size: 2rem;
+	}
+
+	footer.footer {
+		height: 13rem;
+	}
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media only screen and (min-width: 768px) {
-    /* .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    } */
 
     .nav-link {
         padding: 0.15rem;
@@ -674,7 +704,15 @@ footer.footer {
 
 		.showcase .showcase-text {
     		padding: 7rem;
-  }
+  	}
+
+		.share-style h2 {
+				font-size: 2rem;
+		}
+
+		footer.footer {
+			height: 13rem;
+		}
 }
 
 /* fixed top navbar only on medium and up */
@@ -687,10 +725,6 @@ footer.footer {
         z-index: 1030;
     }
 
-    /* .header-container {
-        padding-top: 164px;
-    } */
-
 		.display-4.logo-font.text-black {
         font-size: 3rem;
     }
@@ -701,6 +735,14 @@ footer.footer {
 
 		.btn-lg {
     		font-size: 1.4rem;
+		}
+
+		.share-style h2 {
+		  	font-size: 2rem;
+		 }
+
+		footer.footer {
+			height: 10rem;
 		}
 }
 
@@ -714,14 +756,6 @@ footer.footer {
 			z-index: 1030;
 	}
 
-	/* .header-container {
-			padding-top: 164px;
-	} */
-
-  .container {
-    	max-width: 80%;
-  }
-
 	.display-4.logo-font.text-black {
 			font-size: 3.5rem;
 	}
@@ -732,5 +766,13 @@ footer.footer {
 
 	.btn-lg {
 			font-size: 1.6rem;
+	}
+
+	.share-style h2 {
+	  	font-size: 2rem;
+	  }
+
+	footer.footer {
+	  height: 9rem;
 	}
 }
