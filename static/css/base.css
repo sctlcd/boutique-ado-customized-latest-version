@@ -6,7 +6,8 @@ body {
     /* credit https://www.selbekk.io/blog/2019/06/how-to-overlay-your-background-images/ */
 		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/static/images/hero-image/homepage-background-1920-min.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    /* height: calc(100vh - 164px); */
+		height: 100vh;
     color: #555;
     font-family: 'Lato';
 }
@@ -239,20 +240,6 @@ a.category-badge > span.badge:hover {
     color: #fafafa !important;
 }
 
-/* .btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-.btt-link,
-.update-link,
-.remove-item {
-    cursor: pointer;
-} */
-
 input[name='q']::placeholder {
     color: #aab7c4;
 }
@@ -342,6 +329,12 @@ input[name='q']::placeholder {
 		box-shadow: 0px 5px 5px 0px #828383;
 }
 
+.card, .card-img {
+	border-top-left-radius: calc(1rem - 2px);
+	border-top-right-radius: calc(1rem - 2px);
+	border: 1px solid #fafafa;
+  border-radius: 1rem;
+}
 
 /* ------------------------------- footer */
 
@@ -510,13 +503,13 @@ footer.footer {
 /* -------------------------------- Media Queries */
 
 @media only screen and (max-width: 575px) {
-	.header-container {
+	/* .header-container {
 			padding-top: 116px;
 	}
 
 	body {
 			height: calc(100vh - 116px);
-	}
+	} */
 
 	.nav-link {
 			padding: 0.15rem;
@@ -572,13 +565,13 @@ footer.footer {
 }
 
 @media only screen and (min-width: 576px) {
-	.header-container {
+	/* .header-container {
 			padding-top: 116px;
 	}
 
 	body {
 			height: calc(100vh - 116px);
-	}
+	} */
 
 	.nav-link {
 			padding: 0.15rem;
@@ -627,13 +620,13 @@ footer.footer {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media only screen and (min-width: 768px) {
-    .header-container {
+    /* .header-container {
         padding-top: 116px;
     }
 
     body {
         height: calc(100vh - 116px);
-    }
+    } */
 
     .nav-link {
         padding: 0.15rem;
@@ -694,9 +687,9 @@ footer.footer {
         z-index: 1030;
     }
 
-    .header-container {
+    /* .header-container {
         padding-top: 164px;
-    }
+    } */
 
 		.display-4.logo-font.text-black {
         font-size: 3rem;
@@ -721,9 +714,9 @@ footer.footer {
 			z-index: 1030;
 	}
 
-	.header-container {
+	/* .header-container {
 			padding-top: 164px;
-	}
+	} */
 
   .container {
     	max-width: 80%;
