@@ -4,7 +4,7 @@ html {
 
 body {
     /* credit https://www.selbekk.io/blog/2019/06/how-to-overlay-your-background-images/ */
-		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/media/homepage-background-1920-min.jpg') no-repeat center center fixed;
+		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/static/images/hero-image/homepage-background-1920-min.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
