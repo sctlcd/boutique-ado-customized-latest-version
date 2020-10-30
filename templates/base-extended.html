@@ -147,77 +147,81 @@
   </div>
   {% endif %}
 
-  {% block page_header %}
-  {% endblock %}
+    <div class="wrapper">
+    {% block page_header %}
+    {% endblock %}
 
-  {% block content %}
-  {% endblock %}
 
-  <footer class="footer bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9 h-100 text-center text-lg-left my-auto">
-          <ul class="list-inline mb-2 menu-items">
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">About us</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">Contact us</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">Shipping</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">Return</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">Refund Policy</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">Terms of use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">Privacy Policy</a>
-            </li>
-          </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; Lucinda Souchet 2020</p>
-        </div>
-        <div class="col-lg-3 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0 social-links">
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-facebook fa-2x fa-fw text-skyblue"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-twitter-square fa-2x fa-fw text-skyblue"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-instagram fa-2x fa-fw text-skyblue"></i>
-              </a>
-            </li>
-          </ul>
+    {% block content %}
+    {% endblock %}
+    <div class="push"></div>
+    </div>
+
+    <footer class="footer bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2 menu-items">
+              <li class="list-inline-item">
+                <a href="#" class="text-skyblue">About us</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-skyblue">Contact us</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-skyblue">Shipping</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-skyblue">Return</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-skyblue">Refund Policy</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-skyblue">Terms of use</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-skyblue">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Lucinda Souchet 2020</p>
+          </div>
+          <div class="col-lg-3 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0 social-links">
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-facebook fa-2x fa-fw text-skyblue"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-twitter-square fa-2x fa-fw text-skyblue"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-instagram fa-2x fa-fw text-skyblue"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
   {% block postloadjs %}
   <script type="text/javascript">
     // Display a bottom border in the fixed navbar when scroll down
-    $(window).scroll(function(){
+    $(window).scroll(function() {
       if ($(this).scrollTop() == 0) {
         $('header').removeClass('fixed-top');
-      }else {
+      } else {
         $('header').addClass('fixed-top');
       }
     });

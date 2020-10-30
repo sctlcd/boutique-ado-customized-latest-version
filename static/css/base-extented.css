@@ -223,6 +223,18 @@ input[name='q']::placeholder {
     margin-left: .2rem;
 }
 
+.wrapper {
+  min-height: 100%;
+	/* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -14rem;
+}
+
+.footer,
+.push {
+  height: 14rem;
+}
+
 footer.footer {
   padding-top: 3rem;
   padding-bottom: 4rem;
