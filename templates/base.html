@@ -72,10 +72,10 @@
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
           <li class="list-inline-item">
-            <a class="text-white nav-link" href="#" id="">
+            <a class="text-white nav-link" href="{% url 'gallery' %}">
               <div class="text-center">
                 <div><i class="far fa-images fa-lg text-white"></i></div>
-                <p class="my-0">
+                <p class="my-0 text-white">
                   Gallery
                 </p>
               </div>
@@ -220,20 +220,20 @@
         $('header').addClass('bg-transparent');
         $('header').removeClass('bg-hover-white');
         $('header').removeClass('fixed-top');
-
           //this code will execute when the header is hovered
         $('header').hover(function(){
           //this code will execute when mouse enters the html element
           $('header').removeClass('bg-transparent');
           $('header').addClass('bg-hover-white');
-          $('header').removeClass('fixed-top');
+          $('header').addClass('fixed-top');
         },
         function(){
           //this code will execute when mouse leaves the html element
           $('header').addClass('bg-transparent');
           $('header').removeClass('bg-hover-white');
-          $('header').removeClass('fixed-top');
+          $('header').addClass('fixed-top');
         });
+
       }else {
         //this code will execute when the scrollbar is not on the top
         $('header').removeClass('bg-transparent');
