@@ -38,6 +38,10 @@ body {
 		color: #68c6e6!important;
 }
 
+.header-container {
+    padding-top: 4rem;
+}
+
 .shop-now-button {
     background: black;
     color: white;
@@ -188,12 +192,20 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
-.btt-button {
+.btt-button-top {
     height: 42px;
     width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
+		position: fixed;
+		bottom: 60px;
+		right: 10px;
+}
+
+.btt-button-down {
+	height: 42px;
+	width: 42px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
 }
 
 .btt-link,
@@ -211,11 +223,27 @@ input[name='q']::placeholder {
     margin-left: .2rem;
 }
 
+.wrapper {
+  min-height: 100%;
+	/* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -14rem;
+}
+
+.footer,
+.push {
+  height: 14rem;
+}
+
 footer.footer {
-	margin-top: 4rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 4rem;
 	box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
+  height: 13rem;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
 }
 
 .footer .menu-items a:hover,
@@ -376,9 +404,6 @@ footer.footer {
 /* -------------------------------- Media Queries */
 
 @media only screen and (max-width: 575px) {
-	.header-container {
-			padding-top: 116px;
-	}
 
 	body {
 			height: calc(100vh - 116px);
@@ -435,12 +460,13 @@ footer.footer {
 	.btn-lg {
 	font-size: 0.8rem;
 	}
+
+	footer.footer {
+		height: 16rem;
+	}
 }
 
 @media only screen and (min-width: 576px) {
-	.header-container {
-			padding-top: 116px;
-	}
 
 	body {
 			height: calc(100vh - 116px);
@@ -489,13 +515,14 @@ footer.footer {
 	.btn-lg {
 	font-size: 1rem;
 	}
+
+	footer.footer {
+		height: 13rem;
+	}
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media only screen and (min-width: 768px) {
-    .header-container {
-        padding-top: 116px;
-    }
 
     body {
         height: calc(100vh - 116px);
@@ -544,6 +571,10 @@ footer.footer {
 		.btn-lg {
     font-size: 1.2rem;
 		}
+
+		footer.footer {
+			height: 11rem;
+		}
 }
 
 /* fixed top navbar only on medium and up */
@@ -554,10 +585,6 @@ footer.footer {
         right: 0;
         left: 0;
         z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
     }
 
 		.display-4.logo-font.text-black {
@@ -571,6 +598,11 @@ footer.footer {
 		.btn-lg {
     font-size: 1.4rem;
 		}
+
+		footer.footer {
+			margin-top: 4rem;
+			height: 9rem;
+		}
 }
 
 /* Slightly larger container on xl screens */
@@ -581,10 +613,6 @@ footer.footer {
 			right: 0;
 			left: 0;
 			z-index: 1030;
-	}
-
-	.header-container {
-			padding-top: 164px;
 	}
 
   .container {
@@ -601,5 +629,9 @@ footer.footer {
 
 	.btn-lg {
 	font-size: 1.6rem;
+	}
+
+	footer.footer {
+	  height: 9rem;
 	}
 }

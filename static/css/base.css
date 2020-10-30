@@ -4,12 +4,127 @@ html {
 
 body {
     /* credit https://www.selbekk.io/blog/2019/06/how-to-overlay-your-background-images/ */
-		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/media/homepage-background-1920-min.jpg') no-repeat center center fixed;
+		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/static/images/hero-image/homepage-background-1920-min.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    /* height: calc(100vh - 164px); */
+		height: 100vh;
     color: #555;
     font-family: 'Lato';
 }
+
+/* ------------------------------- button */
+
+.btn-black {
+    background: black;
+    color: #fafafa;
+}
+
+.btn-skyblue {
+    background: #68c6e6;
+    color: #fafafa;
+}
+
+.btn-outline-black {
+    background: #fafafa;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-skyblue {
+    background: #fafafa;
+    color: #68c6e6 !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #68c6e6;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: #fafafa !important;
+}
+
+.btn-outline-skyblue:hover,
+.btn-outline-skyblue:active,
+.btn-outline-skyblue:focus {
+    background: #68c6e6;
+    color: #fafafa !important;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.share-button:hover,
+.share-button:active,
+.share-button:focus {
+	background: #68c6e6;
+	color: #fafafa;
+	border: 1px solid #68c6e6;
+}
+
+.btn-skyblue:hover,
+.btn-skyblue:active,
+.btn-skyblue:focus {
+    background: #68c6e6d1;
+    color: #fafafa;
+		border: 1px solid #68c6e6;
+}
+
+.btn-black:hover,
+.btn-skyblue:active,
+.btn-skyblue:focus {
+    background: #222;
+    color: #fafafa;
+		border: 1px solid #222;
+}
+
+/* ------------------------------- text, border, background style */
+
+.text-black {
+    color: #000 !important;
+}
+
+.text-white {
+    color: #fafafa !important;
+}
+
+.text-skyblue {
+    color: #68c6e6 !important;
+}
+
+.text-info {
+    color: #fafafa!important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.border-skyblue {
+    border: 1px solid #68c6e6 !important;
+}
+
+.bg-skyblue {
+    background: #68c6e6 !important;
+}
+
+.bg-transparent {
+		background-color: transparent !important;
+}
+
+.bg-white {
+	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
+}
+
+.bg-hover-white {
+    transition: all .2s ease-out;
+}
+
+.bg-hover-white,
+.bg-hover-white:hover {
+    background: #fafafa !important;
+}
+
+/* ------------------------------- navbar */
 
 /* from Bulma */
 .icon {
@@ -38,110 +153,8 @@ body {
 		color: white!important;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 16rem;
-}
-
-.btn-black {
-    background: black;
-    color: white;
-}
-
-.btn-skyblue {
-    background: #68c6e6;
-    color: white;
-}
-
-.btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
-}
-
-.btn-outline-skyblue {
-    background: white;
-    color: #68c6e6 !important; /* use important to override link colors for <a> elements */
-    border: 1px solid #68c6e6;
-}
-
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
-    color: white !important;
-}
-
-.btn-outline-skyblue:hover,
-.btn-outline-skyblue:active,
-.btn-outline-skyblue:focus {
-    background: #68c6e6;
-    color: white !important;
-}
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus {
-	background: #68c6e6; /* #222 */
-	color: white;
-	border: 1px solid #68c6e6;
-}
-
-.btn-skyblue:hover,
-.btn-skyblue:active,
-.btn-skyblue:focus {
-    background: #68c6e6d1; /* #222 */
-    color: white;
-		border: 1px solid #68c6e6;
-}
-
-.btn-black:hover,
-.btn-skyblue:active,
-.btn-skyblue:focus {
-    background: #222;
-    color: white;
-		border: 1px solid #222;
-}
-
-.text-black {
-    color: #000 !important;
-}
-
-.text-white {
-    color: #fff !important;
-}
-
-.text-skyblue {
-    color: #68c6e6 !important;
-}
-
-.text-info {
-    color: #fff!important;
-}
-
-.border-black {
-    border: 1px solid black !important;
-}
-
-.border-skyblue {
-    border: 1px solid #68c6e6 !important;
-}
-
-.bg-skyblue {
-    background: #68c6e6!important;
-}
-
-.bg-transparent {
-		background-color: transparent !important;
-}
-
-.bg-hover-white {
-    transition: all .2s ease-out;
-}
-
-.bg-hover-white:hover, .bg-hover-white {
-    background: #fff !important;
+input.bg-white {
+	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
 }
 
 .bg-hover-white:hover h2,
@@ -197,12 +210,12 @@ body {
 }
 
 .custom-toggler.navbar-toggler {
-  	border-color: rgb(255,255,255);
+  	border-color: #fafafa;
 }
 
 .bg-hover-white:hover .navbar-toggler,
 .bg-hover-white .navbar-toggler {
-    background-color: #fff;
+    background-color: #fafafa;
 }
 
 .bg-hover-white:hover .custom-toggler .navbar-toggler-icon,
@@ -216,48 +229,159 @@ body {
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: fixed;
+		background: #fafafa;
+		z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
-    color: #fff !important;
-}
-
-.btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-.btt-link,
-.update-link,
-.remove-item {
-    cursor: pointer;
+    color: #fafafa !important;
 }
 
 input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+/* ------------------------------- hero image */
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 16rem;
+}
+
+/* ------------------------------- features icons */
+
+.features-icons {
+	  padding-top: 7rem;
+	  padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+	  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+	  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+	  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+	  font-size: 5rem;
+}
+
+/* ------------------------------- Image Showcases */
+
+.showcase .showcase-text {
+	  padding: 3rem;
+}
+
+.showcase .showcase-img {
+	  min-height: 30rem;
+	  background-size: cover;
+}
+
+.showcase-img {
+		max-width: 100%;
+	  height: auto;
+		background-repeat: no-repeat;
+  	background-size: cover;
+		background-position: center center;
+}
+
+/* ------------------------------- testimonial */
+
+.testimonial {
+	  padding-top: 7rem;
+	  padding-bottom: 7rem;
+}
+
+.testimonial-header {
+	  padding-bottom: 4rem;
+}
+
+.testimonial .testimonial-item {
+	  max-width: 18rem;
+}
+
+.testimonial .testimonial-item img {
+	  max-width: 12rem;
+	  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+/* .share-style-header .fa-images, */
+.testimonial .fa-comments {
+	padding-right: 1rem;
+}
+
+/* ------------------------------- share style */
+
+.share-style {
+		/* padding-bottom: 4rem; */
+		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/static/images/share-style/pexels-jessica-lewis-593325.jpg') no-repeat left top fixed;
+    background-size: cover;
+		color: #555;
+		/* height: 50vh; */
+}
+
+.controls-top {
+		margin-bottom: 1.5rem;
+}
+
+.btn-circle.btn-sm {
+	  width: 30px;
+	  height: 30px;
+	  padding: 9px 0px;
+	  border-radius: 50px;
+	  font-size: 8px;
+	  text-align: center;
+		background-color: #68c6e6;
+		color: #fafafa;
+		box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.btn-circle.btn-sm:hover {
+		background-color: #adb5bd;
+		box-shadow: 0px 5px 5px 0px #828383;
+}
+
+.card, .card-img {
+	border-top-left-radius: calc(1rem - 2px);
+	border-top-right-radius: calc(1rem - 2px);
+	border: 1px solid #fafafa;
+  border-radius: 1rem;
+}
+
+.share-button {
+    background: black;
+    color: #fafafa;
+    min-width: 6rem;
+}
+
+/* ------------------------------- footer */
+
 footer.footer {
-	margin-top: 4rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 4rem;
 	box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
+  height: 13rem;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
 }
 
 .footer .menu-items a:hover,
 .footer .social-links i:hover {
-	color: #adb5bd!important;
+		color: #adb5bd!important;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -352,35 +476,35 @@ footer.footer {
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
 	/* btn */
-	display: inline-block;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0;
+		display: inline-block;
+	  font-weight: 400;
+	  color: #fafafa;
+	  text-align: center;
+	  vertical-align: middle;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	  background-color: #000;
+	  border: 1px solid #000;
+	  padding: .375rem .75rem;
+	  font-size: 1rem;
+	  line-height: 1.5;
+	  border-radius: 0;
 
-    /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  /* standard bootstrap btn transitions */
+  	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
+		color: #fafafa;
+	  background-color: #222;
+	  border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /*  text-info */
+		color: #17a2b8; /*  text-info */
 }
 
 /* Product Form */
@@ -414,13 +538,6 @@ footer.footer {
 /* -------------------------------- Media Queries */
 
 @media only screen and (max-width: 575px) {
-	.header-container {
-			padding-top: 116px;
-	}
-
-	body {
-			height: calc(100vh - 116px);
-	}
 
 	.nav-link {
 			padding: 0.15rem;
@@ -435,7 +552,7 @@ footer.footer {
 	}
 
 	.dropdown-menu a, .nav-item a {
-		font-size: 0.7rem;
+			font-size: 0.7rem;
 	}
 
 	.navbar-toggler {
@@ -471,18 +588,19 @@ footer.footer {
 	}
 
 	.btn-lg {
-	font-size: 0.8rem;
+			font-size: 0.8rem;
+	}
+
+	.share-style h2 {
+			font-size: 1.6rem;
+	}
+
+	footer.footer {
+		height: 16rem;
 	}
 }
 
 @media only screen and (min-width: 576px) {
-	.header-container {
-			padding-top: 116px;
-	}
-
-	body {
-			height: calc(100vh - 116px);
-	}
 
 	.nav-link {
 			padding: 0.15rem;
@@ -525,19 +643,20 @@ footer.footer {
 	}
 
 	.btn-lg {
-	font-size: 1rem;
+			font-size: 1rem;
+	}
+
+	.share-style h2 {
+			font-size: 2rem;
+	}
+
+	footer.footer {
+		height: 13rem;
 	}
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media only screen and (min-width: 768px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
 
     .nav-link {
         padding: 0.15rem;
@@ -580,7 +699,19 @@ footer.footer {
 		}
 
 		.btn-lg {
-    font-size: 1.2rem;
+    		font-size: 1.2rem;
+		}
+
+		.showcase .showcase-text {
+    		padding: 7rem;
+  	}
+
+		.share-style h2 {
+				font-size: 2rem;
+		}
+
+		footer.footer {
+			height: 13rem;
 		}
 }
 
@@ -594,10 +725,6 @@ footer.footer {
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 164px;
-    }
-
 		.display-4.logo-font.text-black {
         font-size: 3rem;
     }
@@ -607,7 +734,15 @@ footer.footer {
 		}
 
 		.btn-lg {
-    font-size: 1.4rem;
+    		font-size: 1.4rem;
+		}
+
+		.share-style h2 {
+		  	font-size: 2rem;
+		 }
+
+		footer.footer {
+			height: 10rem;
 		}
 }
 
@@ -621,14 +756,6 @@ footer.footer {
 			z-index: 1030;
 	}
 
-	.header-container {
-			padding-top: 164px;
-	}
-
-  .container {
-    max-width: 80%;
-  }
-
 	.display-4.logo-font.text-black {
 			font-size: 3.5rem;
 	}
@@ -638,6 +765,14 @@ footer.footer {
 	}
 
 	.btn-lg {
-	font-size: 1.6rem;
+			font-size: 1.6rem;
+	}
+
+	.share-style h2 {
+	  	font-size: 2rem;
+	  }
+
+	footer.footer {
+	  height: 9rem;
 	}
 }
