@@ -12,6 +12,10 @@ body {
     font-family: 'Lato';
 }
 
+form div > input {
+	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
+}
+
 /* ------------------------------- button */
 
 .btn-black {
@@ -53,9 +57,9 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.share-button:hover,
-.share-button:active,
-.share-button:focus {
+.share-now-button:hover,
+.share-now-button:active,
+.share-now-button:focus {
 	background: #68c6e6;
 	color: #fafafa;
 	border: 1px solid #68c6e6;
@@ -153,10 +157,6 @@ body {
 		color: white!important;
 }
 
-input.bg-white {
-	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
-}
-
 .bg-hover-white:hover h2,
 .bg-hover-white:hover ul a i,
 .bg-hover-white h2,
@@ -247,6 +247,10 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #dee2e6;
+}
+
 /* ------------------------------- hero image */
 
 .shop-now-button {
@@ -323,13 +327,13 @@ input[name='q']::placeholder {
 
 /* ------------------------------- share style */
 
-.share-style {
-		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/static/images/share-style/pexels-jessica-lewis-593325.jpg') no-repeat left top fixed;
+.gallery {
+		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/static/images/gallery/pexels-jessica-lewis-593325.jpg') no-repeat left top fixed;
     background-size: cover;
 		color: #555;
 }
 
-.share-button {
+.share-now-button {
     background: black;
     color: #fafafa;
     min-width: 6rem;
@@ -560,7 +564,7 @@ footer.footer {
 			font-size: 0.8rem;
 	}
 
-	.share-style h2 {
+	.gallery h2 {
 			font-size: 1.6rem;
 	}
 
@@ -615,7 +619,7 @@ footer.footer {
 			font-size: 1rem;
 	}
 
-	.share-style h2 {
+	.gallery h2 {
 			font-size: 2rem;
 	}
 
@@ -675,7 +679,7 @@ footer.footer {
     		padding: 7rem;
   	}
 
-		.share-style h2 {
+		.gallery h2 {
 				font-size: 2rem;
 		}
 
@@ -706,7 +710,7 @@ footer.footer {
     		font-size: 1.4rem;
 		}
 
-		.share-style h2 {
+		.gallery h2 {
 		  	font-size: 2rem;
 		 }
 
@@ -737,7 +741,7 @@ footer.footer {
 			font-size: 1.6rem;
 	}
 
-	.share-style h2 {
+	.gallery h2 {
 	  	font-size: 2rem;
 	  }
 
