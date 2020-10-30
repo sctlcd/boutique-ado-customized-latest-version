@@ -44,28 +44,28 @@ body {
 
 .shop-now-button {
     background: black;
-    color: white;
+    color: #fff;
     min-width: 16rem;
 }
 
 .btn-black {
     background: black;
-    color: white;
+    color: #fff;
 }
 
 .btn-skyblue {
     background: #68c6e6;
-    color: white;
+    color: #fff;
 }
 
 .btn-outline-black {
-    background: white;
+    background: #fff;
     color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
 .btn-outline-skyblue {
-    background: white;
+    background: #fff;
     color: #68c6e6 !important; /* use important to override link colors for <a> elements */
     border: 1px solid #68c6e6;
 }
@@ -75,21 +75,21 @@ body {
 .btn-outline-black:focus,
 .btn-outline-black:hover i {
     background: black;
-    color: white !important;
+    color: #fff !important;
 }
 
 .btn-outline-skyblue:hover,
 .btn-outline-skyblue:active,
 .btn-outline-skyblue:focus {
     background: #68c6e6;
-    color: white !important;
+    color: #fff !important;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus {
 	background: #68c6e6;
-	color: white;
+	color: #fff;
 	border: 1px solid #68c6e6;
 }
 
@@ -97,7 +97,7 @@ body {
 .btn-skyblue:active,
 .btn-skyblue:focus {
     background: #68c6e6c7;
-    color: white;
+    color: #fff;
 		border: 1px solid #68c6e6;
 }
 
@@ -106,7 +106,7 @@ body {
 .btn-skyblue:focus,
 .btn-black:hover i {
     background: #222;
-    color: white;
+    color: #fff;
 		border: 1px solid #222;
 }
 
@@ -135,7 +135,7 @@ body {
 }
 
 .bg-white {
-    background: white!important;
+    background: #fff!important;
 }
 
 .bg-transparent {
@@ -183,7 +183,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: #fff;
 	z-index: -1;
 }
 
@@ -222,6 +222,43 @@ input[name='q']::placeholder {
     margin-right: .2rem;
     margin-left: .2rem;
 }
+
+
+
+/* ------------------------------- carousel */
+
+.controls-top {
+		margin-bottom: 1.5rem;
+}
+
+.btn-circle.btn-sm {
+	  width: 30px;
+	  height: 30px;
+	  padding: 9px 0px;
+	  border-radius: 50px;
+	  font-size: 8px;
+	  text-align: center;
+		background-color: #68c6e6;
+		color: #fafafa;
+		box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.btn-circle.btn-sm:hover {
+		background-color: #adb5bd;
+		box-shadow: 0px 5px 5px 0px #828383;
+}
+
+.card, .card-img {
+		border-top-left-radius: calc(1rem - 2px);
+		border-top-right-radius: calc(1rem - 2px);
+		border: 1px solid #fafafa;
+	  border-radius: 1rem;
+}
+
+.share-style-header .fa-images {
+		padding-right: 1rem;
+}
+/* ------------------------------- footer */
 
 .wrapper {
   min-height: 100%;
