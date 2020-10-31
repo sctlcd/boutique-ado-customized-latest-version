@@ -6,7 +6,7 @@ body {
     /* credit https://www.selbekk.io/blog/2019/06/how-to-overlay-your-background-images/ */
 		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/static/images/hero-image/homepage-background-1920-min.jpg') no-repeat center center fixed;
     background-size: cover;
-    /* height: calc(100vh - 164px); */
+    /* height: calc(100vh - 4rem); */
 		height: 100vh;
     color: #555;
     font-family: 'Lato';
@@ -524,13 +524,17 @@ footer.footer {
 			font-size: 0.6rem;
 	}
 
+	.list-inline-item:not(:last-child) {
+    margin-right: .2rem;
+	}
+
 	.dropdown-menu a, .nav-item a {
 			font-size: 0.7rem;
 	}
 
 	.navbar-toggler {
-			padding: .6rem .6rem;
-			font-size: 1rem;
+			padding: .2rem .2rem;
+			font-size: 0.5rem;
 	}
 
 	#delivery-banner h4 {
@@ -553,7 +557,7 @@ footer.footer {
 	}
 
 	.display-4.logo-font.text-black {
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 	}
 
 	.shop-now-button {
@@ -583,9 +587,13 @@ footer.footer {
 			font-size: 1rem;
 	}
 
+	.nav-link p {
+			font-size: 0.8rem;
+	}
+
 	.navbar-toggler {
-			padding: .6rem .6rem;
-			font-size: 1rem;
+			padding: .4rem .4rem;
+			font-size: 0.6rem;
 	}
 
 	#delivery-banner h4 {
@@ -639,9 +647,13 @@ footer.footer {
         font-size: 1rem;
     }
 
+		.nav-link p {
+				font-size: 1rem;
+		}
+
     .navbar-toggler {
-        padding: .6rem .6rem;
-        font-size: 1rem;
+        padding: .4rem .4rem;
+        font-size: 0.8rem;
     }
 
     #delivery-banner h4 {
