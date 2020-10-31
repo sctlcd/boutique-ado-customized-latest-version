@@ -227,25 +227,6 @@ form div > input {
   	border-color: rgba(0,0,0, 0.2);
 }
 
-/* .overlay {
-		height: 100%;
-		width: 100%;
-		top: 0;
-		left: 0;
-		position: fixed;
-		background: #fafafa;
-		z-index: -1;
-} */
-
-/* a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fafafa !important;
-} */
-
-/* input[name='q']::placeholder {
-    color: #aab7c4;
-} */
-
 .dropdown-item:focus, .dropdown-item:hover {
     background-color: #dee2e6;
 }
@@ -254,7 +235,7 @@ form div > input {
 
 .shop-now-button {
     background: black;
-    color: white;
+    color: #fafafa;
     min-width: 16rem;
 }
 
@@ -324,7 +305,7 @@ form div > input {
 	padding-right: 1rem;
 }
 
-/* ------------------------------- share style */
+/* ------------------------------- gallery */
 
 .gallery {
 		background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('/static/images/gallery-background-1920-min.jpg') no-repeat left top fixed;
@@ -413,10 +394,6 @@ form div > input {
 			font-size: .75rem;
 	}
 
-	/* .increment-qty, .decrement-qty {
-			padding: .25rem .5rem !important;
-	} */
-
 	.display-4.logo-font.text-black {
 			font-size: 1.3rem;
 	}
@@ -482,10 +459,6 @@ form div > input {
 			font-size: .75rem;
 	}
 
-	/* .increment-qty, .decrement-qty {
-			padding: .25rem .5rem !important;
-	} */
-
 	.display-4.logo-font.text-black {
 			font-size: 2.2rem;
 	}
@@ -550,10 +523,6 @@ form div > input {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
-
-    /* .increment-qty, .decrement-qty {
-        padding: .25rem .5rem !important;
-    } */
 
 		.display-4.logo-font.text-black {
         font-size: 2.5rem;

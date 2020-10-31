@@ -3,12 +3,6 @@ html {
 }
 
 body {
-    /* credit https://www.selbekk.io/blog/2019/06/how-to-overlay-your-background-images/ */
-		/* background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , #fafafa) no-repeat center center fixed; */
-    /* background-size: cover; */
-    /* height: calc(100vh - 164px); */
-		/* background-color: red;
-    color: #555; */
 		background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
     font-family: 'Lato';
 }
@@ -523,14 +517,6 @@ input[name='q']::placeholder {
 			font-size: 1.6rem;
 	}
 
-	.shop-now-button {
-			min-width: 3rem;
-	}
-
-	.btn-lg {
-	font-size: 0.8rem;
-	}
-
 	.footer {
 		padding-top: 3rem;
 	}
@@ -577,14 +563,6 @@ input[name='q']::placeholder {
 
 	.display-4.logo-font.text-black {
 			font-size: 2.2rem;
-	}
-
-	.shop-now-button {
-			min-width: 6rem;
-	}
-
-	.btn-lg {
-	font-size: 1rem;
 	}
 
 	.footer {
@@ -635,14 +613,6 @@ input[name='q']::placeholder {
         font-size: 2.5rem;
     }
 
-		.shop-now-button {
-		    min-width: 8rem;
-		}
-
-		.btn-lg {
-    font-size: 1.2rem;
-		}
-
 		.footer {
 			padding-top: 4rem;
 		}
@@ -650,13 +620,6 @@ input[name='q']::placeholder {
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    /* .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    } */
 
 		#delivery-banner h4 {
         font-size: 1rem;
@@ -666,14 +629,6 @@ input[name='q']::placeholder {
         font-size: 3rem;
     }
 
-		.shop-now-button {
-		    min-width: 10rem;
-		}
-
-		.btn-lg {
-    font-size: 1.4rem;
-		}
-
 		.footer {
 			padding-top: 5rem;
 		}
@@ -682,13 +637,6 @@ input[name='q']::placeholder {
 /* Extra large devices (large desktops, 1200px and up) */
 /* Slightly larger container on xl screens */
 @media only screen and (min-width: 1200px) {
-	/* .fixed-top-desktop-only {
-			position: fixed;
-			top: 0;
-			right: 0;
-			left: 0;
-			z-index: 1030;
-	} */
 
 	#delivery-banner h4 {
 			font-size: 1rem;
@@ -700,14 +648,6 @@ input[name='q']::placeholder {
 
 	.display-4.logo-font.text-black {
 			font-size: 3.5rem;
-	}
-
-	.shop-now-button {
-			min-width: 12rem;
-	}
-
-	.btn-lg {
-	font-size: 1.6rem;
 	}
 
 	.footer {
