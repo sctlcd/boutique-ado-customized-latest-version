@@ -132,16 +132,18 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<script src="{% static '/products/js/products.js' %}" type="text/javascript"></script>
+
+<!-- <script type="text/javascript">
 	$('.btt-link-top').click(function(e) {
 		window.scrollTo(0, 0)
 	})
 	$('.btt-link-bottom').click(function(e) {
 		window.scrollTo(0,document.body.scrollHeight)
 	})
-</script>
+</script> -->
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$('#sort-selector').change(function() {
 		var selector = $(this);
 		var currentUrl = new URL(window.location);
@@ -161,6 +163,7 @@
 
 			window.location.replace(currentUrl);
 		}
-	})
-</script>
+	});
+</script> -->
+
 {% endblock %}
