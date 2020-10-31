@@ -243,16 +243,16 @@ input[name='q']::placeholder {
     margin-left: .2rem;
 }
 
-.product-container .card {
+.products-container .card {
 		border: 1px solid #eee !important;
 }
 
-.product-container .card:hover {
+.products-container .card:hover {
 		-webkit-box-shadow: 0 2px 10px 2px #C9C9C9;
 		box-shadow: 0 2px 10px 2px #C9C9C9;
 }
 
-.product-container {
+.products-container {
 		margin-bottom: 2rem;
 }
 

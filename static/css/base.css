@@ -571,11 +571,11 @@ form div > input {
 		}
 
 		.features-icons .features-icons-item .features-icons-icon i {
-			  font-size: 4.5rem;
+			  font-size: 4rem;
 		}
 
 		.features-icons .features-icons-item:hover .features-icons-icon i {
-			  font-size: 5rem;
+			  font-size: 4.5rem;
 		}
 
 		.gallery h2 {
@@ -601,6 +601,14 @@ form div > input {
 
 	.display-4.logo-font.text-black {
 			font-size: 3.5rem;
+	}
+
+	.features-icons .features-icons-item .features-icons-icon i {
+			font-size: 4.5rem;
+	}
+
+	.features-icons .features-icons-item:hover .features-icons-icon i {
+			font-size: 5rem;
 	}
 
 	.shop-now-button {
