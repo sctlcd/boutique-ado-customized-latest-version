@@ -99,12 +99,20 @@ form div > textarea {
     color: #68c6e6 !important;
 }
 
+.text-grey {
+	color: #adb5bd;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
 
 .border-skyblue {
     border: 1px solid #68c6e6 !important;
+}
+
+.border-grey {
+	border: 1px solid #adb5bd !important;
 }
 
 .bg-skyblue {
