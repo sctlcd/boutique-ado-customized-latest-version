@@ -9,3 +9,4 @@ env
 *.sqlite3
 *.pyc
 templates/carousel.html
+static/images/images-showcases
