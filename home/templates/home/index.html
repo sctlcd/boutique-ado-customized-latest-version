@@ -2,11 +2,6 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container header-container">
-  <div class="row">
-    <div class="col"></div>
-  </div>
-</div>
 {% endblock %}
 
 {% block content %}
@@ -14,7 +9,7 @@
 <section class="hero-image h-100">
   <div class="container h-100">
     <div class="row h-100">
-      <div class="col-8 offset-3 col-sm-6 offset-sm-6 col-md-5 offset-md-7 col-lg-5 offset-lg-7 col-xl-5 offset-xl-7 my-auto text-right">
+      <div class="col-6 offset-5 col-sm-6 offset-sm-6 col-md-5 offset-md-7 col-lg-5 offset-lg-7 col-xl-5 offset-xl-7 my-auto text-right">
         <h1 class="display-4 logo-font text-black">
           The new collections are here
         </h1>
@@ -28,6 +23,7 @@
   </div>
 </section>
 
+<div class="features-showcase-testimonial">
 <!-- icons grid -->
 <section class="features-icons bg-white text-center">
   <div class="container">
@@ -67,19 +63,19 @@
 <section class="showcase bg-white">
   <div class="container-fluid p-0">
     <div class="row no-gutters">
-      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../../../static/images/image-showcases/pexels-lucas-da-miranda-1967902-min.jpg');"></div>
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{% static '/home/images/image-showcases/pexels-lucas-da-miranda-1967902-min.jpg' %}');"></div>
       <div class="col-lg-6 col-lg-6 order-lg-1 my-auto showcase-text">
         <h2 class="text-uppercase text-center">Women</h2>
       </div>
     </div>
     <div class="row no-gutters">
-      <div class="col-lg-6 text-white showcase-img" style="background-image: url('../../../static/images/image-showcases/pexels-omar-lópez-1182825-min.jpg');"></div>
+      <div class="col-lg-6 text-white showcase-img" style="background-image: url('{% static '/home/images/image-showcases/pexels-omar-lópez-1182825-min.jpg' %}');"></div>
       <div class="col-lg-6 my-auto showcase-text">
         <h2 class="text-uppercase text-center">Men</h2>
       </div>
     </div>
     <div class="row no-gutters">
-      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../../../static/images/image-showcases/pexels-mentatdgt-1174170-min.jpg');"></div>
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{% static '/home/images/image-showcases/pexels-mentatdgt-1174170-min.jpg' %}');"></div>
       <div class="col-lg-6 order-lg-1 my-auto showcase-text">
         <h2 class="text-uppercase text-center">Kids</h2>
       </div>
@@ -97,41 +93,43 @@
     <div class="row">
       <div class="col-lg-4">
         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-          <img class="img-fluid rounded-circle mb-3" src="../../../static/images/testimonials/pexels-daniel-xavier-1239291-min.jpg" alt="Martina R. picture">
+          <img class="img-fluid rounded-circle mb-4" src="{% static '/home/images/testimonials/pexels-daniel-xavier-1239291-min.jpg' %}" alt="Martina R. picture">
           <h5>Martina R.</h5>
           <p class="font-weight-light mb-0">"The products are always good quality and true sizes. I totally recommend this shopping site."</p>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-          <img class="img-fluid rounded-circle mb-3" src="../../../static/images/testimonials/pexels-tim-savage-903661-min.jpg" alt="Noah A. picture">
+          <img class="img-fluid rounded-circle mb-4" src="{% static '/home/images/testimonials/pexels-tim-savage-903661-min.jpg' %}" alt="Noah A. picture">
           <h5>Noah A.</h5>
           <p class="font-weight-light mb-0">"Good tracked delivery service. The products fit well. I'm satisfied!"</p>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-          <img class="img-fluid rounded-circle mb-3" src="../../../static/images/testimonials/pexels-andrea-piacquadio-712521-min.jpg" alt="Vera P. picture">
+          <img class="img-fluid rounded-circle mb-4" src="{% static '/home/images/testimonials/pexels-pixabay-235534-min.jpg' %}" alt="Vera P. picture">
           <h5>Vera P.</h5>
-          <p class="font-weight-light mb-0">"Good customer service: Friendly and helpful people help me to solve my issue. Thank you so much!"</p>
+          <p class="font-weight-light mb-0">"Good customer service. Friendly and helpful people. My issue got solve quickly. Thank you so much!"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="gallery h-50">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-6 offset-5 col-sm-6 offset-sm-6 col-md-5 offset-md-7 col-lg-5 offset-lg-7 col-xl-5 offset-xl-7 my-auto text-right">
+        <h2 class="logo-font text-white my-xl-4 my-lg-4 my-md-3 my-sm-2">
+          Share your own fashion style
+        </h2>
+        <div class="my-xl-4 my-lg-4 my-md-3 my-sm-2">
+            <a href="{% url 'gallery' %}" class="share-now-button btn btn-dark btn-md rounded-0 text-uppercase">Share now</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="share-style h-50">
-  <div class="container h-100">
-    <div class="row h-100">
-      <div class="col-8 offset-3 col-sm-6 offset-sm-6 col-md-6 offset-md-6 col-lg-4 offset-lg-7 col-xl-4 offset-xl-7 my-auto text-right">
-        <h2 class="logo-font text-white my-xl-4 my-lg-4 my-md-3 my-sm-2">
-          Share your own fashion style
-        </h2>
-        <div class="my-xl-4 my-lg-4 my-md-3 my-sm-2">
-            <a href="#" class="share-button btn btn btn-dark btn-md rounded-0 text-uppercase">Share</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 {% endblock %}

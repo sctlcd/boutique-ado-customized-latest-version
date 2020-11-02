@@ -41,7 +41,7 @@
 </head>
 
 <body>
-  <header class="container-fluid">
+  <header class="header container-fluid">
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-skyblue text-white">
         <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
@@ -72,10 +72,10 @@
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
           <li class="list-inline-item">
-            <a class="text-white nav-link" href="#" id="">
+            <a class="text-white nav-link" href="{% url 'gallery' %}">
               <div class="text-center">
                 <div><i class="far fa-images fa-lg text-white"></i></div>
-                <p class="my-0">
+                <p class="my-0 text-white">
                   Gallery
                 </p>
               </div>
@@ -88,7 +88,7 @@
                 <p class="my-0">My Account</p>
               </div>
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+            <div class="dropdown-menu border-0 bg-white" aria-labelledby="user-options">
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
               <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
@@ -149,7 +149,7 @@
 
   {% block page_header %}
   {% endblock %}
-
+  
   {% block content %}
   {% endblock %}
 
@@ -191,17 +191,17 @@
         <div class="col-lg-3 h-100 text-center text-lg-right my-auto">
           <ul class="list-inline mb-0 social-links">
             <li class="list-inline-item mr-3">
-              <a href="#">
+              <a href="https://www.facebook.com/" target="_blank">
                 <i class="fab fa-facebook fa-2x fa-fw text-skyblue"></i>
               </a>
             </li>
             <li class="list-inline-item mr-3">
-              <a href="#">
+              <a href="https://www.instagram.com/" target="_blank">
                 <i class="fab fa-twitter-square fa-2x fa-fw text-skyblue"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://twitter.com/" target="_blank">
                 <i class="fab fa-instagram fa-2x fa-fw text-skyblue"></i>
               </a>
             </li>
@@ -212,53 +212,7 @@
   </footer>
 
   {% block postloadjs %}
-  <script type="text/javascript">
-    // Display a bottom border in the fixed navbar when scroll down
-    $(window).scroll(function(){
-      if ($(this).scrollTop() == 0) {
-        //this code will execute when when the scrollbar is on the top
-        $('header').addClass('bg-transparent');
-        $('header').removeClass('bg-hover-white');
-        $('header').removeClass('fixed-top');
-
-          //this code will execute when the header is hovered
-        $('header').hover(function(){
-          //this code will execute when mouse enters the html element
-          $('header').removeClass('bg-transparent');
-          $('header').addClass('bg-hover-white');
-          $('header').removeClass('fixed-top');
-        },
-        function(){
-          //this code will execute when mouse leaves the html element
-          $('header').addClass('bg-transparent');
-          $('header').removeClass('bg-hover-white');
-          $('header').removeClass('fixed-top');
-        });
-      }else {
-        //this code will execute when the scrollbar is not on the top
-        $('header').removeClass('bg-transparent');
-        $('header').addClass('bg-hover-white');
-        $('header').addClass('fixed-top');
-
-        //this code will execute when the header is hovered
-        $('header').hover(function(){
-          //this code will execute when mouse enters the html element
-          $('header').removeClass('bg-transparent');
-          $('header').addClass('bg-hover-white');
-          $('header').addClass('fixed-top');
-        },
-        function(){
-          //this code will execute when mouse leaves the html element
-          $('header').removeClass('bg-transparent');
-          $('header').addClass('bg-hover-white');
-          $('header').addClass('fixed-top');
-        });
-      }
-    });
-
-    $('.toast').toast('show');
-
-  </script>
+  <script src="{% static 'js/base.js' %}"></script>
   {% endblock %}
 
 

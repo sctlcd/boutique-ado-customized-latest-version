@@ -24,11 +24,11 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="product-container col-10 offset-1">
+		<div class="products-container col-10 offset-1">
 			<div class="row mt-1 mb-2">
 				<div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
 					<div class="sort-select-wrapper w-50">
-						<select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+						<select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %} bg-white">
 							<option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
 							<option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
 							<option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
@@ -63,7 +63,7 @@
 							<img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
 						</a>
 						{% endif %}
-						<div class="card-body pb-0">
+						<div class="card-body bg-white pb-0">
 							<p class="mb-0">{{ product.name }}</p>
 						</div>
 						<div class="card-footer bg-white pt-0 border-0 text-left">
@@ -114,34 +114,37 @@
 				</div>
 				{% endif %}
 				{% endfor %}
+
 			</div>
 		</div>
 	</div>
 </div>
-	<div class="btt-button-top shadow-sm rounded-0 border border-black">
+	<div class="btt-button-top shadow-sm rounded-0 border border-grey">
 		<a class="btt-link-top d-flex h-100">
-			<i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+			<i class="fas fa-arrow-up text-grey mx-auto my-auto"></i>
 		</a>
 	</div>
-	<div class="btt-button-down shadow-sm rounded-0 border border-black">
+	<div class="btt-button-down shadow-sm rounded-0 border border-grey">
 		<a class="btt-link-bottom d-flex h-100">
-			<i class="fas fa-arrow-down text-black mx-auto my-auto"></i>
+			<i class="fas fa-arrow-down text-grey mx-auto my-auto"></i>
 		</a>
 	</div>
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<script src="{% static '/products/js/products.js' %}" type="text/javascript"></script>
+
+<!-- <script type="text/javascript">
 	$('.btt-link-top').click(function(e) {
 		window.scrollTo(0, 0)
 	})
 	$('.btt-link-bottom').click(function(e) {
 		window.scrollTo(0,document.body.scrollHeight)
 	})
-</script>
+</script> -->
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$('#sort-selector').change(function() {
 		var selector = $(this);
 		var currentUrl = new URL(window.location);
@@ -161,6 +164,7 @@
 
 			window.location.replace(currentUrl);
 		}
-	})
-</script>
+	});
+</script> -->
+
 {% endblock %}

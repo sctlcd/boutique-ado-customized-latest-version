@@ -4,12 +4,15 @@ html {
 
 body {
     /* credit https://www.selbekk.io/blog/2019/06/how-to-overlay-your-background-images/ */
-		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/static/images/hero-image/homepage-background-1920-min.jpg') no-repeat center center fixed;
+		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/static/images/hero-image-background-1920-min.jpg') no-repeat center center fixed;
     background-size: cover;
-    /* height: calc(100vh - 164px); */
 		height: 100vh;
     color: #555;
     font-family: 'Lato';
+}
+
+form div > input {
+	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
 }
 
 /* ------------------------------- button */
@@ -53,9 +56,9 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.share-button:hover,
-.share-button:active,
-.share-button:focus {
+.share-now-button:hover,
+.share-now-button:active,
+.share-now-button:focus {
 	background: #68c6e6;
 	color: #fafafa;
 	border: 1px solid #68c6e6;
@@ -119,6 +122,10 @@ body {
     transition: all .2s ease-out;
 }
 
+.bg-hover-white-no-transition {
+    transition: none;
+}
+
 .bg-hover-white,
 .bg-hover-white:hover {
     background: #fafafa !important;
@@ -153,10 +160,6 @@ body {
 		color: white!important;
 }
 
-input.bg-white {
-	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
-}
-
 .bg-hover-white:hover h2,
 .bg-hover-white:hover ul a i,
 .bg-hover-white h2,
@@ -189,6 +192,12 @@ input.bg-white {
 .bg-hover-white:hover.fixed-top,
 .bg-hover-white.fixed-top {
 		box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
+}
+
+.bg-hover-white:hover.fixed-top .list-inline-item .dropdown-menu-mobile-search.show,
+.bg-hover-white.fixed-top .list-inline-item .dropdown-menu-mobile-search.show {
+	-webkit-box-shadow: 0px 5px 10px 0px #27363c;
+	box-shadow: 0px 5px 10px 0px #27363c;
 }
 
 .bg-hover-white:hover nav li a i,
@@ -228,30 +237,50 @@ input.bg-white {
   	border-color: rgba(0,0,0, 0.2);
 }
 
-.overlay {
-		height: 100%;
-		width: 100%;
-		top: 0;
-		left: 0;
-		position: fixed;
-		background: #fafafa;
-		z-index: -1;
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #dee2e6;
 }
 
-a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fafafa !important;
+.header .list-inline-item.show a.nav-link {
+		background-color: #dee2e66e;
 }
 
-input[name='q']::placeholder {
-    color: #aab7c4;
+.header .list-inline-item a.nav-link:hover {
+		background-color: #dee2e66e;
+}
+
+nav .nav-item.show a.nav-link {
+		background-color: #dee2e66e;
+}
+nav .nav-item a.nav-link:hover {
+		background-color: #dee2e66e;
+}
+
+.header .list-inline-item.show .dropdown-menu.show,
+.navbar-desktop .nav-item.show .dropdown-menu.show {
+		-webkit-box-shadow: 0px 5px 10px 0px #27363c;
+		box-shadow: 0px 5px 10px 0px #27363c;
+}
+
+.navbar-mobile .nav-item.show .dropdown-menu.show {
+		-webkit-box-shadow: 0px 5px 10px 0px #dee2e6;
+		box-shadow: 0px 5px 10px 0px #dee2e6;
+		margin-bottom: 0.7rem;
+}
+
+.navbar-mobile .nav-item.show a.nav-link {
+		margin-right: 0px !important;
+}
+
+.navbar-mobile .nav-item a.nav-link {
+		margin-right: 0px !important;
 }
 
 /* ------------------------------- hero image */
 
 .shop-now-button {
     background: black;
-    color: white;
+    color: #fafafa;
     min-width: 16rem;
 }
 
@@ -317,50 +346,19 @@ input[name='q']::placeholder {
 	  box-shadow: 0px 5px 5px 0px #adb5bd;
 }
 
-/* .share-style-header .fa-images, */
 .testimonial .fa-comments {
 	padding-right: 1rem;
 }
 
-/* ------------------------------- share style */
+/* ------------------------------- gallery */
 
-.share-style {
-		/* padding-bottom: 4rem; */
-		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/static/images/share-style/pexels-jessica-lewis-593325.jpg') no-repeat left top fixed;
+.gallery {
+		background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('/static/images/gallery-background-1920-min.jpg') no-repeat left top fixed;
     background-size: cover;
 		color: #555;
-		/* height: 50vh; */
 }
 
-.controls-top {
-		margin-bottom: 1.5rem;
-}
-
-.btn-circle.btn-sm {
-	  width: 30px;
-	  height: 30px;
-	  padding: 9px 0px;
-	  border-radius: 50px;
-	  font-size: 8px;
-	  text-align: center;
-		background-color: #68c6e6;
-		color: #fafafa;
-		box-shadow: 0px 5px 5px 0px #adb5bd;
-}
-
-.btn-circle.btn-sm:hover {
-		background-color: #adb5bd;
-		box-shadow: 0px 5px 5px 0px #828383;
-}
-
-.card, .card-img {
-	border-top-left-radius: calc(1rem - 2px);
-	border-top-right-radius: calc(1rem - 2px);
-	border: 1px solid #fafafa;
-  border-radius: 1rem;
-}
-
-.share-button {
+.share-now-button {
     background: black;
     color: #fafafa;
     min-width: 6rem;
@@ -368,11 +366,23 @@ input[name='q']::placeholder {
 
 /* ------------------------------- footer */
 
-footer.footer {
-  padding-top: 3rem;
-  padding-bottom: 4rem;
+/* credit: https://css-tricks.com/couple-takes-sticky-footer/ */
+.wrapper {
+  min-height: 100%;
+	/* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -10rem;
+}
+
+.footer,
+.push {
+  height: 14rem;
+}
+
+.footer {
+  padding-top: 5rem;
+	-webkit-box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
 	box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
-  height: 13rem;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -384,159 +394,9 @@ footer.footer {
 		color: #adb5bd!important;
 }
 
-/* ------------------------------- bootstrap toasts */
-
-.message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-		/* high Z index to assure it's always on top of everything else. */
-    z-index: 99999999999;
-}
-
-.custom-toast {
-    overflow: visible;
-}
-
-.toast-capper {
-    height: 2px;
-}
-
-/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
-.arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: 10px solid black;
-    position: absolute;
-    top: -10px;
-    right: 36px;
-}
-
-/* Convenience classes - colors copied from Bootstrap */
-.arrow-primary {
-    border-bottom-color: #007bff !important;
-}
-
-.arrow-secondary {
-    border-bottom-color: #6c757d !important;
-}
-
-.arrow-success {
-    border-bottom-color: #28a745 !important;
-}
-
-.arrow-danger {
-    border-bottom-color: #dc3545 !important;
-}
-
-.arrow-warning {
-    border-bottom-color: #ffc107 !important;
-}
-
-.arrow-info {
-    border-bottom-color: #17a2b8 !important;
-}
-
-.arrow-light {
-    border-bottom-color: #f8f9fa !important;
-}
-
-.arrow-dark {
-    border-bottom-color: #343a40 !important;
-}
-
-.bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-/* Allauth form formatting */
-
-.allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
-}
-
-.allauth-form-inner-content input {
-    border-color: #000;
-    border-radius: 0;
-}
-
-.allauth-form-inner-content label:not([for='id_remember']) {
-    display: none;
-}
-
-.allauth-form-inner-content input::placeholder {
-    color: #aab7c4;
-}
-
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
-	/* btn */
-		display: inline-block;
-	  font-weight: 400;
-	  color: #fafafa;
-	  text-align: center;
-	  vertical-align: middle;
-	  -webkit-user-select: none;
-	  -moz-user-select: none;
-	  -ms-user-select: none;
-	  user-select: none;
-	  background-color: #000;
-	  border: 1px solid #000;
-	  padding: .375rem .75rem;
-	  font-size: 1rem;
-	  line-height: 1.5;
-	  border-radius: 0;
-
-  /* standard bootstrap btn transitions */
-  	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {
-		color: #fafafa;
-	  background-color: #222;
-	  border-color: #222;
-}
-
-.allauth-form-inner-content a {
-		color: #17a2b8; /*  text-info */
-}
-
-/* Product Form */
-
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-file input[type="file"] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.custom-checkbox .custom-control-label::before {
-    border-radius: 0;
-    border-color: #dc3545;
-}
-
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
-    border-radius: 0;
-}
-
 /* -------------------------------- Media Queries */
 
+/* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
 
 	.nav-link {
@@ -552,16 +412,20 @@ footer.footer {
 	}
 
 	.dropdown-menu a, .nav-item a {
-			font-size: 0.7rem;
+		font-size: 0.7rem;
+	}
+
+	.list-inline-item:not(:last-child) {
+    margin-right: .2rem;
 	}
 
 	.navbar-toggler {
-			padding: .6rem .6rem;
-			font-size: 1rem;
+			padding: .2rem .2rem;
+			font-size: 0.5rem;
 	}
 
 	#delivery-banner h4 {
-			font-size: .9rem;
+			font-size: .7rem;
 	}
 
 	.btn.btn-outline-black.rounded-0,
@@ -575,31 +439,37 @@ footer.footer {
 			font-size: .75rem;
 	}
 
-	.increment-qty, .decrement-qty {
-			padding: .25rem .5rem !important;
-	}
-
 	.display-4.logo-font.text-black {
-			font-size: 1.8rem;
+			font-size: 1.3rem;
 	}
 
 	.shop-now-button {
-			min-width: 3rem;
-	}
-
-	.btn-lg {
+			min-width: 2.6rem;
 			font-size: 0.8rem;
 	}
 
-	.share-style h2 {
-			font-size: 1.6rem;
+	.features-icons .features-icons-item .features-icons-icon i {
+		  font-size: 3rem;
 	}
 
-	footer.footer {
-		height: 16rem;
+	.features-icons .features-icons-item:hover .features-icons-icon i {
+		  font-size: 3.5rem;
+	}
+
+	.gallery h2 {
+			font-size: 1.3rem;
+	}
+
+	.gallery .share-now-button {
+			font-size: .8rem;
+	}
+
+	.footer {
+		padding-top: 3rem;
 	}
 }
 
+/* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) {
 
 	.nav-link {
@@ -610,13 +480,17 @@ footer.footer {
 			font-size: 1rem;
 	}
 
+	.nav-link p {
+			font-size: 0.8rem;
+	}
+
 	.navbar-toggler {
-			padding: .6rem .6rem;
-			font-size: 1rem;
+			padding: .4rem .4rem;
+			font-size: 0.6rem;
 	}
 
 	#delivery-banner h4 {
-			font-size: .9rem;
+			font-size: .8rem;
 	}
 
 	.btn.btn-outline-black.rounded-0,
@@ -630,32 +504,37 @@ footer.footer {
 			font-size: .75rem;
 	}
 
-	.increment-qty, .decrement-qty {
-			padding: .25rem .5rem !important;
-	}
-
 	.display-4.logo-font.text-black {
 			font-size: 2.2rem;
 	}
 
 	.shop-now-button {
 			min-width: 6rem;
-	}
-
-	.btn-lg {
 			font-size: 1rem;
 	}
 
-	.share-style h2 {
-			font-size: 2rem;
+	.features-icons .features-icons-item .features-icons-icon i {
+		  font-size: 3.5rem;
 	}
 
-	footer.footer {
-		height: 13rem;
+	.features-icons .features-icons-item:hover .features-icons-icon i {
+		  font-size: 4rem;
+	}
+
+	.gallery h2 {
+			font-size: 1.6rem;
+	}
+
+	.gallery .share-now-button {
+			font-size: 1rem;
+	}
+
+	.footer {
+		padding-top: 3rem;
 	}
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
     .nav-link {
@@ -666,9 +545,13 @@ footer.footer {
         font-size: 1rem;
     }
 
+		.nav-link p {
+				font-size: 1rem;
+		}
+
     .navbar-toggler {
-        padding: .6rem .6rem;
-        font-size: 1rem;
+        padding: .4rem .4rem;
+        font-size: 0.8rem;
     }
 
     #delivery-banner h4 {
@@ -686,44 +569,42 @@ footer.footer {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
-        padding: .25rem .5rem !important;
-    }
-
 		.display-4.logo-font.text-black {
         font-size: 2.5rem;
     }
 
 		.shop-now-button {
 		    min-width: 8rem;
+				font-size: 1.2rem;
 		}
 
-		.btn-lg {
-    		font-size: 1.2rem;
+		.features-icons .features-icons-item .features-icons-icon i {
+			  font-size: 4rem;
+		}
+
+		.features-icons .features-icons-item:hover .features-icons-icon i {
+			  font-size: 4.5rem;
 		}
 
 		.showcase .showcase-text {
     		padding: 7rem;
   	}
 
-		.share-style h2 {
-				font-size: 2rem;
+		.gallery h2 {
+				font-size: 1.8rem;
 		}
 
-		footer.footer {
-			height: 13rem;
+		.gallery .share-now-button {
+				font-size: 1rem;
+		}
+
+		.footer {
+			padding-top: 4rem;
 		}
 }
 
-/* fixed top navbar only on medium and up */
+/* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
 
 		.display-4.logo-font.text-black {
         font-size: 3rem;
@@ -731,48 +612,64 @@ footer.footer {
 
 		.shop-now-button {
 		    min-width: 10rem;
+				font-size: 1.4rem;
 		}
 
-		.btn-lg {
-    		font-size: 1.4rem;
+		.features-icons .features-icons-item .features-icons-icon i {
+			  font-size: 4rem;
 		}
 
-		.share-style h2 {
-		  	font-size: 2rem;
-		 }
-
-		footer.footer {
-			height: 10rem;
+		.features-icons .features-icons-item:hover .features-icons-icon i {
+			  font-size: 4.5rem;
 		}
+
+		.gallery h2 {
+				font-size: 2rem;
+		}
+
+		.gallery .share-now-button {
+				font-size: 1.2rem;
+		}
+
+		 .footer {
+ 			padding-top: 5rem;
+ 		}
 }
 
+/* Extra large devices (large desktops, 1200px and up) */
 /* Slightly larger container on xl screens */
 @media only screen and (min-width: 1200px) {
-	.fixed-top-desktop-only {
-			position: fixed;
-			top: 0;
-			right: 0;
-			left: 0;
-			z-index: 1030;
-	}
+
+	.container {
+    max-width: 80%;
+  }
 
 	.display-4.logo-font.text-black {
 			font-size: 3.5rem;
 	}
 
-	.shop-now-button {
-			min-width: 12rem;
+	.features-icons .features-icons-item .features-icons-icon i {
+			font-size: 4.5rem;
 	}
 
-	.btn-lg {
+	.features-icons .features-icons-item:hover .features-icons-icon i {
+			font-size: 5rem;
+	}
+
+	.shop-now-button {
+			min-width: 12rem;
 			font-size: 1.6rem;
 	}
 
-	.share-style h2 {
-	  	font-size: 2rem;
-	  }
+	.gallery h2 {
+			font-size: 2.2rem;
+	}
 
-	footer.footer {
-	  height: 9rem;
+	.gallery .share-now-button {
+			font-size: 1.4rem;
+	}
+
+	.footer {
+		padding-top: 5rem;
 	}
 }

@@ -1,0 +1,157 @@
+{% extends "base-extended.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- carousel -->
+  <div class="overlay"></div>
+  <div class="container-fluid text-center bg-white">
+    <div class="row">
+      <div class="container col mt-3">
+        <hr>
+        <h2 class="logo-font my-4">Gallery</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col container gallery-container">
+        <!--carousel wrapper-->
+        <div class="gallery-header p-3 my-4">
+          <h2 class="text-skyblue text-bold d-inline">Share your own fashion style...</h2>
+        </div>
+        <div id="multi-item" class="carousel slide carousel-multi-item my-2" data-ride="carousel">
+
+          <!--controls-->
+          <div class="controls-top p-2">
+            <a class="btn btn-circle btn-sm" href="#multi-item" data-slide="prev"><i class="fa fa-chevron-left text-white"></i></a>
+            <a class="btn btn-circle btn-sm" href="#multi-item" data-slide="next"><i class="fa fa-chevron-right text-white"></i></a>
+          </div>
+
+          <!--indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#multi-item" data-slide-to="0" class="active"></li>
+            <li data-target="#multi-item" data-slide-to="1"></li>
+            <li data-target="#multi-item" data-slide-to="2"></li>
+          </ol>
+
+          <!--slides-->
+          <div class="carousel-inner" role="listbox">
+
+            <!--first slide-->
+            <div class="carousel-item active">
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img" src="{% static '/gallery/images/pexels-godisable-jacob-871494-min.jpg' %}" alt="Card image 1">
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img" src="{% static '/gallery/images/pexels-andrea-piacquadio-3782968-min.jpg' %}" alt="Card image 2">
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img" src="{% static '/gallery/images/pexels-lucas-pezeta-2529375-min.jpg' %}" alt="Card image 3">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!--second slide-->
+            <div class="carousel-item">
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img" src="{% static '/gallery/images/pexels-andrea-piacquadio-788567-min.jpg' %}" alt="Card image 4">
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img" src="{% static '/gallery/images/pexels-godisable-jacob-923210-min.jpg' %}" alt="Card image 5">
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img" src="{% static '/gallery/images/pexels-anastasiya-lobanovskaya-1035682-min.jpg' %}" alt="Card image 6">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!--third slide-->
+            <div class="carousel-item">
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img" src="{% static '/gallery/images/pexels-elle-hughes-1680172-min.jpg' %}" alt="Card image 7">
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img" src="{% static '/gallery/images/pexels-joshua-abner-3605015-min.jpg' %}" alt="Card image 8">
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img" src="{% static '/gallery/images/pexels-cottonbro-4842567-min.jpg' %}" alt="Card image 9">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!--fourth slide-->
+            <div class="carousel-item">
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img" src="{% static '/gallery/images/pexels-heitor-verdi-2529456-min.jpg' %}" alt="Card image 10">
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img" src="{% static '/gallery/images/pexels-abhishek-gaurav-829552-min.jpg' %}" alt="Card image 11">
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img" src="{% static '/gallery/images/pexels-cottonbro-5236991-min.jpg' %}" alt="Card image 12">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="gallery-footer my-5 mx-5">
+          <p class="text-black d-inline">Send some photos of your own fashion style at <strong>share-my-fashion-style@boutiqueado.com</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
