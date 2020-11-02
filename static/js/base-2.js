@@ -25,6 +25,16 @@ $(document).ready(function() {
     $('.header').addClass('fixed-top');
   }
 
+  function closeMenuBgTransparent() {
+    bgTransparent();
+    navbarNotFixedTop();
+  }
+
+  function closeMenuBgWhiteNoTransition() {
+    bgWhiteNoTransition();
+    navbarNotFixedTop()
+  }
+
   function init() {
 
     bgTransparent();
@@ -43,12 +53,12 @@ $(document).ready(function() {
 
     // trigger the click event on the header class element
     $('.header').click( function(event) {
-      bgWhite();
+      closeMenuBgWhiteNoTransition();
     });
 
     // trigger the click event on the hero-image class element
     $('.hero-image').click( function(event) {
-      bgTransparent();
+      closeMenuBgTransparent();
       $('.navbar-collapse').removeClass('show');
       $('#main-nav').removeClass('navbar-mobile');
     });
@@ -99,7 +109,7 @@ $(document).ready(function() {
 
     // trigger the click event on the header class element
     $('.header').click( function(event) {
-      bgWhite();
+      closeMenuBgWhiteNoTransition();
       if ($('.navbar-mobile#main-nav').is(':visible')) {
         $('.navbar-collapse').removeClass('show');
         $('#main-nav').removeClass('navbar-mobile');
@@ -108,8 +118,8 @@ $(document).ready(function() {
 
     // trigger the click event on the hero-image class element
     $('.hero-image').click( function(event) {
-      bgWhite();
-      // navbarFixedTop();
+      bgWhiteNoTransition();
+      navbarFixedTop();
       if ($('.navbar-mobile#main-nav').is(':visible')) {
         $('.navbar-collapse').removeClass('show');
         $('#main-nav').removeClass('navbar-mobile');
@@ -118,8 +128,8 @@ $(document).ready(function() {
 
     // trigger the click event on the features-showcase-testimonial class element
     $('.features-showcase-testimonial').click( function(event) {
-      bgWhite();
-      // navbarFixedTop();
+      bgWhiteNoTransition();
+      navbarFixedTop();
       if ($('.navbar-mobile#main-nav').is(':visible')) {
         $('.navbar-collapse').removeClass('show');
         $('#main-nav').removeClass('navbar-mobile');
@@ -128,8 +138,8 @@ $(document).ready(function() {
 
     // trigger the click event on the gallery class element
     $('.gallery').click( function(event) {
-      bgWhite();
-      // navbarFixedTop();
+      bgWhiteNoTransition();
+      navbarFixedTop();
       if ($('.navbar-mobile#main-nav').is(':visible')) {
         $('.navbar-collapse').removeClass('show');
         $('#main-nav').removeClass('navbar-mobile');
@@ -138,8 +148,8 @@ $(document).ready(function() {
 
     // trigger the click event on the footer class element
     $('.footer').click( function(event) {
-      bgWhite();
-      // navbarFixedTop();
+      bgWhiteNoTransition();
+      navbarFixedTop();
       if ($('.navbar-mobile#main-nav').is(':visible')) {
         $('.navbar-collapse').removeClass('show');
         $('#main-nav').removeClass('navbar-mobile');
@@ -189,10 +199,14 @@ $(document).ready(function() {
 
     //this code will execute when when the scrollbar is on the top
     if ($(this).scrollTop() == 0) {
+
       init();
+
     } else {
+
       //this code will execute when the scrollbar is not on the top
       OnPageScroll();
+
     }
   });
 
