@@ -10,4 +10,4 @@ env
 *.pyc
 templates/carousel.html
 static/images/images-showcases
-static/js/base-copy.js
+static\js\base-copy.js

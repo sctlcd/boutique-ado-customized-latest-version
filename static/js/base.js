@@ -75,8 +75,7 @@ $(document).ready(function() {
 
     // this code will execute when the navbar-toggler class element is clicked
     $('.navbar-toggler').click( function(event) {
-      $('#main-nav').removeClass('navbar-desktop');
-      $('#main-nav').addClass('navbar-mobile');
+      $('#main-nav').toggleClass('navbar-mobile');
     });
 
     function closeMenuBgTransparent() {
@@ -107,6 +106,7 @@ $(document).ready(function() {
     $('.hero-image').click( function(event) {
       closeMenuBgTransparent();
       $('.navbar-collapse').removeClass('show');
+      $('#main-nav').removeClass('navbar-mobile');
     });
 
     // this code will execute when the mobile-search id is clicked
@@ -124,7 +124,7 @@ $(document).ready(function() {
         $('#main-nav').removeClass('show');
       }
     });
-    
+
   // When scroll down display a bottom border in the fixed navbar, including the navbar collapse menu when this one is visible
   $(window).scroll(function() {
     //this code will execute when when the scrollbar is on the top
