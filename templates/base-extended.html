@@ -41,7 +41,7 @@
 </head>
 
 <body>
-  <header class="container-fluid bg-white bg-hover-white">
+  <header class=" header container-fluid">
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-skyblue text-white">
         <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
@@ -147,7 +147,7 @@
   </div>
   {% endif %}
 
-    <div class="wrapper">
+  <div class="wrapper">
     {% block page_header %}
     {% endblock %}
 
@@ -155,70 +155,69 @@
     {% block content %}
     {% endblock %}
     <div class="push"></div>
-    </div>
+  </div>
 
-    <footer class="footer bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 h-100 text-center text-lg-left my-auto">
-            <ul class="list-inline mb-2 menu-items">
-              <li class="list-inline-item">
-                <a href="#" class="text-skyblue">About us</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#" class="text-skyblue">Contact us</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#" class="text-skyblue">Shipping</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#" class="text-skyblue">Return</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#" class="text-skyblue">Refund Policy</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#" class="text-skyblue">Terms of use</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#" class="text-skyblue">Privacy Policy</a>
-              </li>
-            </ul>
-            <p class="text-muted small mb-4 mb-lg-0">&copy; Lucinda Souchet 2020</p>
-          </div>
-          <div class="col-lg-3 h-100 text-center text-lg-right my-auto">
-            <ul class="list-inline mb-0 social-links">
-              <li class="list-inline-item mr-3">
-                <a href="https://www.facebook.com/" target="_blank">
-                  <i class="fab fa-facebook fa-2x fa-fw text-skyblue"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mr-3">
-                <a href="https://www.instagram.com/" target="_blank">
-                  <i class="fab fa-twitter-square fa-2x fa-fw text-skyblue"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://twitter.com/" target="_blank">
-                  <i class="fab fa-instagram fa-2x fa-fw text-skyblue"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+  <footer class="footer bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2 menu-items">
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">About us</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">Contact us</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">Shipping</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">Return</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">Refund Policy</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">Terms of use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#" class="text-skyblue">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Lucinda Souchet 2020</p>
+        </div>
+        <div class="col-lg-3 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0 social-links">
+            <li class="list-inline-item mr-3">
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook fa-2x fa-fw text-skyblue"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-twitter-square fa-2x fa-fw text-skyblue"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/" target="_blank">
+                <i class="fab fa-instagram fa-2x fa-fw text-skyblue"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
   {% block postloadjs %}
   <script src="{% static 'js/base-extended.js' %}"></script>
   {% endblock %}
-
 
 </body>
 

@@ -199,6 +199,41 @@ form div > textarea {
     background-color: #dee2e6;
 }
 
+.header .list-inline-item.show a.nav-link {
+		background-color: #dee2e66e;
+}
+
+.header .list-inline-item a.nav-link:hover {
+		background-color: #dee2e66e;
+}
+
+nav .nav-item.show a.nav-link {
+		background-color: #dee2e66e;
+}
+nav .nav-item a.nav-link:hover {
+		background-color: #dee2e66e;
+}
+
+.header .list-inline-item.show .dropdown-menu.show,
+.navbar-desktop .nav-item.show .dropdown-menu.show {
+		-webkit-box-shadow: 0px 5px 10px 0px #27363c;
+		box-shadow: 0px 5px 10px 0px #27363c;
+}
+
+.navbar-mobile .nav-item.show .dropdown-menu.show {
+		-webkit-box-shadow: 0px 5px 10px 0px #dee2e6;
+		box-shadow: 0px 5px 10px 0px #dee2e6;
+		margin-bottom: 0.7rem;
+}
+
+.navbar-mobile .nav-item.show a.nav-link {
+		margin-right: 0px !important;
+}
+
+.navbar-mobile .nav-item a.nav-link {
+		margin-right: 0px !important;
+}
+
 /* ------------------------------- products */
 
 .overlay {
@@ -309,9 +344,6 @@ input[name='q']::placeholder {
 .gallery-container #multi-item .carousel-item .card-img:hover {
 		-webkit-box-shadow: 0px 5px 5px 0px #828383;
 		box-shadow: 0px 5px 5px 0px #828383;
-
-		/* -webkit-box-shadow: 0 2px 10px 2px #dee2e6;
-		box-shadow: 0 2px 10px 2px #dee2e6; */
 }
 
 /* ------------------------------- footer */
