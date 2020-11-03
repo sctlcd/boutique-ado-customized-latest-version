@@ -1,13 +1,16 @@
 $(document).ready(function() {
 
+  // Navbar not fixed on the top
   function navbarNotFixedTop() {
     $('.header').removeClass('fixed-top');
   }
 
+  // Navbar fixed on the top
   function navbarFixedTop() {
     $('.header').addClass('fixed-top');
   }
 
+  // Initialisation (page not scrolled)
   function init() {
 
     $('.header').addClass('bg-white');
@@ -49,6 +52,7 @@ $(document).ready(function() {
     });
   }
 
+  // Page on scroll
   function onPageScroll() {
     navbarFixedTop();
 

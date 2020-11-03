@@ -1,30 +1,36 @@
 $(document).ready(function() {
 
+  // Tranparent navbar
   function bgTransparent() {
     $('.header').addClass('bg-transparent');
     $('.header').removeClass('bg-hover-white-no-transition');
     $('.header').removeClass('bg-hover-white');
   }
 
+  // White navbar
   function bgWhite() {
     $('.header').removeClass('bg-transparent');
     $('.header').removeClass('bg-hover-white-no-transition');
     $('.header').addClass('bg-hover-white');
   }
 
+  // White with no transition navbar
   function bgWhiteNoTransition() {
     bgWhite();
     $('.header').addClass('bg-hover-white-no-transition');
   }
 
+  // Navbar not fixed on the top
   function navbarNotFixedTop() {
     $('.header').removeClass('fixed-top');
   }
 
+  // Navbar fixed on the top
   function navbarFixedTop() {
     $('.header').addClass('fixed-top');
   }
 
+  // Initialisation (page not scrolled)
   function init() {
 
     bgTransparent();
@@ -75,15 +81,6 @@ $(document).ready(function() {
       }
     });
 
-    // trigger the click event on the header class element
-    $('.header').click(function(event) {
-      bgWhite();
-      if ($('.navbar-mobile#main-nav').is(':visible')) {
-        $('.navbar-collapse').removeClass('show');
-        $('#main-nav').removeClass('navbar-mobile');
-      }
-    });
-
     //this code will execute when the header is hovered
     $('.header').hover(function() {
         //this code will execute when mouse enters the header class element
@@ -105,6 +102,7 @@ $(document).ready(function() {
       });
   }
 
+  // Page on scroll
   function onPageScroll() {
 
     bgWhite();
@@ -193,6 +191,7 @@ $(document).ready(function() {
   // trigger the click event on the navbar-toggler class element
   $('.navbar-toggler').click(function(event) {
     $('#main-nav').toggleClass('navbar-mobile');
+    $('#main-nav').toggleClass('navbar-desktop');
   });
 
   init();
