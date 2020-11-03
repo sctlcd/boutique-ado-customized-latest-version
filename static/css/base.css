@@ -474,6 +474,10 @@ nav .nav-item a.nav-link:hover {
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) {
 
+	.container {
+		max-width: 80%;
+	}
+
 	.nav-link {
 			padding: 0.15rem;
 	}
@@ -538,6 +542,10 @@ nav .nav-item a.nav-link:hover {
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+		.container {
+			max-width: 80%;
+		}
 
     .nav-link {
         padding: 0.15rem;
@@ -607,6 +615,10 @@ nav .nav-item a.nav-link:hover {
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+	  .container {
+	    max-width: 80%;
+	  }
 
 		.display-4.logo-font.text-black {
         font-size: 3rem;

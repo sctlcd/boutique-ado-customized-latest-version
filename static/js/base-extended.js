@@ -9,9 +9,26 @@ $(document).ready(function() {
   }
 
   function init() {
+
     $('.header').addClass('bg-white');
     $('.header').addClass('bg-hover-white');
     navbarNotFixedTop();
+
+    // trigger the click event on the header class element
+    $('.header').click(function(event) {
+      if ($('.navbar-mobile#main-nav').is(':visible')) {
+        $('.navbar-collapse').removeClass('show');
+        $('#main-nav').removeClass('navbar-mobile');
+      }
+    });
+
+    // trigger the click event on the wrapper class element
+    $('.wrapper').click(function(event) {
+      if ($('.navbar-mobile#main-nav').is(':visible')) {
+        $('.navbar-collapse').removeClass('show');
+        $('#main-nav').removeClass('navbar-mobile');
+      }
+    });
 
     // trigger the click event on the mobile-search id element
     $('#mobile-search').click(function(event) {
@@ -45,7 +62,14 @@ $(document).ready(function() {
 
     // trigger the click event on the footer class element
     $('.footer').click(function(event) {
-      // navbarFixedTop();
+      if ($('.navbar-mobile#main-nav').is(':visible')) {
+        $('.navbar-collapse').removeClass('show');
+        $('#main-nav').removeClass('navbar-mobile');
+      }
+    });
+
+    // trigger the click event on the wrapper class element
+    $('.wrapper').click(function(event) {
       if ($('.navbar-mobile#main-nav').is(':visible')) {
         $('.navbar-collapse').removeClass('show');
         $('#main-nav').removeClass('navbar-mobile');
@@ -78,11 +102,16 @@ $(document).ready(function() {
 
   init();
 
-  // Display a bottom border in the fixed navbar when scroll down
+  // When scroll down display a bottom border in the fixed navbar,
+  // including the navbar collapse menu when this one is visible
   $(window).scroll(function() {
     if ($(this).scrollTop() == 0) {
+
+      //this code will execute when when the scrollbar is on the top
       init();
     } else {
+
+      //this code will execute when the scrollbar is not on the top
       onPageScroll();
     }
   });

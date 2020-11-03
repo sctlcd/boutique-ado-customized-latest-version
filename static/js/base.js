@@ -197,13 +197,15 @@ $(document).ready(function() {
 
   init();
 
-  // When scroll down display a bottom border in the fixed navbar, including the navbar collapse menu when this one is visible
+  // When scroll down display a bottom border in the fixed navbar,
+  // including the navbar collapse menu when this one is visible
   $(window).scroll(function() {
 
     //this code will execute when when the scrollbar is on the top
     if ($(this).scrollTop() == 0) {
       init();
     } else {
+
       //this code will execute when the scrollbar is not on the top
       onPageScroll();
     }

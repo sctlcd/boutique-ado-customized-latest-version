@@ -531,6 +531,10 @@ input[name='q']::placeholder {
 /* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
 
+	.container {
+		max-width: 80%;
+	}
+
 	.nav-link {
 			padding: 0.15rem;
 	}
@@ -582,10 +586,18 @@ input[name='q']::placeholder {
 	.footer {
 		padding-top: 3rem;
 	}
+
+	.no-result-found-text h6 {
+		font-size: 0.9rem;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) {
+
+	.container {
+		max-width: 80%;
+	}
 
 	.nav-link {
 			padding: 0.15rem;
@@ -630,10 +642,17 @@ input[name='q']::placeholder {
 	.footer {
 		padding-top: 3rem;
 	}
+
+	.no-result-found-text h6 {
+		font-size: 0.9rem;
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+		.container {
+	    max-width: 80%;
+	  }
 
     .nav-link {
         padding: 0.15rem;
@@ -678,10 +697,21 @@ input[name='q']::placeholder {
 		.footer {
 			padding-top: 4rem;
 		}
+
+		.no-result-found-text h5 {
+			font-size: 1.4rem;
+		}
+
+		.no-result-found-text h6 {
+			font-size: 1rem;
 }
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+		.container {
+			max-width: 80%;
+		}
 
 		#delivery-banner h4 {
         font-size: 1rem;
@@ -693,6 +723,10 @@ input[name='q']::placeholder {
 
 		.footer {
 			padding-top: 5rem;
+		}
+
+		.no-result-found-text h5 {
+			font-size: 1.5rem;
 		}
 }
 
@@ -714,5 +748,9 @@ input[name='q']::placeholder {
 
 	.footer {
 		padding-top: 5rem;
+	}
+
+	.no-result-found-text h5 {
+		font-size: 1.6rem;
 	}
 }
