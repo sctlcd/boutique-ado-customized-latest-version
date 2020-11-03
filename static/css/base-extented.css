@@ -344,6 +344,7 @@ input[name='q']::placeholder {
 .gallery-container #multi-item .carousel-item .card-img:hover {
 		-webkit-box-shadow: 0px 5px 5px 0px #828383;
 		box-shadow: 0px 5px 5px 0px #828383;
+		cursor: pointer;
 }
 
 /* ------------------------------- footer */

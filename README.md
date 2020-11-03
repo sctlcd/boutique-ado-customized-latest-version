@@ -13,6 +13,7 @@
 2. [Features](#Features)
 
 	- [Adding Features](#AddingFeatures)
+	- [Screenshots](#AddingFeatures)
 
 3. [Technologies Used](#TechnologiesUsed)
 
@@ -38,6 +39,17 @@ Back to [top](#TableOfContents)
 
 ### Adding Features <a name="AddingFeatures"></a>
 
+### Screenshots <a name="Screenshots"></a>
+
+#### Landing page <a name="LandingPage"></a>
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_1.png" alt="Landing page" width="700">
+
+#### Gallery image carousel <a name="GalleryImageCarousel"></a>
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_2.png" alt="Gallery image carousel" width="700">
+
+#### Modal image gallery <a name="ModalImageGallery"></a>
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_3.png" alt="Modal image gallery" width="700">
+
 Back to [top](#TableOfContents)
 
 ---
@@ -53,7 +65,7 @@ Back to [top](#TableOfContents)
 
 ---
 
-##### Front-End Technologies <a name="Front-end-technologies"></a>
+### Front-End Technologies <a name="Front-end-technologies"></a>
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Used as the base for markup text.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - Used as the base for cascading styles.
@@ -65,10 +77,10 @@ Back to [top](#TableOfContents)
 
 ---
 
-##### Back-End Technologies <a name="Back-end-technologies"></a>
+### Back-End Technologies <a name="Back-end-technologies"></a>
 
-	- [Python 3.8](https://www.python.org/) - Used as the back-end programming language.
-	- [Django 3.1.1](https://www.djangoproject.com/) - Used as Python web framework.
+- [Python 3.8](https://www.python.org/) - Used as the back-end programming language.
+- [Django 3.1.1](https://www.djangoproject.com/) - Used as Python web framework.
 
 Back to [top](#TableOfContents)
 
@@ -87,10 +99,10 @@ Back to [top](#TableOfContents)
 
 Sources of the images used on this site:
 
-- [Pexel](https://www.pexels.com/) - All pictures relative to the features added: landing page, gallery
-- [Flaticon](https://www.flaticon.com/free-icon/clothing-store_3486355?term=boutique&page=1&position=3) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.flaticon.com/authors/freepik)
+- All pictures relative to the features added: landing page, gallery - [Pexel](https://www.pexels.com/)
+- [Favicon](https://www.flaticon.com/free-icon/clothing-store_3486355?term=boutique&page=1&position=3) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.flaticon.com/authors/freepik)
 - [No-results-found](https://all-free-download.com/free-vector/download/exploration-job-background-searching-man-sketch-cartoon-design_6844384.html) - [Free vectors](https://all-free-download.com/free-vector/) | copyright [BSGStudio](http://buysellgraphic.com/)
-- [Code institute](https://codeinstitute.net/) - All pictured of products
+- All pictured of products - [Code institute](https://codeinstitute.net/)
 
 Back to [top](#TableOfContents)
 
@@ -100,10 +112,11 @@ Back to [top](#TableOfContents)
 
 - Environment variables - [Igor Basuga](https://github.com/bravoalpha79) Tutor at [Code Institute](http://codeinstitute.net)
 - Environment variables - Code Institute archive resources
-- ngrok [ngrok](https://ngrok.com/)
-- Using ngrok on Windows-10 [youtube](https://www.youtube.com/watch?v=9gaaVbX0USI&ab_channel=ChuckSeverance)
-- Testing our Django App to be publicly accessible using NGROK [medium](https://medium.com/@iot24hours/testing-our-django-app-to-be-publicly-accessible-using-ngrok-9b73851c46e0)
-- jQuery documentation [jQuery](https://jquery.com/)
-- Bootsrtap 4 documentation [Bootsrtap 4](https://getbootstrap.com/)
+- Ngrok - [ngrok](https://ngrok.com/)
+- Using ngrok on Windows-10 - [youtube](https://www.youtube.com/watch?v=9gaaVbX0USI&ab_channel=ChuckSeverance)
+- Testing our Django App to be publicly accessible using NGROK - [medium](https://medium.com/@iot24hours/testing-our-django-app-to-be-publicly-accessible-using-ngrok-9b73851c46e0)
+- jQuery documentation - [jQuery](https://jquery.com/)
+- Bootsrtap 4 documentation - [Bootsrtap 4](https://getbootstrap.com/)
+- Creating-a-modal-image-gallery-with-bootstrap-components - [css-tricks](https://css-tricks.com/creating-a-modal-image-gallery-with-bootstrap-components/)
 
 Back to [top](#TableOfContents)
