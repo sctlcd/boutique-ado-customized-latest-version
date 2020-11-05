@@ -396,6 +396,10 @@ nav .nav-item a.nav-link:hover {
 		color: #adb5bd!important;
 }
 
+.footer .fa-github:hover {
+		color: #adb5bd!important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Extra small devices (portrait phones, less than 576px) */

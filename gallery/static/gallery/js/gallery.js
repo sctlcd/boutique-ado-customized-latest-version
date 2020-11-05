@@ -1,14 +1,18 @@
-$("#multi-item .card").each(function() {
+// trigger the click event on each #multi-item-carousel .card elements
+$("#multi-item-carousel .card").each(function() {
   $(this).click(function(){
-    $("#exampleModal").modal("show");
+    $("#modal").modal("show");
   });
 });
 
-$('#exampleModal').on('shown.bs.modal', function () {
-  $('#multi-item').carousel('pause');
-  $('#gallery').carousel('cycle');
+// show.bs.modal event fires when the modal id element is about to be displayed
+$('#modal').on('shown.bs.modal', function () {
+  // Pauses the cycling of the multi-item-carousel id element
+  $('#multi-item-carousel').carousel('pause');
 });
 
-$('#exampleModal').on('hidden.bs.modal', function () {
-  $('#multi-item').carousel('cycle');
+// hidden.bs.modal event fires when the modal id element is completely hidden
+$('#modal').on('hidden.bs.modal', function () {
+  // Resumes the cycling of the multi-item-carousel id element
+  $('#multi-item-carousel').carousel('cycle');
 });
