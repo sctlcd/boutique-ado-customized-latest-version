@@ -13,11 +13,18 @@ User interface improvements, look and feel, presentation, interactivity, and add
 1. [About](#About)
 
 2. [Adding Features](#AddingFeatures)
+	- [Navigation bar](NavigationBar)
+	- [Footer](#Footer)
+	- [Landing page](#LandingPage)
+	- [Set of slides gallery](#GalleryImageCarousel)
+	- [Modal image gallery](#ModalImageGallery)
+	- [No result found page](#NoResultFoundPage)
+	- [Products pages](#ProductsPages)
 
 3. [Technologies Used](#TechnologiesUsed)
 
 	- [Front-End Technologies](#Front-end-technologies)
-  - [Back-End Technologies](#Back-end-technologies)
+	- [Back-End Technologies](#Back-end-technologies)
 
 4. [Known Issues](#KnownIssues)
 
@@ -44,26 +51,34 @@ Back to [top](#TableOfContents)
 
 - desktop : menu box shadow
 - mobile : menu box shadow, add gallery icon link, navbar collapse menu, my account menu and search input field close if the user clicks anywhere in the page
-	#TO_UPDATE
+<br />#TO_UPDATE
+
+Back to [top](#TableOfContents)
 
 ### Footer <a name="Footer"></a>
 
 - links to pages (not implemented)
 - Social media links
 - A copyright mention is displayed with my name beside a GitHub icon link which opens my [Github](https://github.com/sctlcd)
-	#TO_UPDATE
+<br />#TO_UPDATE
+
+Back to [top](#TableOfContents)
 
 ### Landing page <a name="LandingPage"></a>
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_1.png" alt="Landing page" width="700">
 
  - Sections: Shop now, order features offered, target audience, customer reviews, Share your own style feature
- #TO_UPDATE
+<br />#TO_UPDATE
+
+Back to [top](#TableOfContents)
 
 ### Set of slides gallery <a name="GalleryImageCarousel"></a>
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_2.png" alt="Gallery image carousel" width="700">
 
 - carousel of 4 slides of 3 images each
-	#TO_UPDATE
+<br />#TO_UPDATE
+
+Back to [top](#TableOfContents)
 
 ### Modal image gallery <a name="ModalImageGallery"></a>
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_3.png" alt="Modal image gallery" width="700">
@@ -72,18 +87,22 @@ Back to [top](#TableOfContents)
 - The modal image gallery opens on the image selected in the set of slides gallery.
 - When the modal image gallery opens it pauses the cycling of the set of slides gallery. The modal image gallery cycling is maintained.  
 - When the modal image gallery closes it resumes the cycling of the set of slides gallery.
-	#TO_UPDATE
+<br />#TO_UPDATE
+
+Back to [top](#TableOfContents)
 
 ### No result found page <a name="NoResultFoundPage"></a>
 
 - Displays an humoristic image and a message informing the user
 - Offers a link to go back to Products page.
-	#TO_UPDATE
+<br />#TO_UPDATE
+
+Back to [top](#TableOfContents)
 
 ### Products pages <a name="ProductsPages"></a>
 
 - Adding a page down button, in addition to the page up button
-	#TO_UPDATE
+<br />#TO_UPDATE
 
 Back to [top](#TableOfContents)
 
