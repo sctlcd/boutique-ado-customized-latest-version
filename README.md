@@ -118,5 +118,6 @@ Back to [top](#TableOfContents)
 - jQuery documentation - [jQuery](https://jquery.com/)
 - Bootsrtap 4 documentation - [Bootsrtap 4](https://getbootstrap.com/)
 - Creating-a-modal-image-gallery-with-bootstrap-components - [css-tricks](https://css-tricks.com/creating-a-modal-image-gallery-with-bootstrap-components/)
+- Bootstrap show.bs.modal Event - [tutorialspoint](https://www.tutorialspoint.com/Bootstrap-show-bs-modal-Event)
 
 Back to [top](#TableOfContents)
