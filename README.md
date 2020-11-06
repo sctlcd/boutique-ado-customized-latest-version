@@ -153,8 +153,6 @@ Back to [top](#TableOfContents)
 
 ## Known Issues <a name="KnownIssues"></a>
 
-- Navbar collapse menu: First time the user clicks on a menu-item of the navbar collapse menu it closes the navbar collapse menu.
-The second time the user clicks on the same menu-item it opens correctly the relative sub-menu.
 
 Back to [top](#TableOfContents)
 
