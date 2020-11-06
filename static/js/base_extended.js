@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  // White navbar
   function bgWhite() {
     $('.header').addClass('bg-white');
   }
@@ -21,45 +22,54 @@ $(document).ready(function() {
     $('#main-nav').addClass('navbar-desktop');
   }
 
-  // Initialisation
+  // Initialisation (page not scrolled)
   function init() {
-
     bgWhite();
-
-    // trigger the click event on the wrapper class element
-    $('.wrapper').click(function(event) {
-      if ($('.navbar-mobile#main-nav').is(':visible')) {
-        hideNavbarCollapseMenu();
-      }
-    });
-
-    // trigger the click event on the mobile-search id element
-    $('#mobile-search').click(function(event) {
-      // reset the value of the text input
-      $('.dropdown-menu-mobile-search input').val('');
-      // collapse the navbar collapse menu
-      if ($('#main-nav.show').is(':visible')) {
-        hideNavbarCollapseMenu();
-      }
-    });
-
-    // trigger the click event on the user-options id element
-    $('.navbar #user-options').click(function(event) {
-      // collapse the navbar collapse menu
-      if ($('#main-nav.show').is(':visible')) {
-        hideNavbarCollapseMenu();
-      }
-    });
+    navbarNotFixedTop();
   }
 
-  // trigger the click event on the navbar-toggler class element
-  $('.navbar-toggler').click(function(event) {
+  // Trigger the click event on the navbar-toggler class element
+  $('.navbar-toggler').on('click', function(event) {
     $('#main-nav').toggleClass('navbar-mobile');
     $('#main-nav').toggleClass('navbar-desktop');
   });
 
+  // Trigger the click event on the wrapper class element
+  $('.wrapper').on('click', function(event) {
+    if ($('.navbar-mobile#main-nav').is(':visible')) {
+      // Collapse the navbar collapse menu
+      hideNavbarCollapseMenu();
+    }
+  });
+
+  // Trigger the click event on the user-options id element
+  $('.navbar #user-options').on('click', function(event) {
+    if ($('#main-nav.show').is(':visible')) {
+      // Collapse the navbar collapse menu
+      hideNavbarCollapseMenu();
+    }
+  });
+
+  // Trigger the click event on the mobile-search id element
+  $('#mobile-search').on('click', function(event) {
+    // Reset the value of the text input
+    $('.dropdown-menu-mobile-search input').val('');
+
+    if ($('#main-nav.show').is(':visible')) {
+      // Collapse the navbar collapse menu
+      hideNavbarCollapseMenu();
+    }
+  });
+
+  // Trigger the click event on the footer class element
+  $('.footer').on('click', function(event) {
+    if ($('#main-nav.show').is(':visible')) {
+      // Collapse the navbar collapse menu
+      hideNavbarCollapseMenu();
+    }
+  });
+
   init();
-  navbarNotFixedTop();
 
   // When scroll down display a bottom border in the fixed navbar,
   // including the navbar collapse menu when this one is visible
