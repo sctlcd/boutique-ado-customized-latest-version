@@ -14,18 +14,18 @@ $(document).ready(function() {
     $('.header').addClass('bg-hover-white');
   }
 
-  // White with no transition navbar
+  // White navbar with no transition
   function bgWhiteNoTransition() {
     bgWhite();
     $('.header').addClass('bg-hover-white-no-transition');
   }
 
-  // Navbar not fixed on the top
+  // Navbar not fixed to the top
   function navbarNotFixedTop() {
     $('.header').removeClass('fixed-top');
   }
 
-  // Navbar fixed on the top
+  // Navbar fixed to the top
   function navbarFixedTop() {
     $('.header').addClass('fixed-top');
   }
@@ -46,15 +46,6 @@ $(document).ready(function() {
     } else {
       bgTransparent();
     }
-
-    // trigger the click event on the header class element
-    $('.header').click(function(event) {
-      bgWhite();
-      if ($('.navbar-mobile#main-nav').is(':visible')) {
-        $('.navbar-collapse').removeClass('show');
-        $('#main-nav').removeClass('navbar-mobile');
-      }
-    });
 
     // trigger the click event on the hero-image class element
     $('.hero-image').click(function(event) {
@@ -107,15 +98,6 @@ $(document).ready(function() {
 
     bgWhite();
     navbarFixedTop();
-
-    // trigger the click event on the header class element
-    $('.header').click(function(event) {
-      bgWhite();
-      if ($('.navbar-mobile#main-nav').is(':visible')) {
-        $('.navbar-collapse').removeClass('show');
-        $('#main-nav').removeClass('navbar-mobile');
-      }
-    });
 
     // trigger the click event on the hero-image class element
     $('.hero-image').click(function(event) {

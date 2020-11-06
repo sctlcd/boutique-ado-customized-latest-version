@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-  // Navbar not fixed on the top
+  // Navbar not fixed to the top
   function navbarNotFixedTop() {
     $('.header').removeClass('fixed-top');
   }
 
-  // Navbar fixed on the top
+  // Navbar fixed to the top
   function navbarFixedTop() {
     $('.header').addClass('fixed-top');
   }
@@ -16,14 +16,6 @@ $(document).ready(function() {
     $('.header').addClass('bg-white');
     $('.header').addClass('bg-hover-white');
     navbarNotFixedTop();
-
-    // trigger the click event on the header class element
-    $('.header').click(function(event) {
-      if ($('.navbar-mobile#main-nav').is(':visible')) {
-        $('.navbar-collapse').removeClass('show');
-        $('#main-nav').removeClass('navbar-mobile');
-      }
-    });
 
     // trigger the click event on the wrapper class element
     $('.wrapper').click(function(event) {
@@ -55,14 +47,6 @@ $(document).ready(function() {
   // Page on scroll
   function onPageScroll() {
     navbarFixedTop();
-
-    // trigger the click event on the header class element
-    $('.header').click(function(event) {
-      if ($('.navbar-mobile#main-nav').is(':visible')) {
-        $('.navbar-collapse').removeClass('show');
-        $('#main-nav').removeClass('navbar-mobile');
-      }
-    });
 
     // trigger the click event on the footer class element
     $('.footer').click(function(event) {

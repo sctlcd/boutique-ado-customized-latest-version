@@ -47,41 +47,46 @@ Back to [top](#TableOfContents)
 
 ### Navigation bar <a name="NavigationBar"></a>
 
-- transparent, white, sky blue line on the bottom on page scroll, highlight menu item if hovered or selected, highlight sub-menu if hovered, gallery icon link added
+- common desktop/mobile: transparent, white, sky blue line on the bottom on page scroll, highlight menu item if hovered or selected, highlight sub-menu item if hovered, my account menu closes if the user clicks anywhere in the page
 
-- desktop : menu box shadow
-- mobile : menu box shadow, add gallery icon link, navbar collapse menu, my account menu and search input field close if the user clicks anywhere in the page
+- specific desktop : dark grey menu box shadow, gallery icon link added in the desktop top nav, navbar item sub-menu closes if the user clicks anywhere in the page
+- specific mobile : light grey menu box shadow, home and gallery icon links added in the mobile top header, search input field in the mobile top header closes if the user clicks anywhere in the page, navbar item sub-menu closes if the user clicks on the header in the page, navbar collapse menu closes if the user clicks on search or My Account icon links and if the user clicks on the body of the page (apart from the header) or the footer.
+
+<img src="" alt="" width="700">
 <br />#TO_UPDATE
 
 Back to [top](#TableOfContents)
 
 ### Footer <a name="Footer"></a>
 
-- links to pages (not implemented)
+- links to additionnal website pages in the purpose of the website presentation (page links not implemented)
 - Social media links
 - A copyright mention is displayed with my name beside a GitHub icon link which opens my [Github](https://github.com/sctlcd)
+
+<img src="" alt="" width="700">
 <br />#TO_UPDATE
 
 Back to [top](#TableOfContents)
 
 ### Landing page <a name="LandingPage"></a>
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_1.png" alt="Landing page" width="700">
 
  - Sections: Shop now feature, order features offered, target audience, customer reviews, Share your own fashion style feature
 <br />#TO_UPDATE
 
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_1.png" alt="Landing page" width="700">
+
 Back to [top](#TableOfContents)
 
 ### Set of slides gallery <a name="GalleryImageCarousel"></a>
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_2.png" alt="Gallery image carousel" width="700">
 
 - carousel of 4 slides of 3 images each
 <br />#TO_UPDATE
 
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_2.png" alt="Set of slides gallery" width="700">
+
 Back to [top](#TableOfContents)
 
 ### Modal image gallery <a name="ModalImageGallery"></a>
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_3.png" alt="Modal image gallery" width="700">
 
 - On click of each images of the set of slides gallery a modal image gallery opens whose purpose is to display the images in bigger size.
 - The modal image gallery opens on the image selected in the set of slides gallery.
@@ -89,12 +94,16 @@ Back to [top](#TableOfContents)
 - When the modal image gallery closes it resumes the cycling of the set of slides gallery.
 <br />#TO_UPDATE
 
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_3.png" alt="Modal image gallery" width="700">
+
 Back to [top](#TableOfContents)
 
 ### No result found page <a name="NoResultFoundPage"></a>
 
 - Displays an humoristic image and a message informing the user
 - Offers a link to go back to Products page.
+
+<img src="" alt="" width="700">
 <br />#TO_UPDATE
 
 Back to [top](#TableOfContents)
@@ -102,6 +111,8 @@ Back to [top](#TableOfContents)
 ### Products pages <a name="ProductsPages"></a>
 
 - Adding a page down button, in addition to the page up button
+
+<img src="" alt="" width="700">
 <br />#TO_UPDATE
 
 Back to [top](#TableOfContents)
