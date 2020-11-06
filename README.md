@@ -170,17 +170,17 @@ Sources of the images used on this site:
 	- [gallery-background-1920-min.jpg](https://www.pexels.com/photo/apple-device-camera-camera-lens-desk-593325/) - [Pexel](https://www.pexels.com/) | copyright [Jessica Lewis](https://www.pexels.com/@thepaintedsquare)
 	- [hero-image-background-1920-min.jpg](https://pixabay.com/fr/photos/femme-shopping-mode-de-vie-belle-3040029/) - [Pixabay](https://pixabay.com) | copyright [gonghuimin468](https://pixabay.com/fr/users/gonghuimin468-3804290/)
 
-- From home/static/home/images/image_showcases/  - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/home/static/home/images/image_showcases)
+- From home/static/home/images/image_showcases sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/home/static/home/images/image_showcases)
 	- [pexels-lucas-da-miranda-1967902-min.jpg](https://www.pexels.com/photo/woman-in-black-spaghetti-strap-top-1967902/) - [Pexel](https://www.pexels.com/) | copyright [lucas da miranda](https://www.pexels.com/@lucas-da-miranda-998015)
 	- [pexels-mentatdgt-1174170-min.jpg](https://www.pexels.com/photo/woman-wearing-jacket-crop-top-and-mini-skirt-1174170/) - [Pexel](https://www.pexels.com/) | copyright [mentatdgt](https://www.pexels.com/@mentatdgt-330508)
 	- [pexels-omar-lópez-1182825-min.jpg](https://www.pexels.com/photo/man-wearing-black-zip-up-leather-jacket-1182825/) - [Pexel](https://www.pexels.com/) | copyright [Omar López](https://www.pexels.com/@omarlopezphil)
 
-- From home/static/home/images/testimonials/ - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/home/static/home/images/testimonials)
+- From home/static/home/images/testimonials sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/home/static/home/images/testimonials)
 	- [pexels-daniel-xavier-1239291-min.jpg](https://www.pexels.com/photo/woman-wearing-black-eyeglasses-1239291/) - [Pexel](https://www.pexels.com/) | copyright [Pixabay](https://www.pexels.com/@pixabay)
 	- [pexels-pixabay-235534-min.jpg](https://www.pexels.com/photo/adolescent-beauty-blur-cute-235534/) - [Pexel](https://www.pexels.com/) | copyright [Daniel Xavier](https://www.pexels.com/@danxavier)
 	- [pexels-tim-savage-903661-min.jpg](https://www.pexels.com/photo/photography-of-a-man-wearing-black-shirt-903661/) - [Pexel](https://www.pexels.com/) | copyright [Tim Savage](https://www.pexels.com/@timsavage)
 
-- From gallery/static/gallery/images/ - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/gallery/static/gallery/images)
+- From gallery/static/gallery/images sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/gallery/static/gallery/images)
 	- [pexels-anastasiya-lobanovskaya-1035682-min.jpg](https://www.pexels.com/photo/woman-holding-flower-bouquet-1035682/) - [Pexel](https://www.pexels.com/) | copyright [Anastasiya Lobanovskaya](https://www.pexels.com/@annetnavi)
 	- [pexels-andrea-piacquadio-3782968-min.jpg](https://www.pexels.com/photo/depth-of-field-photography-of-woman-in-pastel-color-sleeveless-shirt-and-white-sunhat-788567/) - [Pexel](https://www.pexels.com/) | copyright [Andrea Piacquadio](https://www.pexels.com/@olly)
 	- [pexels-andrea-piacquadio-788567-min.jpg](https://www.pexels.com/photo/man-in-green-jacket-3782968/) - [Pexel](https://www.pexels.com/) | copyright [Andrea Piacquadio](https://www.pexels.com/@olly)
@@ -194,10 +194,10 @@ Sources of the images used on this site:
 	- [pexels-lucas-pezeta-2529375-min.jpg](https://www.pexels.com/photo/woman-spreading-both-her-arms-2529375/) - [Pexel](https://www.pexels.com/) | copyright [Lucas Pezeta](https://www.pexels.com/@lucaspezeta)
 	- [pexels-toa-heftiba-şinca-1194412-min.jpg](https://www.pexels.com/photo/three-men-sitting-on-veranda-1194412/) - [Pexel](https://www.pexels.com/) | copyright [Toa Heftiba Şinca](https://www.pexels.com/@toa-heftiba-sinca-235378)
 
-- From products/static/products/images/ - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/products/static/products/images)
+- From products/static/products/images sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/products/static/products/images)
 	- [no-results-found-min.jpg](https://all-free-download.com/free-vector/download/exploration-job-background-searching-man-sketch-cartoon-design_6844384.html) - [Free vectors](https://all-free-download.com/free-vector/) | copyright [BSGStudio](http://buysellgraphic.com/)
 
-- From media/ - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media)
+- From media directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media)
 	- All products images - Code institute
 
 Back to [top](#TableOfContents)
