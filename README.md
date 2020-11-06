@@ -67,7 +67,7 @@ Back to [top](#TableOfContents)
 ### Landing page <a name="LandingPage"></a>
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_1.png" alt="Landing page" width="700">
 
- - Sections: Shop now, order features offered, target audience, customer reviews, Share your own style feature
+ - Sections: Shop now feature, order features offered, target audience, customer reviews, Share your own fashion style feature
 <br />#TO_UPDATE
 
 Back to [top](#TableOfContents)
@@ -161,7 +161,7 @@ Sources of the images used on this site:
 	- [gallery-background-1920-min.jpg](https://www.pexels.com/photo/apple-device-camera-camera-lens-desk-593325/) - [Pexel](https://www.pexels.com/) | copyright [Jessica Lewis](https://www.pexels.com/@thepaintedsquare)
 	- [hero-image-background-1920-min.jpg](https://pixabay.com/fr/photos/femme-shopping-mode-de-vie-belle-3040029/) - [Pixabay](https://pixabay.com) | copyright [gonghuimin468](https://pixabay.com/fr/users/gonghuimin468-3804290/)
 
-- From home/static/home/images/image-showcases/  - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/home/static/home/images/image-showcases)
+- From home/static/home/images/image_showcases/  - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/home/static/home/images/image_showcases)
 	- [pexels-lucas-da-miranda-1967902-min.jpg](https://www.pexels.com/photo/woman-in-black-spaghetti-strap-top-1967902/) - [Pexel](https://www.pexels.com/) | copyright [lucas da miranda](https://www.pexels.com/@lucas-da-miranda-998015)
 	- [pexels-mentatdgt-1174170-min.jpg](https://www.pexels.com/photo/woman-wearing-jacket-crop-top-and-mini-skirt-1174170/) - [Pexel](https://www.pexels.com/) | copyright [mentatdgt](https://www.pexels.com/@mentatdgt-330508)
 	- [pexels-omar-lópez-1182825-min.jpg](https://www.pexels.com/photo/man-wearing-black-zip-up-leather-jacket-1182825/) - [Pexel](https://www.pexels.com/) | copyright [Omar López](https://www.pexels.com/@omarlopezphil)
@@ -178,11 +178,11 @@ Sources of the images used on this site:
 	- [pexels-cottonbro-4842567-min.jpg](https://www.pexels.com/photo/woman-in-pink-dress-sitting-beside-woman-in-white-shirt-4842567/) - [Pexel](https://www.pexels.com/) | copyright [cottonbro](https://www.pexels.com/@cottonbro)
 	- [pexels-cottonbro-5236991-min.jpg](https://www.pexels.com/photo/4-women-and-2-men-standing-near-gray-wall-5236991/) - [Pexel](https://www.pexels.com/) | copyright [cottonbro](https://www.pexels.com/@cottonbro)
 	- [pexels-elle-hughes-1680172-min.jpg](https://www.pexels.com/photo/photo-of-man-wearing-sunglasses-1680172/) - [Pexel](https://www.pexels.com/) | copyright [Elle Hughes](https://www.pexels.com/@elletakesphotos)
-	- [pexels-godisable-jacob-871494-min.jpg](https://www.pexels.com/photo/woman-sitting-on-chair-while-leaning-on-table-871494/) - [Pexel](https://www.pexels.com/) | copyright []()
-	- [pexels-godisable-jacob-923210-min.jpg]() - [Pexel](https://www.pexels.com/) | copyright [Godisable Jacob](https://www.pexels.com/@godisable-jacob-226636)
+	- [pexels-godisable-jacob-871494-min.jpg](https://www.pexels.com/photo/woman-sitting-on-chair-while-leaning-on-table-871494/) - [Pexel](https://www.pexels.com/) | copyright [Godisable Jacob](https://www.pexels.com/@godisable-jacob-226636)
+	- [pexels-godisable-jacob-923210-min.jpg](https://www.pexels.com/photo/red-haired-woman-in-white-and-black-floral-sleeveless-maxi-dress-923210/) - [Pexel](https://www.pexels.com/) | copyright [Godisable Jacob](https://www.pexels.com/@godisable-jacob-226636)
 	- [pexels-heitor-verdi-2529456-min.jpg](https://www.pexels.com/photo/photo-of-woman-leaning-on-vehicle-2529456/) - [Pexel](https://www.pexels.com/) | copyright [Heitor Verdi](https://www.pexels.com/@heitorverdifotos)
-	- [pexels-joshua-abner-3605015-min.jpg](https://www.pexels.com/photo/woman-in-white-and-red-floral-dress-standing-on-green-grass-field-3605015/) - [Pexel](https://www.pexels.com/) | copyright []()
-	- [pexels-lucas-pezeta-2529375-min.jpg]() - [Pexel](https://www.pexels.com/) | copyright [Joshua Abner](https://www.pexels.com/@joshuaabner)
+	- [pexels-joshua-abner-3605015-min.jpg](https://www.pexels.com/photo/woman-in-white-and-red-floral-dress-standing-on-green-grass-field-3605015/) - [Pexel](https://www.pexels.com/) | copyright [Joshua Abner](https://www.pexels.com/@joshuaabner)
+	- [pexels-lucas-pezeta-2529375-min.jpg](https://www.pexels.com/photo/woman-spreading-both-her-arms-2529375/) - [Pexel](https://www.pexels.com/) | copyright [Lucas Pezeta](https://www.pexels.com/@lucaspezeta)
 	- [pexels-toa-heftiba-şinca-1194412-min.jpg](https://www.pexels.com/photo/three-men-sitting-on-veranda-1194412/) - [Pexel](https://www.pexels.com/) | copyright [Toa Heftiba Şinca](https://www.pexels.com/@toa-heftiba-sinca-235378)
 
 - From products/static/products/images/ - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/products/static/products/images)
