@@ -14,6 +14,13 @@ $(document).ready(function() {
     $('.header').addClass('fixed-top');
   }
 
+  // Hide the navbar collapse menu
+  function hideNavbarCollapseMenu() {
+    $('.navbar-collapse').removeClass('show');
+    $('#main-nav').removeClass('navbar-mobile');
+    $('#main-nav').addClass('navbar-desktop');
+  }
+
   // Initialisation
   function init() {
 
@@ -22,9 +29,7 @@ $(document).ready(function() {
     // trigger the click event on the wrapper class element
     $('.wrapper').click(function(event) {
       if ($('.navbar-mobile#main-nav').is(':visible')) {
-        $('.navbar-collapse').removeClass('show');
-        $('#main-nav').removeClass('navbar-mobile');
-        $('#main-nav').addClass('navbar-desktop');
+        hideNavbarCollapseMenu();
       }
     });
 
@@ -34,9 +39,7 @@ $(document).ready(function() {
       $('.dropdown-menu-mobile-search input').val('');
       // collapse the navbar collapse menu
       if ($('#main-nav.show').is(':visible')) {
-        $('#main-nav').removeClass('show');
-        $('#main-nav').removeClass('navbar-mobile');
-        $('#main-nav').addClass('navbar-desktop');
+        hideNavbarCollapseMenu();
       }
     });
 
@@ -44,9 +47,7 @@ $(document).ready(function() {
     $('.navbar #user-options').click(function(event) {
       // collapse the navbar collapse menu
       if ($('#main-nav.show').is(':visible')) {
-        $('#main-nav').removeClass('show');
-        $('#main-nav').removeClass('navbar-mobile');
-        $('#main-nav').addClass('navbar-desktop');
+        hideNavbarCollapseMenu();
       }
     });
   }
