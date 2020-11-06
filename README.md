@@ -67,7 +67,7 @@ Back to [top](#TableOfContents)
 ### Landing page <a name="LandingPage"></a>
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_1.png" alt="Landing page" width="700">
 
- - Sections: Shop now, order features offered, target audience, customer reviews, Share your own style feature
+ - Sections: Shop now feature, order features offered, target audience, customer reviews, Share your own fashion style feature
 <br />#TO_UPDATE
 
 Back to [top](#TableOfContents)
@@ -161,7 +161,7 @@ Sources of the images used on this site:
 	- [gallery-background-1920-min.jpg](https://www.pexels.com/photo/apple-device-camera-camera-lens-desk-593325/) - [Pexel](https://www.pexels.com/) | copyright [Jessica Lewis](https://www.pexels.com/@thepaintedsquare)
 	- [hero-image-background-1920-min.jpg](https://pixabay.com/fr/photos/femme-shopping-mode-de-vie-belle-3040029/) - [Pixabay](https://pixabay.com) | copyright [gonghuimin468](https://pixabay.com/fr/users/gonghuimin468-3804290/)
 
-- From home/static/home/images/image-showcases/  - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/home/static/home/images/image-showcases)
+- From home/static/home/images/image_showcases/  - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/home/static/home/images/image_showcases)
 	- [pexels-lucas-da-miranda-1967902-min.jpg](https://www.pexels.com/photo/woman-in-black-spaghetti-strap-top-1967902/) - [Pexel](https://www.pexels.com/) | copyright [lucas da miranda](https://www.pexels.com/@lucas-da-miranda-998015)
 	- [pexels-mentatdgt-1174170-min.jpg](https://www.pexels.com/photo/woman-wearing-jacket-crop-top-and-mini-skirt-1174170/) - [Pexel](https://www.pexels.com/) | copyright [mentatdgt](https://www.pexels.com/@mentatdgt-330508)
 	- [pexels-omar-lópez-1182825-min.jpg](https://www.pexels.com/photo/man-wearing-black-zip-up-leather-jacket-1182825/) - [Pexel](https://www.pexels.com/) | copyright [Omar López](https://www.pexels.com/@omarlopezphil)
