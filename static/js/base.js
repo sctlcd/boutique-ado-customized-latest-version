@@ -50,8 +50,11 @@ $(document).ready(function() {
     // trigger the click event on the hero-image class element
     $('.hero-image').click(function(event) {
       bgTransparent();
-      $('.navbar-collapse').removeClass('show');
-      $('#main-nav').removeClass('navbar-mobile');
+      if ($('#main-nav.show').is(':visible')) {
+        $('#main-nav').removeClass('show');
+        $('#main-nav').removeClass('navbar-mobile');
+        $('#main-nav').addClass('navbar-desktop');
+      }
     });
 
     // trigger the click event on the mobile-search id element
@@ -61,6 +64,8 @@ $(document).ready(function() {
       // collapse the navbar collapse menu
       if ($('#main-nav.show').is(':visible')) {
         $('#main-nav').removeClass('show');
+        $('#main-nav').removeClass('navbar-mobile');
+        $('#main-nav').addClass('navbar-desktop');
       }
     });
 
@@ -69,6 +74,8 @@ $(document).ready(function() {
       // collapse the navbar collapse menu
       if ($('#main-nav.show').is(':visible')) {
         $('#main-nav').removeClass('show');
+        $('#main-nav').removeClass('navbar-mobile');
+        $('#main-nav').addClass('navbar-desktop');
       }
     });
 
@@ -106,6 +113,7 @@ $(document).ready(function() {
       if ($('.navbar-mobile#main-nav').is(':visible')) {
         $('.navbar-collapse').removeClass('show');
         $('#main-nav').removeClass('navbar-mobile');
+        $('#main-nav').addClass('navbar-desktop');
       }
     });
 
@@ -116,6 +124,7 @@ $(document).ready(function() {
       if ($('.navbar-mobile#main-nav').is(':visible')) {
         $('.navbar-collapse').removeClass('show');
         $('#main-nav').removeClass('navbar-mobile');
+        $('#main-nav').addClass('navbar-desktop');
       }
     });
 
@@ -126,6 +135,7 @@ $(document).ready(function() {
       if ($('.navbar-mobile#main-nav').is(':visible')) {
         $('.navbar-collapse').removeClass('show');
         $('#main-nav').removeClass('navbar-mobile');
+        $('#main-nav').addClass('navbar-desktop');
       }
     });
 
@@ -136,6 +146,7 @@ $(document).ready(function() {
       if ($('.navbar-mobile#main-nav').is(':visible')) {
         $('.navbar-collapse').removeClass('show');
         $('#main-nav').removeClass('navbar-mobile');
+        $('#main-nav').addClass('navbar-desktop');
       }
     });
 
@@ -146,6 +157,8 @@ $(document).ready(function() {
       // collapse the navbar collapse menu
       if ($('#main-nav.show').is(':visible')) {
         $('#main-nav').removeClass('show');
+        $('#main-nav').removeClass('navbar-mobile');
+        $('#main-nav').addClass('navbar-desktop');
       }
     });
 
@@ -154,6 +167,8 @@ $(document).ready(function() {
       // collapse the navbar collapse menu
       if ($('#main-nav.show').is(':visible')) {
         $('#main-nav').removeClass('show');
+        $('#main-nav').removeClass('navbar-mobile');
+        $('#main-nav').addClass('navbar-desktop');
       }
     });
 

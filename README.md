@@ -26,7 +26,13 @@ User interface improvements, look and feel, presentation, interactivity, and add
 	- [Front-End Technologies](#Front-end-technologies)
 	- [Back-End Technologies](#Back-end-technologies)
 
-4. [Known Issues](#KnownIssues)
+4. [Testing](#Testing)
+
+	- [Layout responsiveness](#LayoutResponsiveness)
+	- [Compatibility](#Compatibility)
+	- [Testing left](#TestingLeft)
+	- [Validators](#Validators)
+	- [Known Issues](#KnownIssues)
 
 5. [Credits](#Credits)
 
@@ -59,7 +65,7 @@ Back to [top](#TableOfContents)
 
 ### Footer <a name="Footer"></a>
 
-- links to additionnal website pages in the purpose of the website presentation (page links not implemented)
+- links to additional website pages in the purpose of the website presentation (page links not implemented)
 - Social media links
 - A copyright mention is displayed with my name beside a GitHub icon link which opens my [Github](https://github.com/sctlcd)
 
@@ -151,8 +157,77 @@ Back to [top](#TableOfContents)
 
 ---
 
-## Known Issues <a name="KnownIssues"></a>
+## Testing <a name="Testing"></a>
 
+### Layout responsiveness <a name="LayoutResponsiveness"></a>
+
+|  | Moto G4 | Galaxy S5 | Pixel 2 | Pixel 2 XL | iPhone 5/SE | iPhone 6/7/8 | iPhone 6/7/8 Plus | iPhone X | Surface Duo | Galaxy Fold | iPad | iPad Pro | Desktop 1024px | Desktop > 1200px |
+| :--- | :--- | :---| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| website is responsive <= 767 px | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | n/a | n/a | n/a | n/a |
+| website is responsive >= 768 px | n/a | n/a | n/a | n/a | n/a | n/a | n/a | n/a | n/a | n/a | Good | Good | Good | Good |
+|**base.html** |
+| Navigation bar: logo / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / icons text / links / buttons / text | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+|**base_extended.html** |
+| Navigation bar: logo / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / icons text / links / buttons / text | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| gallery.html |
+| Content page: Carousel / modal / images / buttons / text | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| no_results_found.html |
+| Content page: Images / links / text | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| products.html |
+| Content page: Images / links / buttons / text | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+
+Back to [top](#TableOfContents)
+
+### Compatibility <a name="Compatibility"></a>
+
+I tested the website across the 6 main browsers in both desktop and mobile configuration to ensure a large number of users can use it successfully.
+
+- Chrome v.86.0
+- Edge v.86.0
+- Firefox v.82.0
+- Safari v.5.1.7 for Windows 10
+- Opera v.72.0
+- Internet Explorer v.11
+
+|All pages | Chrome | Edge | Firefox | Safari | Opera | IE |
+| :--- | :--- | :---| :--- | :--- | :--- | :--- |
+| Expected appearance | Good | Good | Good | Poor | Good | Poor |
+| Expected responsiveness | Good | Good | Good | Poor | Good | Poor |
+
+- IE: Some CSS3 properties and HTML5 elements are not fully supported
+
+- Safari v.5.1.7: It’s an outdated version and lacks many of the features present in the latest version of Safari. The last version of Safari for Windows was released on May 9, 2012.
+
+Back to [top](#TableOfContents)
+
+### Testing left <a name="TestingLeft"></a>
+
+There is no way to install the latest version of the Safari browser on Windows 10 as Apple stopped developing Safari for Windows operating system long ago. For testing this website on the latest version of Safari, I will have to install the newest version of macOS on Windows 10 in a virtual machine.
+
+### Validators <a name="Validators"></a>
+
+**HTML**
+- [W3C HTML Validator](https://validator.w3.org/)
+
+**CSS**
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+**Javascript**
+- [Javascript Validator](https://jshint.com/)
+
+**Chrome DevTools**
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
+
+**Python**
+- [Python validator](http://pep8online.com/)
+
+Back to [top](#TableOfContents)
+
+### Known Issues <a name="KnownIssues"></a>
 
 Back to [top](#TableOfContents)
 

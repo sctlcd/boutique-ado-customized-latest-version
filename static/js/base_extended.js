@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  function bgWhite() {
+    $('.header').addClass('bg-white');
+  }
+
   // Navbar not fixed to the top
   function navbarNotFixedTop() {
     $('.header').removeClass('fixed-top');
@@ -10,18 +14,17 @@ $(document).ready(function() {
     $('.header').addClass('fixed-top');
   }
 
-  // Initialisation (page not scrolled)
+  // Initialisation
   function init() {
 
-    $('.header').addClass('bg-white');
-    $('.header').addClass('bg-hover-white');
-    navbarNotFixedTop();
+    bgWhite();
 
     // trigger the click event on the wrapper class element
     $('.wrapper').click(function(event) {
       if ($('.navbar-mobile#main-nav').is(':visible')) {
         $('.navbar-collapse').removeClass('show');
         $('#main-nav').removeClass('navbar-mobile');
+        $('#main-nav').addClass('navbar-desktop');
       }
     });
 
@@ -32,6 +35,8 @@ $(document).ready(function() {
       // collapse the navbar collapse menu
       if ($('#main-nav.show').is(':visible')) {
         $('#main-nav').removeClass('show');
+        $('#main-nav').removeClass('navbar-mobile');
+        $('#main-nav').addClass('navbar-desktop');
       }
     });
 
@@ -40,45 +45,8 @@ $(document).ready(function() {
       // collapse the navbar collapse menu
       if ($('#main-nav.show').is(':visible')) {
         $('#main-nav').removeClass('show');
-      }
-    });
-  }
-
-  // Page on scroll
-  function onPageScroll() {
-    navbarFixedTop();
-
-    // trigger the click event on the footer class element
-    $('.footer').click(function(event) {
-      if ($('.navbar-mobile#main-nav').is(':visible')) {
-        $('.navbar-collapse').removeClass('show');
         $('#main-nav').removeClass('navbar-mobile');
-      }
-    });
-
-    // trigger the click event on the wrapper class element
-    $('.wrapper').click(function(event) {
-      if ($('.navbar-mobile#main-nav').is(':visible')) {
-        $('.navbar-collapse').removeClass('show');
-        $('#main-nav').removeClass('navbar-mobile');
-      }
-    });
-
-    // trigger the click event on the mobile-search id element
-    $('#mobile-search').click(function(event) {
-      // reset the value of the text input
-      $('.dropdown-menu-mobile-search input').val('');
-      // collapse the navbar collapse menu
-      if ($('#main-nav.show').is(':visible')) {
-        $('#main-nav').removeClass('show');
-      }
-    });
-
-    // trigger the click event on the user-options id element
-    $('.navbar #user-options').click(function(event) {
-      // collapse the navbar collapse menu
-      if ($('#main-nav.show').is(':visible')) {
-        $('#main-nav').removeClass('show');
+        $('#main-nav').addClass('navbar-desktop');
       }
     });
   }
@@ -86,9 +54,11 @@ $(document).ready(function() {
   // trigger the click event on the navbar-toggler class element
   $('.navbar-toggler').click(function(event) {
     $('#main-nav').toggleClass('navbar-mobile');
+    $('#main-nav').toggleClass('navbar-desktop');
   });
 
   init();
+  navbarNotFixedTop();
 
   // When scroll down display a bottom border in the fixed navbar,
   // including the navbar collapse menu when this one is visible
@@ -96,11 +66,11 @@ $(document).ready(function() {
     if ($(this).scrollTop() == 0) {
 
       //this code will execute when when the scrollbar is on the top
-      init();
+      navbarNotFixedTop();
     } else {
 
       //this code will execute when the scrollbar is not on the top
-      onPageScroll();
+      navbarFixedTop();
     }
   });
 
