@@ -76,11 +76,11 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() == 0) {
 
-      //this code will execute when when the scrollbar is on the top
+      //This code will execute when when the scrollbar is on the top
       navbarNotFixedTop();
     } else {
 
-      //this code will execute when the scrollbar is not on the top
+      //This code will execute when the scrollbar is not on the top
       navbarFixedTop();
     }
   });

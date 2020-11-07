@@ -43,60 +43,31 @@ $(document).ready(function() {
     bgTransparent();
     navbarNotFixedTop();
 
-    //this code will execute when navbar collapse menu, desktop navbar dropdown menu,
-    //user options dropdown menu are visible or when the header is currently hovered
-    if ($('#main-nav.show').is(':visible') ||
-      $('.header .list-inline-item.show').is(':visible') ||
-      $('.navbar .nav-item.show').is(':visible') ||
-      $('.header').is(':hover')) {
-      bgWhiteNoTransition();
-    } else {
-      bgTransparent();
-    }
-
-    // trigger the click event on the hero-image class element
-    $('.hero-image').click(function(event) {
-      bgTransparent();
-      if ($('#main-nav.show').is(':visible')) {
-        hideNavbarCollapseMenu();
-      }
-    });
-
-    // trigger the click event on the mobile-search id element
-    $('#mobile-search').click(function(event) {
-      // reset the value of the text input
-      $('.dropdown-menu-mobile-search input').val('');
-      // collapse the navbar collapse menu
-      if ($('#main-nav.show').is(':visible')) {
-        hideNavbarCollapseMenu();
-      }
-    });
-
-    // trigger the click event on the user-options id element
-    $('.navbar #user-options').click(function(event) {
-      // collapse the navbar collapse menu
-      if ($('#main-nav.show').is(':visible')) {
-        hideNavbarCollapseMenu();
-      }
-    });
+    // // This code will execute when navbar collapse menu, desktop navbar dropdown menu,
+    // //user options dropdown menu are visible or when the header is currently hovered
+    // if ($('#main-nav.show').is(':visible') ||
+    //   $('.header .list-inline-item.show').is(':visible') ||
+    //   // $('.navbar .nav-item.show').is(':visible') ||
+    //   $('.header').is(':hover')) {
+    //   bgWhiteNoTransition();
+    // } else {
+    //   bgTransparent();
+    // }
 
     //this code will execute when the header is hovered
     $('.header').hover(function() {
         //this code will execute when mouse enters the header class element
         bgWhite();
-        navbarNotFixedTop();
       },
       function() {
         //this code will execute when mouse leaves the header class element
-        bgTransparent();
-        navbarNotFixedTop();
-
-        //this code will execute when navbar collapse menu, desktop navbar dropdown menu,
-        //user options dropdown menu are visible or when the header is currently hovered
+        // bgTransparent();
+        // navbarNotFixedTop();
         if ($('#main-nav.show').is(':visible') ||
-          $('.header .list-inline-item.show').is(':visible') ||
-          $('.navbar .nav-item.show').is(':visible')) {
-          bgWhiteNoTransition();
+          $('.header .list-inline-item.show').is(':visible')) {
+          bgWhiteNoTransition()
+        } else {
+          bgTransparent();
         }
       });
   }
@@ -107,70 +78,14 @@ $(document).ready(function() {
     bgWhite();
     navbarFixedTop();
 
-    // trigger the click event on the hero-image class element
-    $('.hero-image').click(function(event) {
-      bgWhite();
-      // navbarFixedTop();
-      if ($('.navbar-mobile#main-nav').is(':visible')) {
-        hideNavbarCollapseMenu();
-      }
-    });
-
-    // trigger the click event on the features-showcase-testimonial class element
-    $('.features-showcase-testimonial').click(function(event) {
-      bgWhite();
-      // navbarFixedTop();
-      if ($('.navbar-mobile#main-nav').is(':visible')) {
-        hideNavbarCollapseMenu();
-      }
-    });
-
-    // trigger the click event on the gallery class element
-    $('.gallery').click(function(event) {
-      bgWhite();
-      // navbarFixedTop();
-      if ($('.navbar-mobile#main-nav').is(':visible')) {
-        hideNavbarCollapseMenu();
-      }
-    });
-
-    // trigger the click event on the footer class element
-    $('.footer').click(function(event) {
-      bgWhite();
-      // navbarFixedTop();
-      if ($('.navbar-mobile#main-nav').is(':visible')) {
-        hideNavbarCollapseMenu();
-      }
-    });
-
-    // trigger the click event on the mobile-search id element
-    $('#mobile-search').click(function(event) {
-      // reset the value of the text input
-      $('.dropdown-menu-mobile-search input').val('');
-      // collapse the navbar collapse menu
-      if ($('#main-nav.show').is(':visible')) {
-        hideNavbarCollapseMenu();
-      }
-    });
-
-    // trigger the click event on the user-options id element
-    $('.navbar #user-options').click(function(event) {
-      // collapse the navbar collapse menu
-      if ($('#main-nav.show').is(':visible')) {
-        hideNavbarCollapseMenu();
-      }
-    });
-
     //this code will execute when the header is hovered
     $('.header').hover(function() {
         //this code will execute when mouse enters the header class element
         bgWhiteNoTransition();
-        navbarFixedTop();
       },
       function() {
         //this code will execute when mouse leaves the header class element
         bgWhiteNoTransition();
-        navbarFixedTop();
       });
   }
 
@@ -180,22 +95,91 @@ $(document).ready(function() {
     $('#main-nav').toggleClass('navbar-desktop');
   });
 
-  init();
-
-  // When scroll down display a bottom border in the fixed navbar,
-  // including the navbar collapse menu when this one is visible
-  $(window).scroll(function() {
+  // trigger the click event on the hero-image class element
+  $('.hero-image').click(function(event) {
 
     //this code will execute when when the scrollbar is on the top
-    if ($(this).scrollTop() == 0) {
-      init();
-    } else {
+      if ($(window).scrollTop() == 0) {
 
-      //this code will execute when the scrollbar is not on the top
-      onPageScroll();
-    }
+        //This code will execute when when the scrollbar is on the top
+        if ($('#main-nav.show').is(':visible')) {
+            hideNavbarCollapseMenu();
+            bgTransparent();
+        } else {
+          bgTransparent();
+        }
+      } else {
+
+        //this code will execute when the scrollbar is not on the top
+        if ($('#main-nav.show').is(':visible')) {
+            hideNavbarCollapseMenu();
+            bgWhite();
+        } else {
+          bgWhite();
+        }
+      }
   });
 
-  $('.toast').toast('show');
+// trigger the click event on the features-showcase-testimonial class element
+$('.features-showcase-testimonial').click(function(event) {
+
+  if ($('.navbar-mobile#main-nav').is(':visible')) {
+    hideNavbarCollapseMenu();
+  }
+});
+
+// trigger the click event on the gallery class element
+$('.gallery').click(function(event) {
+
+  if ($('.navbar-mobile#main-nav').is(':visible')) {
+    hideNavbarCollapseMenu();
+  }
+});
+
+// trigger the click event on the footer class element
+$('.footer').click(function(event) {
+  //
+  if ($('.navbar-mobile#main-nav').is(':visible')) {
+    hideNavbarCollapseMenu();
+  }
+});
+
+// trigger the click event on the user-options id element
+$('.navbar #user-options').click(function(event) {
+  // collapse the navbar collapse menu
+  if ($('#main-nav.show').is(':visible')) {
+    hideNavbarCollapseMenu();
+  }
+});
+
+// trigger the click event on the mobile-search id element
+$('#mobile-search').click(function(event) {
+  // reset the value of the text input
+  $('.dropdown-menu-mobile-search input').val('');
+  // collapse the navbar collapse menu
+  if ($('#main-nav.show').is(':visible')) {
+    hideNavbarCollapseMenu();
+  }
+
+});
+
+init();
+
+// When scroll down display a bottom border in the fixed navbar,
+// including the navbar collapse menu when this one is visible
+$(window).scroll(function() {
+
+  //this code will execute when when the scrollbar is on the top
+  if ($(this).scrollTop() == 0) {
+    //This code will execute when when the scrollbar is on the top
+    init();
+  } else {
+
+    //this code will execute when the scrollbar is not on the top
+    onPageScroll();
+  }
+});
+
+$('.toast').toast('show');
 
 });
