@@ -29,13 +29,13 @@ $(document).ready(function() {
   }
 
   // Trigger the click event on the navbar-toggler class element
-  $('.navbar-toggler').on('click', function(event) {
+  $('.navbar-toggler').click(function(event) {
     $('#main-nav').toggleClass('navbar-mobile');
     $('#main-nav').toggleClass('navbar-desktop');
   });
 
   // Trigger the click event on the wrapper class element
-  $('.wrapper').on('click', function(event) {
+  $('.wrapper').click(function(event) {
     if ($('.navbar-mobile#main-nav').is(':visible')) {
       // Collapse the navbar collapse menu
       hideNavbarCollapseMenu();
@@ -43,7 +43,7 @@ $(document).ready(function() {
   });
 
   // Trigger the click event on the user-options id element
-  $('.navbar #user-options').on('click', function(event) {
+  $('.navbar #user-options').click(function(event) {
     if ($('#main-nav.show').is(':visible')) {
       // Collapse the navbar collapse menu
       hideNavbarCollapseMenu();
@@ -51,7 +51,7 @@ $(document).ready(function() {
   });
 
   // Trigger the click event on the mobile-search id element
-  $('#mobile-search').on('click', function(event) {
+  $('#mobile-search').click(function(event) {
     // Reset the value of the text input
     $('.dropdown-menu-mobile-search input').val('');
 
@@ -62,29 +62,26 @@ $(document).ready(function() {
   });
 
   // Trigger the click event on the footer class element
-  $('.footer').on('click', function(event) {
+  $('.footer').click(function(event) {
     if ($('#main-nav.show').is(':visible')) {
       // Collapse the navbar collapse menu
       hideNavbarCollapseMenu();
     }
   });
 
-  init();
-
   // When scroll down display a bottom border in the fixed navbar,
   // including the navbar collapse menu when this one is visible
   $(window).scroll(function() {
     if ($(this).scrollTop() == 0) {
-
       //This code will execute when when the scrollbar is on the top
       navbarNotFixedTop();
     } else {
-
       //This code will execute when the scrollbar is not on the top
       navbarFixedTop();
     }
   });
 
+  init();
   $('.toast').toast('show');
 
 });
