@@ -26,7 +26,13 @@ User interface improvements, look and feel, presentation, interactivity, and add
 	- [Front-End Technologies](#Front-end-technologies)
 	- [Back-End Technologies](#Back-end-technologies)
 
-4. [Known Issues](#KnownIssues)
+4. [Testing](#Testing)
+
+	- [Layout responsiveness](#LayoutResponsiveness)
+	- [Compatibility](#Compatibility)
+	- [Testing left](#TestingLeft)
+	- [Validators](#Validators)
+	- [Known Issues](#KnownIssues)
 
 5. [Credits](#Credits)
 
@@ -59,7 +65,7 @@ Back to [top](#TableOfContents)
 
 ### Footer <a name="Footer"></a>
 
-- links to additionnal website pages in the purpose of the website presentation (page links not implemented)
+- links to additional website pages in the purpose of the website presentation (page links not implemented)
 - Social media links
 - A copyright mention is displayed with my name beside a GitHub icon link which opens my [Github](https://github.com/sctlcd)
 
@@ -151,8 +157,77 @@ Back to [top](#TableOfContents)
 
 ---
 
-## Known Issues <a name="KnownIssues"></a>
+## Testing <a name="Testing"></a>
 
+### Layout responsiveness <a name="LayoutResponsiveness"></a>
+
+|  | Moto G4 | Galaxy S5 | Pixel 2 | Pixel 2 XL | iPhone 5/SE | iPhone 6/7/8 | iPhone 6/7/8 Plus | iPhone X | Surface Duo | Galaxy Fold | iPad | iPad Pro | Desktop 1024px | Desktop > 1200px |
+| :--- | :--- | :---| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| website is responsive <= 767 px | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | n/a | n/a | n/a | n/a |
+| website is responsive >= 768 px | n/a | n/a | n/a | n/a | n/a | n/a | n/a | n/a | n/a | n/a | Good | Good | Good | Good |
+|**base.html** |
+| Navigation bar: logo / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / icons text / links / buttons / text | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+|**base_extended.html** |
+| Navigation bar: logo / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / icons text / links / buttons / text | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| gallery.html |
+| Content page: Carousel / modal / images / buttons / text | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| no_results_found.html |
+| Content page: Images / links / text | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+| products.html |
+| Content page: Images / links / buttons / text | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
+
+Back to [top](#TableOfContents)
+
+### Compatibility <a name="Compatibility"></a>
+
+I tested the website across the 6 main browsers in both desktop and mobile configuration to ensure a large number of users can use it successfully.
+
+- Chrome v.86.0
+- Edge v.86.0
+- Firefox v.82.0
+- Safari v.5.1.7 for Windows 10
+- Opera v.72.0
+- Internet Explorer v.11
+
+|All pages | Chrome | Edge | Firefox | Safari | Opera | IE |
+| :--- | :--- | :---| :--- | :--- | :--- | :--- |
+| Expected appearance | Good | Good | Good | Poor | Good | Poor |
+| Expected responsiveness | Good | Good | Good | Poor | Good | Poor |
+
+- IE: Some CSS3 properties and HTML5 elements are not fully supported
+
+- Safari v.5.1.7: It’s an outdated version and lacks many of the features present in the latest version of Safari. The last version of Safari for Windows was released on May 9, 2012.
+
+Back to [top](#TableOfContents)
+
+### Testing left <a name="TestingLeft"></a>
+
+There is no way to install the latest version of the Safari browser on Windows 10 as Apple stopped developing Safari for Windows operating system long ago. For testing this website on the latest version of Safari, I will have to install the newest version of macOS on Windows 10 in a virtual machine.
+
+### Validators <a name="Validators"></a>
+
+**HTML**
+- [W3C HTML Validator](https://validator.w3.org/)
+
+**CSS**
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+**Javascript**
+- [Javascript Validator](https://jshint.com/)
+
+**Chrome DevTools**
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
+
+**Python**
+- [Python validator](http://pep8online.com/)
+
+Back to [top](#TableOfContents)
+
+### Known Issues <a name="KnownIssues"></a>
 
 Back to [top](#TableOfContents)
 
@@ -170,17 +245,17 @@ Sources of the images used on this site:
 	- [gallery-background-1920-min.jpg](https://www.pexels.com/photo/apple-device-camera-camera-lens-desk-593325/) - [Pexel](https://www.pexels.com/) | copyright [Jessica Lewis](https://www.pexels.com/@thepaintedsquare)
 	- [hero-image-background-1920-min.jpg](https://pixabay.com/fr/photos/femme-shopping-mode-de-vie-belle-3040029/) - [Pixabay](https://pixabay.com) | copyright [gonghuimin468](https://pixabay.com/fr/users/gonghuimin468-3804290/)
 
-- From home/static/home/images/image_showcases/  - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/home/static/home/images/image_showcases)
+- From home/static/home/images/image_showcases sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/home/static/home/images/image_showcases)
 	- [pexels-lucas-da-miranda-1967902-min.jpg](https://www.pexels.com/photo/woman-in-black-spaghetti-strap-top-1967902/) - [Pexel](https://www.pexels.com/) | copyright [lucas da miranda](https://www.pexels.com/@lucas-da-miranda-998015)
 	- [pexels-mentatdgt-1174170-min.jpg](https://www.pexels.com/photo/woman-wearing-jacket-crop-top-and-mini-skirt-1174170/) - [Pexel](https://www.pexels.com/) | copyright [mentatdgt](https://www.pexels.com/@mentatdgt-330508)
 	- [pexels-omar-lópez-1182825-min.jpg](https://www.pexels.com/photo/man-wearing-black-zip-up-leather-jacket-1182825/) - [Pexel](https://www.pexels.com/) | copyright [Omar López](https://www.pexels.com/@omarlopezphil)
 
-- From home/static/home/images/testimonials/ - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/home/static/home/images/testimonials)
+- From home/static/home/images/testimonials sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/home/static/home/images/testimonials)
 	- [pexels-daniel-xavier-1239291-min.jpg](https://www.pexels.com/photo/woman-wearing-black-eyeglasses-1239291/) - [Pexel](https://www.pexels.com/) | copyright [Pixabay](https://www.pexels.com/@pixabay)
 	- [pexels-pixabay-235534-min.jpg](https://www.pexels.com/photo/adolescent-beauty-blur-cute-235534/) - [Pexel](https://www.pexels.com/) | copyright [Daniel Xavier](https://www.pexels.com/@danxavier)
 	- [pexels-tim-savage-903661-min.jpg](https://www.pexels.com/photo/photography-of-a-man-wearing-black-shirt-903661/) - [Pexel](https://www.pexels.com/) | copyright [Tim Savage](https://www.pexels.com/@timsavage)
 
-- From gallery/static/gallery/images/ - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/gallery/static/gallery/images)
+- From gallery/static/gallery/images sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/gallery/static/gallery/images)
 	- [pexels-anastasiya-lobanovskaya-1035682-min.jpg](https://www.pexels.com/photo/woman-holding-flower-bouquet-1035682/) - [Pexel](https://www.pexels.com/) | copyright [Anastasiya Lobanovskaya](https://www.pexels.com/@annetnavi)
 	- [pexels-andrea-piacquadio-3782968-min.jpg](https://www.pexels.com/photo/depth-of-field-photography-of-woman-in-pastel-color-sleeveless-shirt-and-white-sunhat-788567/) - [Pexel](https://www.pexels.com/) | copyright [Andrea Piacquadio](https://www.pexels.com/@olly)
 	- [pexels-andrea-piacquadio-788567-min.jpg](https://www.pexels.com/photo/man-in-green-jacket-3782968/) - [Pexel](https://www.pexels.com/) | copyright [Andrea Piacquadio](https://www.pexels.com/@olly)
@@ -194,10 +269,10 @@ Sources of the images used on this site:
 	- [pexels-lucas-pezeta-2529375-min.jpg](https://www.pexels.com/photo/woman-spreading-both-her-arms-2529375/) - [Pexel](https://www.pexels.com/) | copyright [Lucas Pezeta](https://www.pexels.com/@lucaspezeta)
 	- [pexels-toa-heftiba-şinca-1194412-min.jpg](https://www.pexels.com/photo/three-men-sitting-on-veranda-1194412/) - [Pexel](https://www.pexels.com/) | copyright [Toa Heftiba Şinca](https://www.pexels.com/@toa-heftiba-sinca-235378)
 
-- From products/static/products/images/ - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/products/static/products/images)
+- From products/static/products/images sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/products/static/products/images)
 	- [no-results-found-min.jpg](https://all-free-download.com/free-vector/download/exploration-job-background-searching-man-sketch-cartoon-design_6844384.html) - [Free vectors](https://all-free-download.com/free-vector/) | copyright [BSGStudio](http://buysellgraphic.com/)
 
-- From media/ - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media)
+- From media directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media)
 	- All products images - Code institute
 
 Back to [top](#TableOfContents)
