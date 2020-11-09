@@ -43,7 +43,7 @@ User interface improvements, look and feel, presentation, interactivity, and add
 
 ## About <a name="About"></a>
 
-The purpose of this project is to improve the user interface: look and feel, the presentation and the interactivity of the initial Boutique Ado website version and adding features.
+The purpose of this project is to improve the user interfaces: look and feel, the presentation and the interactivity of the initial Boutique Ado website version and adding features.
 
 Back to [top](#TableOfContents)
 
@@ -53,10 +53,33 @@ Back to [top](#TableOfContents)
 
 ### Navigation bar <a name="NavigationBar"></a>
 
-- common desktop/mobile: transparent, white, sky blue line on the bottom on page scroll, highlight menu item if hovered or selected, highlight sub-menu item if hovered, my account menu closes if the user clicks anywhere in the page
+- common desktop/mobile:
+	- transparent navbar when
+		- the window is at the top
+		- the header is not hovered
+		- menu/sub-menu are not opened
+		- navbar collapse menu is collapsed
+	- white navbar when
+		- the window is scrolled down
+		- the header is hovered
+		- menu/sub-menu are opened
+		- navbar collapse menu is pulled down
+	- sky blue line on the bottom of the navbar (including the navbar collapse menu when this one is pulled down) when the page is scrolled
+	- highlight menu item when hovered or selected/pulled down
+	- highlight sub-menu item when hovered
+	- "My account" menu closes when the user clicks anywhere in the page
 
-- specific desktop : dark grey menu box shadow, gallery icon link added in the desktop top nav, navbar item sub-menu closes if the user clicks anywhere in the page
-- specific mobile : light grey menu box shadow, home and gallery icon links added in the mobile top header, search input field in the mobile top header closes if the user clicks anywhere in the page, navbar item sub-menu closes if the user clicks on the header in the page, navbar collapse menu closes if the user clicks on search or My Account icon links and if the user clicks on the body of the page (apart from the header) or the footer.
+- specific desktop :
+	- dropdown menus: dark grey box shadow
+	- "Gallery" icon link added in the desktop top nav
+	- navbar item sub-menu closes when the user clicks anywhere in the page
+
+- specific mobile :
+	- dropdown menus: light grey box shadow
+	- "Home" and "Gallery" icon links added in the mobile top header
+	- search input field in the mobile top header closes when the user clicks anywhere in the page
+	- navbar item sub-menu closes when the user clicks in the header of the page
+	- navbar collapse menu closes when the user clicks on "Search" or "My Account" icon links and when the user clicks in the body of the page (apart from the header) or in the footer.
 
 <img src="" alt="" width="700">
 <br />#TO_UPDATE
@@ -65,7 +88,7 @@ Back to [top](#TableOfContents)
 
 ### Footer <a name="Footer"></a>
 
-- links to additional website pages in the purpose of the website presentation (page links not implemented)
+- Links to additional website pages in the purpose of the website presentation (page links not implemented)
 - Social media links
 - A copyright mention is displayed with my name beside a GitHub icon link which opens my [Github](https://github.com/sctlcd)
 
@@ -76,7 +99,12 @@ Back to [top](#TableOfContents)
 
 ### Landing page <a name="LandingPage"></a>
 
- - Sections: Shop now feature, order features offered, target audience, customer reviews, Share your own fashion style feature
+ - Sections:
+ 	- Shop now feature
+	- Order features offered
+	- Target audience
+	- Customer reviews
+	- Share your own fashion style feature
 <br />#TO_UPDATE
 
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_1.png" alt="Landing page" width="700">
@@ -86,6 +114,7 @@ Back to [top](#TableOfContents)
 ### Set of slides gallery <a name="GalleryImageCarousel"></a>
 
 - carousel of 4 slides of 3 images each
+- autoplay the set of slides gallery on page load
 <br />#TO_UPDATE
 
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_2.png" alt="Set of slides gallery" width="700">
@@ -96,6 +125,7 @@ Back to [top](#TableOfContents)
 
 - On click of each images of the set of slides gallery a modal image gallery opens whose purpose is to display the images in bigger size.
 - The modal image gallery opens on the image selected in the set of slides gallery.
+- autoplay the modal image gallery on page load
 - When the modal image gallery opens it pauses the cycling of the set of slides gallery. The modal image gallery cycling is maintained.  
 - When the modal image gallery closes it resumes the cycling of the set of slides gallery.
 <br />#TO_UPDATE
