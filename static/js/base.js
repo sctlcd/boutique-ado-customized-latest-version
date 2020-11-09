@@ -50,7 +50,8 @@ $(document).ready(function() {
       function() {
         // This code will execute when mouse leaves the header class element
         if ($('#main-nav.show').is(':visible') ||
-          $('.header .list-inline-item.show').is(':visible')) {
+          $('.header .list-inline-item.show').is(':visible') ||
+          $('.navbar-desktop .dropdown-menu.show').is(':visible')) {
           bgWhiteNoTransition()
         } else {
           bgTransparent();
@@ -82,9 +83,7 @@ $(document).ready(function() {
 
   // Trigger the click event on the hero-image class element
   $('.hero-image').click(function(event) {
-    // This code will execute when when the scrollbar is on the top
     if ($(window).scrollTop() == 0) {
-
       // This code will execute when when the scrollbar is on the top
       if ($('#main-nav.show').is(':visible')) {
         // Collapse the navbar collapse menu
@@ -147,16 +146,21 @@ $(document).ready(function() {
       // Collapse the navbar collapse menu
       hideNavbarCollapseMenu();
     }
-
   });
 
   // When scroll down display a bottom border in the fixed navbar,
   // including the navbar collapse menu when this one is visible
   $(window).scroll(function() {
-    // This code will execute when when the scrollbar is on the top
     if ($(this).scrollTop() == 0) {
       // This code will execute when when the scrollbar is on the top
       init();
+      if ($('#main-nav.show').is(':visible') ||
+        $('.header .list-inline-item.show').is(':visible') ||
+        $('.navbar-desktop .dropdown-menu.show').is(':visible')) {
+        bgWhiteNoTransition()
+      } else {
+        bgTransparent();
+      }
     } else {
       // This code will execute when the scrollbar is not on the top
       onPageScroll();
