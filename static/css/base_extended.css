@@ -131,10 +131,6 @@ form div > textarea {
     transition: all .2s ease-out;
 }
 
-.bg-hover-white-no-transition {
-    transition: none;
-}
-
 /* ------------------------------- navbar */
 
 /* from Bulma */
