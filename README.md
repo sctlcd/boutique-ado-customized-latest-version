@@ -53,33 +53,33 @@ Back to [top](#TableOfContents)
 
 ### Navigation bar <a name="NavigationBar"></a>
 
-- common desktop/mobile:
-	- transparent navbar when
+- Common desktop/mobile:
+	- Transparent navbar when
 		- the window is at the top
 		- the header is not hovered
 		- menu/sub-menu are not opened
 		- navbar collapse menu is collapsed
-	- white navbar when
+	- White navbar when
 		- the window is scrolled down
 		- the header is hovered
 		- menu/sub-menu are opened
 		- navbar collapse menu is pulled down
-	- sky blue line on the bottom of the navbar (including the navbar collapse menu when this one is pulled down) when the page is scrolled
-	- highlight menu item when hovered or selected/pulled down
-	- highlight sub-menu item when hovered
+	- Sky blue line on the bottom of the navbar (including the navbar collapse menu when this one is pulled down) when the page is scrolled
+	- Menu item highlighted when hovered or selected/pulled down
+	- Sub-menu item highlighted when hovered
 	- "My account" menu closes when the user clicks anywhere in the page
 
-- specific desktop :
-	- dropdown menus: dark grey box shadow
+- Specific desktop :
+	- Dropdown menus: dark grey box shadow
 	- "Gallery" icon link added in the desktop top nav
-	- navbar item sub-menu closes when the user clicks anywhere in the page
+	- Navbar item sub-menu closes when the user clicks anywhere in the page
 
-- specific mobile :
-	- dropdown menus: light grey box shadow
+- Specific mobile :
+	- Dropdown menus: light grey box shadow
 	- "Home" and "Gallery" icon links added in the mobile top header
-	- search input field in the mobile top header closes when the user clicks anywhere in the page
-	- navbar item sub-menu closes when the user clicks in the header of the page
-	- navbar collapse menu closes when the user clicks on "Search" or "My Account" icon links and when the user clicks in the body of the page (apart from the header) or in the footer.
+	- Search input field in the mobile top header closes when the user clicks anywhere in the page
+	- Navbar item sub-menu closes when the user clicks in the header of the page
+	- Navbar collapse menu closes when the user clicks on "Search" or "My Account" icon links and when the user clicks in the body of the page (apart from the header) or in the footer.
 
 <img src="" alt="" width="700">
 <br />#TO_UPDATE
@@ -99,7 +99,7 @@ Back to [top](#TableOfContents)
 
 ### Landing page <a name="LandingPage"></a>
 
- - Sections:
+ - Landing page sections:
  	- Shop now feature
 	- Order features offered
 	- Target audience
@@ -113,8 +113,8 @@ Back to [top](#TableOfContents)
 
 ### Set of slides gallery <a name="GalleryImageCarousel"></a>
 
-- carousel of 4 slides of 3 images each
-- autoplay the set of slides gallery on page load
+- Carousel of 4 slides of 3 images each
+- The set of slides gallery is autoplayed on page load/refresh
 <br />#TO_UPDATE
 
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_2.png" alt="Set of slides gallery" width="700">
@@ -123,9 +123,9 @@ Back to [top](#TableOfContents)
 
 ### Modal image gallery <a name="ModalImageGallery"></a>
 
-- On click of each images of the set of slides gallery a modal image gallery opens whose purpose is to display the images in bigger size.
+- On click on each images of the set of slides gallery a modal image gallery opens whose purpose is to display the images in bigger size.
 - The modal image gallery opens on the image selected in the set of slides gallery.
-- autoplay the modal image gallery on page load
+- The modal image gallery is autoplayed on page load/refresh
 - When the modal image gallery opens it pauses the cycling of the set of slides gallery. The modal image gallery cycling is maintained.  
 - When the modal image gallery closes it resumes the cycling of the set of slides gallery.
 <br />#TO_UPDATE
