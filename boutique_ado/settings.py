@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 
 if os.path.exists("env.py"):
     import env
@@ -131,6 +132,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.parse('postgres://qpkqedxwjycahp:b361c518f65d56d4081f835a916980694fc9747ef8ba280f4f0318c2def44e52@ec2-54-228-250-82.eu-west-1.compute.amazonaws.com:5432/dd2i7s6pi8gqa5')
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
