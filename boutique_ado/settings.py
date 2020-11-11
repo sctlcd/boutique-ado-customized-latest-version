@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'e6abc0080e6a.ngrok.io']
+ALLOWED_HOSTS = ['boutique-ado-v0.herokuapp.com', '127.0.0.1', 'localhost', 'e6abc0080e6a.ngrok.io']
 
 
 # Application definition
@@ -125,17 +125,17 @@ WSGI_APPLICATION = 'boutique_ado.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASE = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
-
-# DATABASES = {
-#     'default': dj_database_url.parse('postgres://qpkqedxwjycahp:b361c518f65d56d4081f835a916980694fc9747ef8ba280f4f0318c2def44e52@ec2-54-228-250-82.eu-west-1.compute.amazonaws.com:5432/dd2i7s6pi8gqa5')
-# }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
