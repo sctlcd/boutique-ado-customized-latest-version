@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['boutique-ado-v0.herokuapp.com', '127.0.0.1', 'localhost', '419eda5744e2.ngrok.io']
+ALLOWED_HOSTS = ['sctlcd-boutique-ado.herokuapp.com', '127.0.0.1', 'localhost', '419eda5744e2.ngrok.io']
 
 
 # Application definition
