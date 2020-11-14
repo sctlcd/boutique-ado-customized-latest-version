@@ -8,7 +8,3 @@ __pycache__/
 env
 *.sqlite3
 *.pyc
-static/images/images-showcases
-gallery/templates/gallery/gallery-copy.html
-static/js/base_copy.js
-static/js/base_extended_copy.js
