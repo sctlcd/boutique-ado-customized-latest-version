@@ -1,8 +1,9 @@
-# [Boutique Ado]()
+# [Boutique Ado](https://sctlcd-boutique-ado.herokuapp.com/)
 
 <img src="" alt="Boutique Ado" width="700">
 
-User interface improvements, look and feel, presentation, interactivity, and adding features to the initial Boutique Ado website version
+User interface improvements, look and feel, presentation, interactivity, and adding features to the initial Boutique Ado website version.
+To see [my new version of Boutique Ado website](https://sctlcd-boutique-ado.herokuapp.com/)
 
 <br>
 
@@ -321,5 +322,6 @@ Back to [top](#TableOfContents)
 - Creating-a-modal-image-gallery-with-bootstrap-components - [css-tricks](https://css-tricks.com/creating-a-modal-image-gallery-with-bootstrap-components/)
 - Bootstrap show.bs.modal Event - [tutorialspoint](https://www.tutorialspoint.com/Bootstrap-show-bs-modal-Event)
 - hidden.bs.modal Bootstrap Event - [tutorialspoint](https://www.tutorialspoint.com/hidden-bs-modal-Bootstrap-Event)
+- Favicon in django app - [stackoverflow](https://stackoverflow.com/questions/21938028/how-can-i-get-a-favicon-to-show-up-in-my-django-app)
 
 Back to [top](#TableOfContents)
