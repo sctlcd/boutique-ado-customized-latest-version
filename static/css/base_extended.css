@@ -357,9 +357,12 @@ input[name='q']::placeholder {
   margin-bottom: -10rem;
 }
 
-.footer,
+.footer {
+	height: 15rem;
+}
+
 .push {
-  height: 15rem;
+  height: 17rem;
 }
 
 .footer {
