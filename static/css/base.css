@@ -376,9 +376,8 @@ nav .nav-item a.nav-link:hover {
   margin-bottom: -10rem;
 }
 
-.footer,
-.push {
-  height: 15rem;
+.footer {
+	height: 15rem;
 }
 
 .footer {
