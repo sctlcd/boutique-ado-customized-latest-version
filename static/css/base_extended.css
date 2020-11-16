@@ -237,13 +237,13 @@ nav .nav-item a.nav-link:hover {
 /* ------------------------------- products */
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: #fafafa;
-	z-index: -1;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: fixed;
+		background: #fafafa;
+		z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
@@ -251,20 +251,14 @@ a.category-badge > span.badge:hover {
     color: #fafafa!important;
 }
 
-.btt-button-top {
-    height: 42px;
-    width: 42px;
+.btt-button-top,
+.btt-button-down {
 		position: fixed;
-		bottom: 60px;
-		right: 10px;
+		right: 0.6rem;
 }
 
 .btt-button-down {
-	height: 42px;
-	width: 42px;
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
+		bottom: 0.6rem;
 }
 
 .btt-link,
@@ -362,7 +356,7 @@ input[name='q']::placeholder {
 }
 
 .push {
-  height: 17rem;
+  height: 19rem;
 }
 
 .footer {
@@ -540,6 +534,10 @@ input[name='q']::placeholder {
 /* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
 
+	.footer .container {
+		max-width: 80%;
+	}
+
 	.nav-link {
 			padding: 0.15rem;
 	}
@@ -594,6 +592,22 @@ input[name='q']::placeholder {
 
 	.no-result-found-text h6 {
 		font-size: 0.8rem;
+	}
+
+	.btt-button-top {
+		bottom: 2.5rem;
+	}
+
+	.btt-button-top,
+	.btt-button-down {
+		height: 1.6rem;
+		width: 1.6rem;
+		right: 0.5rem;
+	}
+
+	.fa-arrow-up,
+	.fa-arrow-down {
+		font-size: 0.6rem;
 	}
 }
 
@@ -650,6 +664,22 @@ input[name='q']::placeholder {
 
 	.no-result-found-text h6 {
 		font-size: 0.9rem;
+	}
+
+	.btt-button-top {
+		bottom: 3.25rem;
+	}
+
+	.btt-button-top,
+	.btt-button-down {
+		height: 2.2rem;
+		width: 2.2rem;
+	}
+
+	.fa-arrow-up,
+	.fa-arrow-down {
+		font-size: 0.8rem;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -709,6 +739,17 @@ input[name='q']::placeholder {
 
 		.no-result-found-text h6 {
 			font-size: 1rem;
+		}
+
+		.btt-button-top {
+			bottom: 3.75rem;
+		}
+
+		.btt-button-top,
+		.btt-button-down {
+			height: 2.6rem;
+			width: 2.6rem;
+		}
 }
 
 /* Large devices (desktops, 992px and up) */

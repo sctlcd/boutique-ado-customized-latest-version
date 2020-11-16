@@ -1,7 +1,7 @@
-$('.btt-link-top').click(function(e) {
+$('.btt-button-top').click(function(e) {
   window.scrollTo(0, 0)
 })
-$('.btt-link-bottom').click(function(e) {
+$('.btt-button-down').click(function(e) {
   window.scrollTo(0, document.body.scrollHeight)
 })
 
