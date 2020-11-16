@@ -2,7 +2,7 @@
 
 <img src="" alt="Boutique Ado" width="700">
 
-User interface improvements, look and feel, presentation, interactivity, and adding features to the initial Boutique Ado website version.
+User interface improvements, look and feel, presentation, interactivity, adding features relative to user interface improvements (gallery, button page down) to the initial Boutique Ado website version.
 To see [my new version of Boutique Ado website](https://sctlcd-boutique-ado.herokuapp.com/)
 
 <br>
@@ -44,7 +44,7 @@ To see [my new version of Boutique Ado website](https://sctlcd-boutique-ado.hero
 
 ## About <a name="About"></a>
 
-The purpose of this project is to improve the user interfaces: look and feel, the presentation and the interactivity of the initial Boutique Ado website version and adding features.
+The purpose of this project is to improve the user interfaces: look and feel, the presentation and the interactivity of the initial Boutique Ado website version and adding features relative to user interface improvements (gallery, button page down).
 
 Back to [top](#TableOfContents)
 
