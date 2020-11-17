@@ -24,7 +24,7 @@ form div > textarea {
 /* ------------------------------- button */
 
 .btn-black {
-    background: black;
+    background: black !important;
     color: #fafafa;
 }
 
@@ -76,11 +76,8 @@ form div > textarea {
 		border: 1px solid #68c6e6;
 }
 
-.btn-black:hover,
-.btn-skyblue:active,
-.btn-skyblue:focus,
-.btn-black:hover i {
-    background: #222;
+.btn-black:hover {
+    background: #222 !important;
     color: #fafafa;
 		border: 1px solid #222;
 }
@@ -356,7 +353,7 @@ input[name='q']::placeholder {
 }
 
 .push {
-  height: 19rem;
+  height: 29rem;
 }
 
 .footer {

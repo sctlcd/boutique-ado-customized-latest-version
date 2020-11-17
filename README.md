@@ -1,8 +1,9 @@
 # [Boutique Ado](https://sctlcd-boutique-ado.herokuapp.com/)
 
-<img src="" alt="Boutique Ado" width="700">
+<img src="#" alt="Boutique Ado" width="700">
 
-User interface improvements, look and feel, presentation, interactivity, and adding features to the initial Boutique Ado website version.
+User interface improvements, look and feel, presentation, interactivity, adding features relative to user interface improvements (image gallery, go to page bottom button, highlighting menu/sub-menu items, "Home" icon link on mobile devices, navbar display change on its hover position and on window scroll position) to the initial Boutique Ado website version.
+<br />
 To see [my new version of Boutique Ado website](https://sctlcd-boutique-ado.herokuapp.com/)
 
 <br>
@@ -44,7 +45,7 @@ To see [my new version of Boutique Ado website](https://sctlcd-boutique-ado.hero
 
 ## About <a name="About"></a>
 
-The purpose of this project is to improve the user interfaces: look and feel, the presentation and the interactivity of the initial Boutique Ado website version and adding features.
+The purpose of this project is to improve the user interfaces: look and feel, the presentation and the interactivity of the initial Boutique Ado website version and adding features relative to user interface improvements (image gallery, go to page bottom button, highlighting menu/sub-menu items, "Home" icon link on mobile devices, navbar display change on its hover position and on window scroll position).
 
 Back to [top](#TableOfContents)
 
@@ -82,7 +83,7 @@ Back to [top](#TableOfContents)
 	- Navbar item sub-menu closes when the user clicks in the header of the page
 	- Navbar collapse menu closes when the user clicks on "Search" or "My Account" icon links and when the user clicks in the body of the page (apart from the header) or in the footer.
 
-<img src="" alt="" width="700">
+<img src="#" alt="" width="700">
 <br />#TO_UPDATE
 
 Back to [top](#TableOfContents)
@@ -93,7 +94,7 @@ Back to [top](#TableOfContents)
 - Social media links
 - A copyright mention is displayed with my name beside a GitHub icon link which opens my [Github](https://github.com/sctlcd)
 
-<img src="" alt="" width="700">
+<img src="#" alt="" width="700">
 <br />#TO_UPDATE
 
 Back to [top](#TableOfContents)
@@ -140,7 +141,7 @@ Back to [top](#TableOfContents)
 - Displays an humoristic image and a message informing the user
 - Offers a link to go back to Products page.
 
-<img src="" alt="" width="700">
+<img src="#" alt="" width="700">
 <br />#TO_UPDATE
 
 Back to [top](#TableOfContents)
@@ -149,7 +150,7 @@ Back to [top](#TableOfContents)
 
 - Adding a page down button, in addition to the page up button
 
-<img src="" alt="" width="700">
+<img src="#" alt="" width="700">
 <br />#TO_UPDATE
 
 Back to [top](#TableOfContents)
@@ -318,7 +319,7 @@ Back to [top](#TableOfContents)
 - Using ngrok on Windows-10 - [youtube](https://www.youtube.com/watch?v=9gaaVbX0USI&ab_channel=ChuckSeverance)
 - Testing our Django App to be publicly accessible using NGROK - [medium](https://medium.com/@iot24hours/testing-our-django-app-to-be-publicly-accessible-using-ngrok-9b73851c46e0)
 - jQuery documentation - [jQuery](https://jquery.com/)
-- Bootsrtap 4 documentation - [Bootsrtap 4](https://getbootstrap.com/)
+- Bootstrap 4 documentation - [Bootstrap 4](https://getbootstrap.com/)
 - Creating-a-modal-image-gallery-with-bootstrap-components - [css-tricks](https://css-tricks.com/creating-a-modal-image-gallery-with-bootstrap-components/)
 - Bootstrap show.bs.modal Event - [tutorialspoint](https://www.tutorialspoint.com/Bootstrap-show-bs-modal-Event)
 - hidden.bs.modal Bootstrap Event - [tutorialspoint](https://www.tutorialspoint.com/hidden-bs-modal-Bootstrap-Event)
