@@ -22,36 +22,11 @@ form div > input {
     color: #fafafa;
 }
 
-.btn-skyblue {
-    background: #68c6e6;
+/* .bg-hover-white form button.btn-black:hover {
+    background: #68c6e6c7 !important;
     color: #fafafa;
-}
-
-.btn-outline-black {
-    background: #fafafa;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
-}
-
-.btn-outline-skyblue {
-    background: #fafafa;
-    color: #68c6e6 !important; /* use important to override link colors for <a> elements */
-    border: 1px solid #68c6e6;
-}
-
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
-    color: #fafafa !important;
-}
-
-.btn-outline-skyblue:hover,
-.btn-outline-skyblue:active,
-.btn-outline-skyblue:focus {
-    background: #68c6e6;
-    color: #fafafa !important;
-}
+		border: 1px solid #68c6e6;
+} */
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -62,22 +37,6 @@ form div > input {
 	background: #68c6e6;
 	color: #fafafa;
 	border: 1px solid #68c6e6;
-}
-
-.btn-skyblue:hover,
-.btn-skyblue:active,
-.btn-skyblue:focus {
-    background: #68c6e6d1;
-    color: #fafafa;
-		border: 1px solid #68c6e6;
-}
-
-.btn-black:hover,
-.btn-skyblue:active,
-.btn-skyblue:focus {
-    background: #222;
-    color: #fafafa;
-		border: 1px solid #222;
 }
 
 /* ------------------------------- text, border, background style */
@@ -179,9 +138,14 @@ form div > input {
 		border: 1px solid #68c6e6 !important;
 }
 
-.bg-hover-white:hover form button,
 .bg-hover-white form button {
 		background: #68c6e6 !important;
+}
+
+.bg-hover-white form button:hover {
+	background: #68c6e6c7 !important;
+	color: #fafafa;
+	/* border: 1px solid #68c6e6; */
 }
 
 .bg-hover-white:hover #main-nav ul li .nav-link,
@@ -502,17 +466,6 @@ nav .nav-item a.nav-link:hover {
 			font-size: .7rem;
 	}
 
-	.btn.btn-outline-black.rounded-0,
-	.btn.btn-black.rounded-0 {
-			padding: .375rem .375rem;
-	}
-
-	.btn.btn-outline-black.rounded-0.btn-lg,
-	.btn.btn-black.rounded-0.btn-lg {
-			padding: .375rem .375rem;
-			font-size: .75rem;
-	}
-
 	.display-4.logo-font.text-black {
 			font-size: 1.3rem;
 	}
@@ -571,17 +524,6 @@ nav .nav-item a.nav-link:hover {
 			font-size: .8rem;
 	}
 
-	.btn.btn-outline-black.rounded-0,
-	.btn.btn-black.rounded-0 {
-			padding: .375rem .375rem;
-	}
-
-	.btn.btn-outline-black.rounded-0.btn-lg,
-	.btn.btn-black.rounded-0.btn-lg {
-			padding: .375rem .375rem;
-			font-size: .75rem;
-	}
-
 	.display-4.logo-font.text-black {
 			font-size: 2.2rem;
 	}
@@ -638,17 +580,6 @@ nav .nav-item a.nav-link:hover {
 
     #delivery-banner h4 {
         font-size: .9rem;
-    }
-
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
-        padding: .375rem .375rem;
-    }
-
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
-        padding: .375rem .375rem;
-        font-size: .75rem;
     }
 
 		.display-4.logo-font.text-black {

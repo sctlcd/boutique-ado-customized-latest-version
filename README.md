@@ -2,7 +2,7 @@
 
 <img src="#" alt="Boutique Ado" width="700">
 
-User interface improvements, look and feel, presentation, interactivity, adding features relative to user interface improvements (gallery, go to page bottom button) to the initial Boutique Ado website version.
+User interface improvements, look and feel, presentation, interactivity, adding features relative to user interface improvements (image gallery, go to page bottom button, highlighting menu/sub-menu items, "Home" icon link on mobile devices, navbar display change on its hover and on window scroll position) to the initial Boutique Ado website version.
 <br />
 To see [my new version of Boutique Ado website](https://sctlcd-boutique-ado.herokuapp.com/)
 
@@ -45,7 +45,7 @@ To see [my new version of Boutique Ado website](https://sctlcd-boutique-ado.hero
 
 ## About <a name="About"></a>
 
-The purpose of this project is to improve the user interfaces: look and feel, the presentation and the interactivity of the initial Boutique Ado website version and adding features relative to user interface improvements (gallery, go to page bottom button).
+The purpose of this project is to improve the user interfaces: look and feel, the presentation and the interactivity of the initial Boutique Ado website version and adding features relative to user interface improvements (image gallery, go to page bottom button, highlighting menu/sub-menu items, "Home" icon link on mobile devices, navbar display change on its hover and on window scroll position).
 
 Back to [top](#TableOfContents)
 
@@ -319,7 +319,7 @@ Back to [top](#TableOfContents)
 - Using ngrok on Windows-10 - [youtube](https://www.youtube.com/watch?v=9gaaVbX0USI&ab_channel=ChuckSeverance)
 - Testing our Django App to be publicly accessible using NGROK - [medium](https://medium.com/@iot24hours/testing-our-django-app-to-be-publicly-accessible-using-ngrok-9b73851c46e0)
 - jQuery documentation - [jQuery](https://jquery.com/)
-- Bootsrtap 4 documentation - [Bootsrtap 4](https://getbootstrap.com/)
+- Bootstrap 4 documentation - [Bootstrap 4](https://getbootstrap.com/)
 - Creating-a-modal-image-gallery-with-bootstrap-components - [css-tricks](https://css-tricks.com/creating-a-modal-image-gallery-with-bootstrap-components/)
 - Bootstrap show.bs.modal Event - [tutorialspoint](https://www.tutorialspoint.com/Bootstrap-show-bs-modal-Event)
 - hidden.bs.modal Bootstrap Event - [tutorialspoint](https://www.tutorialspoint.com/hidden-bs-modal-Bootstrap-Event)
