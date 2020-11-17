@@ -1,14 +1,14 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    /* credit https://www.selbekk.io/blog/2019/06/how-to-overlay-your-background-images/ */
-		background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/media/home/hero_image/hero-image-background-1920-min.jpg') no-repeat center center fixed;
-    background-size: cover;
-		height: 100vh;
-    background-color: #555;
-    font-family: 'Lato';
+  /* credit https://www.selbekk.io/blog/2019/06/how-to-overlay-your-background-images/ */
+	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) , url('/media/home/hero_image/hero-image-background-1920-min.jpg') no-repeat center center fixed;
+  background-size: cover;
+	height: 100vh;
+  background-color: #555;
+  font-family: 'Lato';
 }
 
 form div > input {
@@ -18,15 +18,9 @@ form div > input {
 /* ------------------------------- button */
 
 .btn-black {
-    background: black;
-    color: #fafafa;
+  background: black;
+  color: #fafafa;
 }
-
-/* .bg-hover-white form button.btn-black:hover {
-    background: #68c6e6c7 !important;
-    color: #fafafa;
-		border: 1px solid #68c6e6;
-} */
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -42,35 +36,35 @@ form div > input {
 /* ------------------------------- text, border, background style */
 
 .text-black {
-    color: #000 !important;
+  color: #000 !important;
 }
 
 .text-white {
-    color: #fafafa !important;
+  color: #fafafa !important;
 }
 
 .text-skyblue {
-    color: #68c6e6 !important;
+  color: #68c6e6 !important;
 }
 
 .text-info {
-    color: #fafafa!important;
+  color: #fafafa!important;
 }
 
 .border-black {
-    border: 1px solid black !important;
+  border: 1px solid black !important;
 }
 
 .border-skyblue {
-    border: 1px solid #68c6e6 !important;
+  border: 1px solid #68c6e6 !important;
 }
 
 .bg-skyblue {
-    background: #68c6e6 !important;
+  background: #68c6e6 !important;
 }
 
 .bg-transparent {
-		background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 .bg-white {
@@ -78,85 +72,84 @@ form div > input {
 }
 
 .bg-hover-white {
-    transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 
 .bg-hover-white-no-transition {
-    transition: none;
+  transition: none;
 }
 
 .bg-hover-white,
 .bg-hover-white:hover {
-    background: #fafafa !important;
+  background: #fafafa !important;
 }
 
 /* ------------------------------- navbar */
 
 /* from Bulma */
 .icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .logo-font {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .main-logo-link {
-    width: fit-content;
+  width: fit-content;
 }
 
 .main-logo-link img {
-		height: 30px;
-	  width: 30px;
-	  margin: 0px 10px 16px 10px;
+	height: 30px;
+  width: 30px;
+  margin: 0px 10px 16px 10px;
 }
 
 #mobile-home {
-		color: white!important;
+	color: white!important;
 }
 
 .bg-hover-white:hover h2,
 .bg-hover-white:hover ul a i,
 .bg-hover-white h2,
 .bg-hover-white ul a i {
-		color: #68c6e6 !important;
+	color: #68c6e6 !important;
 }
 
 .bg-hover-white:hover ul a p,
 .bg-hover-white ul a p {
-		color: black !important;
+	color: black !important;
 }
 
 .bg-hover-white:hover form input,
 .bg-hover-white:hover form button,
 .bg-hover-white form input,
 .bg-hover-white form button {
-		border: 1px solid #68c6e6 !important;
+	border: 1px solid #68c6e6 !important;
 }
 
 .bg-hover-white form button {
-		background: #68c6e6 !important;
+	background: #68c6e6 !important;
 }
 
 .bg-hover-white form button:hover {
 	background: #68c6e6c7 !important;
 	color: #fafafa;
-	/* border: 1px solid #68c6e6; */
 }
 
 .bg-hover-white:hover #main-nav ul li .nav-link,
 .bg-hover-white #main-nav ul li .nav-link {
-		color: black !important;
+	color: black !important;
 }
 
 .bg-hover-white:hover.fixed-top,
 .bg-hover-white.fixed-top {
-		-webkit-box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
-		box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
+	-webkit-box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
+	box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
 }
 
 .bg-hover-white:hover.fixed-top .list-inline-item .dropdown-menu-mobile-search.show,
@@ -167,149 +160,149 @@ form div > input {
 
 .bg-hover-white:hover nav li a i,
 .bg-hover-white nav li a i {
-		color: #68c6e6 !important;
+	color: #68c6e6 !important;
 }
 
 .bg-hover-white:hover nav li a p,
 .bg-hover-white nav li a p {
-		color: black !important;
+	color: black !important;
 }
 
 .navbar-toggler {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .custom-toggler .navbar-toggler-icon {
-  	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .custom-toggler.navbar-toggler {
-  	border-color: #fafafa;
+  border-color: #fafafa;
 }
 
 .bg-hover-white:hover .navbar-toggler,
 .bg-hover-white .navbar-toggler {
-    background-color: #fafafa;
+  background-color: #fafafa;
 }
 
 .bg-hover-white:hover .custom-toggler .navbar-toggler-icon,
 .bg-hover-white .custom-toggler .navbar-toggler-icon {
-  	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .bg-hover-white:hover .custom-toggler.navbar-toggler,
 .bg-hover-white .custom-toggler.navbar-toggler {
-  	border-color: rgba(0,0,0, 0.2);
+  border-color: rgba(0,0,0, 0.2);
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
-    background-color: #dee2e6;
+  background-color: #dee2e6;
 }
 
 .header .list-inline-item.show a.nav-link {
-		background-color: #dee2e66e;
+	background-color: #dee2e66e;
 }
 
 .header .list-inline-item a.nav-link:hover {
-		background-color: #dee2e66e;
+	background-color: #dee2e66e;
 }
 
 nav .nav-item.show a.nav-link {
-		background-color: #dee2e66e;
+	background-color: #dee2e66e;
 }
 nav .nav-item a.nav-link:hover {
-		background-color: #dee2e66e;
+	background-color: #dee2e66e;
 }
 
 .header .list-inline-item.show .dropdown-menu.show,
 .navbar-desktop .nav-item.show .dropdown-menu.show {
-		-webkit-box-shadow: 0px 5px 10px 0px #27363c;
-		box-shadow: 0px 5px 10px 0px #27363c;
+	-webkit-box-shadow: 0px 5px 10px 0px #27363c;
+	box-shadow: 0px 5px 10px 0px #27363c;
 }
 
 .navbar-mobile .nav-item.show .dropdown-menu.show {
-		-webkit-box-shadow: 0px 5px 10px 0px #dee2e6;
-		box-shadow: 0px 5px 10px 0px #dee2e6;
-		margin-bottom: 0.7rem;
+	-webkit-box-shadow: 0px 5px 10px 0px #dee2e6;
+	box-shadow: 0px 5px 10px 0px #dee2e6;
+	margin-bottom: 0.7rem;
 }
 
 .navbar-mobile .nav-item.show a.nav-link {
-		margin-right: 0px !important;
+	margin-right: 0px !important;
 }
 
 .navbar-mobile .nav-item a.nav-link {
-		margin-right: 0px !important;
+	margin-right: 0px !important;
 }
 
 /* ------------------------------- hero image */
 
 .shop-now-button {
-    background: black;
-    color: #fafafa;
-    min-width: 16rem;
+  background: black;
+  color: #fafafa;
+  min-width: 16rem;
 }
 
 /* ------------------------------- features icons */
 
 .features-icons {
-	  padding-top: 7rem;
-	  padding-bottom: 7rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .features-icons .features-icons-item {
-	  max-width: 20rem;
+	max-width: 20rem;
 }
 
 .features-icons .features-icons-item .features-icons-icon {
-	  height: 7rem;
+	height: 7rem;
 }
 
 .features-icons .features-icons-item .features-icons-icon i {
-	  font-size: 4.5rem;
+	font-size: 4.5rem;
 }
 
 .features-icons .features-icons-item:hover .features-icons-icon i {
-	  font-size: 5rem;
+	font-size: 5rem;
 }
 
 /* ------------------------------- Image Showcases */
 
 .showcase .showcase-text {
-	  padding: 3rem;
+	padding: 3rem;
 }
 
 .showcase .showcase-img {
-	  min-height: 30rem;
-	  background-size: cover;
+  min-height: 30rem;
+  background-size: cover;
 }
 
 .showcase-img {
-		max-width: 100%;
-	  height: auto;
-		background-repeat: no-repeat;
-  	background-size: cover;
-		background-position: center center;
+	max-width: 100%;
+  height: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 
 /* ------------------------------- testimonial */
 
 .testimonial {
-	  padding-top: 7rem;
-	  padding-bottom: 7rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .testimonial-header {
-	  padding-bottom: 4rem;
+	padding-bottom: 4rem;
 }
 
 .testimonial .testimonial-item {
-	  max-width: 18rem;
+	max-width: 18rem;
 }
 
 .testimonial .testimonial-item img {
-	  max-width: 12rem;
-		-webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
-	  box-shadow: 0px 5px 5px 0px #adb5bd;
+  max-width: 12rem;
+	-webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
 }
 
 .testimonial .fa-comments {
@@ -319,15 +312,15 @@ nav .nav-item a.nav-link:hover {
 /* ------------------------------- gallery */
 
 .gallery {
-		background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('/media/home/gallery/gallery-background-1920-min.jpg') no-repeat left top fixed;
-    background-size: cover;
-		color: #555;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('/media/home/gallery/gallery-background-1920-min.jpg') no-repeat left top fixed;
+  background-size: cover;
+	color: #555;
 }
 
 .share-now-button {
-    background: black;
-    color: #fafafa;
-    min-width: 6rem;
+  background: black;
+  color: #fafafa;
+  min-width: 6rem;
 }
 
 /* ------------------------------- footer */
@@ -335,8 +328,6 @@ nav .nav-item a.nav-link:hover {
 /* credit: https://css-tricks.com/couple-takes-sticky-footer/ */
 .wrapper {
   min-height: 100%;
-	/* Equal to height of footer */
-  /* But also accounting for potential margin-bottom of last child */
   margin-bottom: -10rem;
 }
 
@@ -356,80 +347,80 @@ nav .nav-item a.nav-link:hover {
 
 .footer .menu-items a:hover,
 .footer .social-links i:hover {
-		color: #adb5bd!important;
+	color: #adb5bd!important;
 }
 
 .footer .fa-github:hover {
-		color: #adb5bd!important;
+	color: #adb5bd!important;
 }
 
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-		/* high Z index to assure it's always on top of everything else. */
-    z-index: 99999999999;
+  position: fixed;
+  top: 72px;
+  right: 15px;
+	/* high Z index to assure it's always on top of everything else. */
+  z-index: 99999999999;
 }
 
 .custom-toast {
-    overflow: visible;
+  overflow: visible;
 }
 
 .toast-capper {
-    height: 2px;
+  height: 2px;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: 10px solid black;
-    position: absolute;
-    top: -10px;
-    right: 36px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 10px solid black;
+  position: absolute;
+  top: -10px;
+  right: 36px;
 }
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
-    border-bottom-color: #007bff !important;
+  border-bottom-color: #007bff !important;
 }
 
 .arrow-secondary {
-    border-bottom-color: #6c757d !important;
+  border-bottom-color: #6c757d !important;
 }
 
 .arrow-success {
-    border-bottom-color: #28a745 !important;
+  border-bottom-color: #28a745 !important;
 }
 
 .arrow-danger {
-    border-bottom-color: #dc3545 !important;
+  border-bottom-color: #dc3545 !important;
 }
 
 .arrow-warning {
-    border-bottom-color: #ffc107 !important;
+  border-bottom-color: #ffc107 !important;
 }
 
 .arrow-info {
-    border-bottom-color: #17a2b8 !important;
+  border-bottom-color: #17a2b8 !important;
 }
 
 .arrow-light {
-    border-bottom-color: #f8f9fa !important;
+  border-bottom-color: #f8f9fa !important;
 }
 
 .arrow-dark {
-    border-bottom-color: #343a40 !important;
+  border-bottom-color: #343a40 !important;
 }
 
 .bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* -------------------------------- Media Queries */
@@ -438,15 +429,15 @@ nav .nav-item a.nav-link:hover {
 @media only screen and (max-width: 575px) {
 
 	.nav-link {
-			padding: 0.15rem;
+		padding: 0.15rem;
 	}
 
 	.nav-link i.fa-lg {
-			font-size: 0.9rem;
+		font-size: 0.9rem;
 	}
 
 	.nav-link p {
-			font-size: 0.6rem;
+		font-size: 0.6rem;
 	}
 
 	.dropdown-menu a, .nav-item a {
@@ -458,37 +449,37 @@ nav .nav-item a.nav-link:hover {
 	}
 
 	.navbar-toggler {
-			padding: .2rem .2rem;
-			font-size: 0.5rem;
+		padding: .2rem .2rem;
+		font-size: 0.5rem;
 	}
 
 	#delivery-banner h4 {
-			font-size: .7rem;
+		font-size: .7rem;
 	}
 
 	.display-4.logo-font.text-black {
-			font-size: 1.3rem;
+		font-size: 1.3rem;
 	}
 
 	.shop-now-button {
-			min-width: 2.6rem;
-			font-size: 0.8rem;
+		min-width: 2.6rem;
+		font-size: 0.8rem;
 	}
 
 	.features-icons .features-icons-item .features-icons-icon i {
-		  font-size: 3rem;
+		font-size: 3rem;
 	}
 
 	.features-icons .features-icons-item:hover .features-icons-icon i {
-		  font-size: 3.5rem;
+		font-size: 3.5rem;
 	}
 
 	.gallery h2 {
-			font-size: 1.3rem;
+		font-size: 1.3rem;
 	}
 
 	.gallery .share-now-button {
-			font-size: .8rem;
+		font-size: .8rem;
 	}
 
 	.footer {
@@ -504,49 +495,49 @@ nav .nav-item a.nav-link:hover {
 	}
 
 	.nav-link {
-			padding: 0.15rem;
+		padding: 0.15rem;
 	}
 
 	.nav-link i.fa-lg {
-			font-size: 1rem;
+		font-size: 1rem;
 	}
 
 	.nav-link p {
-			font-size: 0.8rem;
+		font-size: 0.8rem;
 	}
 
 	.navbar-toggler {
-			padding: .4rem .4rem;
-			font-size: 0.6rem;
+		padding: .4rem .4rem;
+		font-size: 0.6rem;
 	}
 
 	#delivery-banner h4 {
-			font-size: .8rem;
+		font-size: .8rem;
 	}
 
 	.display-4.logo-font.text-black {
-			font-size: 2.2rem;
+		font-size: 2.2rem;
 	}
 
 	.shop-now-button {
-			min-width: 6rem;
-			font-size: 1rem;
+		min-width: 6rem;
+		font-size: 1rem;
 	}
 
 	.features-icons .features-icons-item .features-icons-icon i {
-		  font-size: 3.5rem;
+		font-size: 3.5rem;
 	}
 
 	.features-icons .features-icons-item:hover .features-icons-icon i {
-		  font-size: 4rem;
+		font-size: 4rem;
 	}
 
 	.gallery h2 {
-			font-size: 1.6rem;
+		font-size: 1.6rem;
 	}
 
 	.gallery .share-now-button {
-			font-size: 1rem;
+		font-size: 1rem;
 	}
 
 	.footer {
@@ -557,100 +548,100 @@ nav .nav-item a.nav-link:hover {
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-		.container {
-			max-width: 80%;
-		}
+	.container {
+		max-width: 80%;
+	}
 
-    .nav-link {
-        padding: 0.15rem;
-    }
+  .nav-link {
+    padding: 0.15rem;
+  }
 
-    .nav-link i.fa-lg {
-        font-size: 1rem;
-    }
+  .nav-link i.fa-lg {
+    font-size: 1rem;
+  }
 
-		.nav-link p {
-				font-size: 1rem;
-		}
+	.nav-link p {
+		font-size: 1rem;
+	}
 
-    .navbar-toggler {
-        padding: .4rem .4rem;
-        font-size: 0.8rem;
-    }
+  .navbar-toggler {
+    padding: .4rem .4rem;
+    font-size: 0.8rem;
+  }
 
-    #delivery-banner h4 {
-        font-size: .9rem;
-    }
+  #delivery-banner h4 {
+    font-size: .9rem;
+  }
 
-		.display-4.logo-font.text-black {
-        font-size: 2.5rem;
-    }
+	.display-4.logo-font.text-black {
+    font-size: 2.5rem;
+  }
 
-		.shop-now-button {
-		    min-width: 8rem;
-				font-size: 1.2rem;
-		}
+	.shop-now-button {
+    min-width: 8rem;
+		font-size: 1.2rem;
+	}
 
-		.features-icons .features-icons-item .features-icons-icon i {
-			  font-size: 4rem;
-		}
+	.features-icons .features-icons-item .features-icons-icon i {
+		font-size: 4rem;
+	}
 
-		.features-icons .features-icons-item:hover .features-icons-icon i {
-			  font-size: 4.5rem;
-		}
+	.features-icons .features-icons-item:hover .features-icons-icon i {
+		font-size: 4.5rem;
+	}
 
-		.showcase .showcase-text {
-    		padding: 7rem;
-  	}
+	.showcase .showcase-text {
+  	padding: 7rem;
+	}
 
-		.gallery h2 {
-				font-size: 1.8rem;
-		}
+	.gallery h2 {
+		font-size: 1.8rem;
+	}
 
-		.gallery .share-now-button {
-				font-size: 1rem;
-		}
+	.gallery .share-now-button {
+		font-size: 1rem;
+	}
 
-		.footer {
-			padding-top: 4rem;
-		}
+	.footer {
+		padding-top: 4rem;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-	  .container {
-	    max-width: 80%;
-	  }
+  .container {
+    max-width: 80%;
+  }
 
-		.display-4.logo-font.text-black {
-        font-size: 3rem;
-    }
+	.display-4.logo-font.text-black {
+    font-size: 3rem;
+  }
 
-		.shop-now-button {
-		    min-width: 10rem;
-				font-size: 1.4rem;
-		}
+	.shop-now-button {
+    min-width: 10rem;
+		font-size: 1.4rem;
+	}
 
-		.features-icons .features-icons-item .features-icons-icon i {
-			  font-size: 4rem;
-		}
+	.features-icons .features-icons-item .features-icons-icon i {
+		font-size: 4rem;
+	}
 
-		.features-icons .features-icons-item:hover .features-icons-icon i {
-			  font-size: 4.5rem;
-		}
+	.features-icons .features-icons-item:hover .features-icons-icon i {
+		font-size: 4.5rem;
+	}
 
-		.gallery h2 {
-				font-size: 2rem;
-		}
+	.gallery h2 {
+		font-size: 2rem;
+	}
 
-		.gallery .share-now-button {
-				font-size: 1.2rem;
-		}
+	.gallery .share-now-button {
+		font-size: 1.2rem;
+	}
 
-		 .footer {
- 			padding-top: 5rem;
- 		}
+  .footer {
+		padding-top: 5rem;
+	}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

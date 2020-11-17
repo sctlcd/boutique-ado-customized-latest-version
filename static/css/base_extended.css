@@ -1,10 +1,10 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-		background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
-    font-family: 'Lato';
+	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
+  font-family: 'Lato';
 }
 
 form div > input,
@@ -14,50 +14,58 @@ form div > textarea {
 }
 
 .header-container {
-    padding-top: 4rem;
+  padding-top: 4rem;
 }
 
-.wrapper .container .bag-container,
 .wrapper .container .allauth-container {
-	margin-bottom: 26rem;
+	margin-bottom: 27rem;
 }
+
+.wrapper .profile-container {
+	margin-bottom: 3rem;
+}
+
+.push-bag-empty  {
+	height: 27rem;
+}
+
 /* ------------------------------- button */
 
 .btn-black {
-    background: black !important;
-    color: #fafafa;
+  background: black !important;
+  color: #fafafa;
 }
 
 .btn-skyblue {
-    background: #68c6e6;
-    color: #fafafa;
+  background: #68c6e6;
+  color: #fafafa;
 }
 
 .btn-outline-black {
-    background: #fafafa;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+  background: #fafafa;
+  color: black !important;
+  border: 1px solid black;
 }
 
 .btn-outline-skyblue {
-    background: #fafafa;
-    color: #68c6e6 !important; /* use important to override link colors for <a> elements */
-    border: 1px solid #68c6e6;
+  background: #fafafa;
+  color: #68c6e6 !important;
+  border: 1px solid #68c6e6;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus,
 .btn-outline-black:hover i {
-    background: black;
-    color: #fafafa !important;
+  background: black;
+  color: #fafafa !important;
 }
 
 .btn-outline-skyblue:hover,
 .btn-outline-skyblue:active,
 .btn-outline-skyblue:focus {
-    background: #68c6e6;
-    color: #fafafa !important;
+  background: #68c6e6;
+  color: #fafafa !important;
 }
 
 .shop-now-button:hover,
@@ -71,29 +79,29 @@ form div > textarea {
 .btn-skyblue:hover,
 .btn-skyblue:active,
 .btn-skyblue:focus {
-    background: #68c6e6c7;
-    color: #fafafa;
-		border: 1px solid #68c6e6;
+  background: #68c6e6c7;
+  color: #fafafa;
+	border: 1px solid #68c6e6;
 }
 
 .btn-black:hover {
-    background: #222 !important;
-    color: #fafafa;
-		border: 1px solid #222;
+  background: #222 !important;
+  color: #fafafa;
+	border: 1px solid #222;
 }
 
 /* ------------------------------- text, border, background style */
 
 .text-black {
-    color: #000 !important;
+  color: #000 !important;
 }
 
 .text-white {
-    color: #fafafa !important;
+  color: #fafafa !important;
 }
 
 .text-skyblue {
-    color: #68c6e6 !important;
+  color: #68c6e6 !important;
 }
 
 .text-grey {
@@ -101,11 +109,11 @@ form div > textarea {
 }
 
 .border-black {
-    border: 1px solid black !important;
+  border: 1px solid black !important;
 }
 
 .border-skyblue {
-    border: 1px solid #68c6e6 !important;
+  border: 1px solid #68c6e6 !important;
 }
 
 .border-grey {
@@ -113,38 +121,38 @@ form div > textarea {
 }
 
 .bg-skyblue {
-    background: #68c6e6!important;
+  background: #68c6e6!important;
 }
 
 .bg-white {
-    background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
+  background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
 }
 
 .bg-transparent {
-		background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 .bg-hover-white {
-    transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 
 /* ------------------------------- navbar */
 
 /* from Bulma */
 .icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .logo-font {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .main-logo-link {
-    width: fit-content;
+  width: fit-content;
 }
 
 .main-logo-link img {
@@ -154,7 +162,7 @@ form div > textarea {
 }
 
  #mobile-home i {
-		color: #68c6e6!important;
+	color: #68c6e6!important;
 }
 
 .fixed-top {
@@ -163,127 +171,124 @@ form div > textarea {
 }
 
 .fixed-top .list-inline-item .dropdown-menu-mobile-search.show {
+	-webkit-box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
 	box-shadow: 2px 2px 2px rgba(104, 198, 230, 0.5);
 }
 
 .bg-hover-white:hover {
-    background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
+  background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
 }
 
 .bg-hover-white:hover h2,
 .bg-hover-white:hover ul a i {
-		color: #68c6e6 !important;
+	color: #68c6e6 !important;
 }
 
 .bg-hover-white:hover ul a p {
-		color: black !important;
+	color: black !important;
 }
 
 .bg-hover-white:hover form input,
 .bg-hover-white:hover form button {
-		border: 1px solid #68c6e6 !important;
+	border: 1px solid #68c6e6 !important;
 }
 
 .bg-hover-white:hover form button {
-		background: #68c6e6 !important;
+	background: #68c6e6 !important;
 }
 
 .bg-hover-white:hover #main-nav ul li .nav-link {
-		color: black !important;
+	color: black !important;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
-    background-color: #dee2e6;
+  background-color: #dee2e6;
 }
 
 .header .list-inline-item.show a.nav-link {
-		background-color: #dee2e66e;
+	background-color: #dee2e66e;
 }
 
 .header .list-inline-item a.nav-link:hover {
-		background-color: #dee2e66e;
+	background-color: #dee2e66e;
 }
 
 nav .nav-item.show a.nav-link {
-		background-color: #dee2e66e;
+	background-color: #dee2e66e;
 }
 nav .nav-item a.nav-link:hover {
-		background-color: #dee2e66e;
+	background-color: #dee2e66e;
 }
 
 .header .list-inline-item.show .dropdown-menu.show,
 .navbar-desktop .nav-item.show .dropdown-menu.show {
-		-webkit-box-shadow: 0px 5px 10px 0px #27363c;
-		box-shadow: 0px 5px 10px 0px #27363c;
+	-webkit-box-shadow: 0px 5px 10px 0px #27363c;
+	box-shadow: 0px 5px 10px 0px #27363c;
 }
 
 .navbar-mobile .nav-item.show .dropdown-menu.show {
-		-webkit-box-shadow: 0px 5px 10px 0px #dee2e6;
-		box-shadow: 0px 5px 10px 0px #dee2e6;
-		margin-bottom: 0.7rem;
+	-webkit-box-shadow: 0px 5px 10px 0px #dee2e6;
+	box-shadow: 0px 5px 10px 0px #dee2e6;
+	margin-bottom: 0.7rem;
 }
 
 .navbar-mobile .nav-item.show a.nav-link {
-		margin-right: 0px !important;
+	margin-right: 0px !important;
 }
 
 .navbar-mobile .nav-item a.nav-link {
-		margin-right: 0px !important;
+	margin-right: 0px !important;
 }
 
 /* ------------------------------- products */
 
 .overlay {
-		height: 100%;
-		width: 100%;
-		top: 0;
-		left: 0;
-		position: fixed;
-		background: #fafafa;
-		z-index: -1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #fafafa;
+	z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fafafa!important;
+  background: #212529 !important;
+  color: #fafafa!important;
 }
 
 .btt-button-top,
 .btt-button-down {
-		position: fixed;
-		right: 0.6rem;
+	position: fixed;
+	right: 0.6rem;
 }
 
 .btt-button-down {
-		bottom: 0.6rem;
+	bottom: 0.6rem;
 }
 
 .btt-link,
 .update-link,
 .remove-item {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 input[name='q']::placeholder {
-    color: #aab7c4;
+  color: #aab7c4;
 }
 
 .list-inline-item:not(:last-child) {
-    margin-right: .2rem;
-    margin-left: .2rem;
+  margin-right: .2rem;
+  margin-left: .2rem;
 }
 
 .products-container .card {
-		border: 1px solid #eee !important;
+	border: 1px solid #eee !important;
 }
 
 .products-container .card:hover {
-		-webkit-box-shadow: 0 2px 10px 2px #C9C9C9;
-		box-shadow: 0 2px 10px 2px #C9C9C9;
-}
-
-.products-container {
-		margin-bottom: 2rem;
+	-webkit-box-shadow: 0 2px 10px 2px #C9C9C9;
+	box-shadow: 0 2px 10px 2px #C9C9C9;
 }
 
 .push-products-empty-search {
@@ -300,42 +305,38 @@ input[name='q']::placeholder {
 
 /* ------------------------------- gallery */
 
-.gallery-container {
-		margin-bottom: 8rem;
-}
-
 .controls-top {
-		margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .btn-circle.btn-sm {
-	  width: 30px;
-	  height: 30px;
-	  padding: 9px 0px;
-	  border-radius: 50px;
-	  font-size: 8px;
-	  text-align: center;
-		background-color: #68c6e6;
-		color: #fafafa;
-		-webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
-		box-shadow: 0px 5px 5px 0px #adb5bd;
+  width: 30px;
+  height: 30px;
+  padding: 9px 0px;
+  border-radius: 50px;
+  font-size: 8px;
+  text-align: center;
+	background-color: #68c6e6;
+	color: #fafafa;
+	-webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+	box-shadow: 0px 5px 5px 0px #adb5bd;
 }
 
 .btn-circle.btn-sm:hover {
-		background-color: #adb5bd;
-		-webkit-box-shadow: 0px 5px 5px 0px #828383;
-		box-shadow: 0px 5px 5px 0px #828383;
+	background-color: #adb5bd;
+	-webkit-box-shadow: 0px 5px 5px 0px #828383;
+	box-shadow: 0px 5px 5px 0px #828383;
 }
 
 .carousel .card, .carousel .card-img {
-		border: 1px solid #eee !important;
-	  border-radius: 1rem;
+	border: 1px solid #eee !important;
+  border-radius: 1rem;
 }
 
 .gallery-container #multi-item-carousel .carousel-item .card-img:hover {
-		-webkit-box-shadow: 0px 5px 5px 0px #828383;
-		box-shadow: 0px 5px 5px 0px #828383;
-		cursor: pointer;
+	-webkit-box-shadow: 0px 5px 5px 0px #828383;
+	box-shadow: 0px 5px 5px 0px #828383;
+	cursor: pointer;
 }
 
 /* ------------------------------- footer */
@@ -343,8 +344,6 @@ input[name='q']::placeholder {
 /* credit: https://css-tricks.com/couple-takes-sticky-footer/ */
 .wrapper {
   min-height: 100%;
-	/* Equal to height of footer */
-  /* But also accounting for potential margin-bottom of last child */
   margin-bottom: -10rem;
 }
 
@@ -353,7 +352,7 @@ input[name='q']::placeholder {
 }
 
 .push {
-  height: 29rem;
+  height: 18rem;
 }
 
 .footer {
@@ -372,126 +371,126 @@ input[name='q']::placeholder {
 }
 
 .footer .fa-github:hover {
-		color: #adb5bd!important;
+	color: #adb5bd!important;
 }
 
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-		/* high Z index to assure it's always on top of everything else. */
-    z-index: 99999999999;
+  position: fixed;
+  top: 72px;
+  right: 15px;
+	/* high Z index to assure it's always on top of everything else. */
+  z-index: 99999999999;
 }
 
 .custom-toast {
-    overflow: visible;
+  overflow: visible;
 }
 
 .toast-capper {
-    height: 2px;
+  height: 2px;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: 10px solid black;
-    position: absolute;
-    top: -10px;
-    right: 36px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 10px solid black;
+  position: absolute;
+  top: -10px;
+  right: 36px;
 }
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
-    border-bottom-color: #007bff !important;
+  border-bottom-color: #007bff !important;
 }
 
 .arrow-secondary {
-    border-bottom-color: #6c757d !important;
+  border-bottom-color: #6c757d !important;
 }
 
 .arrow-success {
-    border-bottom-color: #28a745 !important;
+  border-bottom-color: #28a745 !important;
 }
 
 .arrow-danger {
-    border-bottom-color: #dc3545 !important;
+  border-bottom-color: #dc3545 !important;
 }
 
 .arrow-warning {
-    border-bottom-color: #ffc107 !important;
+  border-bottom-color: #ffc107 !important;
 }
 
 .arrow-info {
-    border-bottom-color: #17a2b8 !important;
+  border-bottom-color: #17a2b8 !important;
 }
 
 .arrow-light {
-    border-bottom-color: #f8f9fa !important;
+  border-bottom-color: #f8f9fa !important;
 }
 
 .arrow-dark {
-    border-bottom-color: #343a40 !important;
+  border-bottom-color: #343a40 !important;
 }
 
 .bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+  margin-top: 1.5rem;
+  color: #6c757d;
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
-    border-radius: 0;
+  border-color: #000;
+  border-radius: 0;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
-    display: none;
+  display: none;
 }
 
 .allauth-form-inner-content input::placeholder {
-    color: #aab7c4;
+  color: #aab7c4;
 }
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
 	/* btn */
 	display: inline-block;
-    font-weight: 400;
-    color: #fafafa;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0;
+  font-weight: 400;
+  color: #fafafa;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #000;
+  border: 1px solid #000;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0;
 
-    /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  /* standard bootstrap btn transitions */
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
 	color: #fafafa;
-    background-color: #222;
-    border-color: #222;
+  background-color: #222;
+  border-color: #222;
 }
 
 .allauth-form-inner-content a {
@@ -501,29 +500,29 @@ input[name='q']::placeholder {
 /* Product Form */
 
 .btn-file {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-file input[type="file"] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .custom-checkbox .custom-control-label::before {
-    border-radius: 0;
-    border-color: #dc3545;
+  border-radius: 0;
+  border-color: #dc3545;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
-    border-radius: 0;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 0;
 }
 
 /* -------------------------------- Media Queries */
@@ -536,15 +535,15 @@ input[name='q']::placeholder {
 	}
 
 	.nav-link {
-			padding: 0.15rem;
+		padding: 0.15rem;
 	}
 
 	.nav-link i.fa-lg {
-			font-size: 0.9rem;
+		font-size: 0.9rem;
 	}
 
 	.nav-link p {
-			font-size: 0.6rem;
+		font-size: 0.6rem;
 	}
 
 	.dropdown-menu a, .nav-item a {
@@ -556,31 +555,31 @@ input[name='q']::placeholder {
 	}
 
 	.navbar-toggler {
-			padding: .2rem .2rem;
-			font-size: 0.5rem;
+		padding: .2rem .2rem;
+		font-size: 0.5rem;
 	}
 
 	#delivery-banner h4 {
-			font-size: .7rem;
+		font-size: .7rem;
 	}
 
 	.btn.btn-outline-black.rounded-0,
 	.btn.btn-black.rounded-0 {
-			padding: .375rem .375rem;
+		padding: .375rem .375rem;
 	}
 
 	.btn.btn-outline-black.rounded-0.btn-lg,
 	.btn.btn-black.rounded-0.btn-lg {
-			padding: .375rem .375rem;
-			font-size: .75rem;
+		padding: .375rem .375rem;
+		font-size: .75rem;
 	}
 
 	.increment-qty, .decrement-qty {
-			padding: .25rem .5rem !important;
+		padding: .25rem .5rem !important;
 	}
 
 	.display-4.logo-font.text-black {
-			font-size: 1.6rem;
+		font-size: 1.6rem;
 	}
 
 	.footer {
@@ -616,43 +615,43 @@ input[name='q']::placeholder {
 	}
 
 	.nav-link {
-			padding: 0.15rem;
+		padding: 0.15rem;
 	}
 
 	.nav-link i.fa-lg {
-			font-size: 1rem;
+		font-size: 1rem;
 	}
 
 	.nav-link p {
-			font-size: 0.8rem;
+		font-size: 0.8rem;
 	}
 
 	.navbar-toggler {
-			padding: .4rem .4rem;
-			font-size: 0.6rem;
+		padding: .4rem .4rem;
+		font-size: 0.6rem;
 	}
 
 	#delivery-banner h4 {
-			font-size: .8rem;
+		font-size: .8rem;
 	}
 
 	.btn.btn-outline-black.rounded-0,
 	.btn.btn-black.rounded-0 {
-			padding: .375rem .375rem;
+		padding: .375rem .375rem;
 	}
 
 	.btn.btn-outline-black.rounded-0.btn-lg,
 	.btn.btn-black.rounded-0.btn-lg {
-			padding: .375rem .375rem;
-			font-size: .75rem;
+		padding: .375rem .375rem;
+		font-size: .75rem;
 	}
 
 	.increment-qty, .decrement-qty {
-			padding: .25rem .5rem !important;
+		padding: .25rem .5rem !important;
 	}
 
 	.display-4.logo-font.text-black {
-			font-size: 2.2rem;
+		font-size: 2.2rem;
 	}
 
 	.footer {
@@ -687,43 +686,43 @@ input[name='q']::placeholder {
 	  }
 
     .nav-link {
-        padding: 0.15rem;
+      padding: 0.15rem;
     }
 
     .nav-link i.fa-lg {
-        font-size: 1rem;
+      font-size: 1rem;
     }
 
 		.nav-link p {
-				font-size: 1rem;
+			font-size: 1rem;
 		}
 
     .navbar-toggler {
-        padding: .4rem .4rem;
-        font-size: 0.8rem;
+      padding: .4rem .4rem;
+      font-size: 0.8rem;
     }
 
     #delivery-banner h4 {
-        font-size: .9rem;
+      font-size: .9rem;
     }
 
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
-        padding: .375rem .375rem;
+      padding: .375rem .375rem;
     }
 
     .btn.btn-outline-black.rounded-0.btn-lg,
     .btn.btn-black.rounded-0.btn-lg {
-        padding: .375rem .375rem;
-        font-size: .75rem;
+      padding: .375rem .375rem;
+      font-size: .75rem;
     }
 
     .increment-qty, .decrement-qty {
-        padding: .25rem .5rem !important;
+      padding: .25rem .5rem !important;
     }
 
 		.display-4.logo-font.text-black {
-        font-size: 2.5rem;
+      font-size: 2.5rem;
     }
 
 		.footer {
@@ -757,11 +756,11 @@ input[name='q']::placeholder {
 		}
 
 		#delivery-banner h4 {
-        font-size: 1rem;
+      font-size: 1rem;
     }
 
 		.display-4.logo-font.text-black {
-        font-size: 3rem;
+      font-size: 3rem;
     }
 
 		.footer {
@@ -778,7 +777,7 @@ input[name='q']::placeholder {
 @media only screen and (min-width: 1200px) {
 
 	#delivery-banner h4 {
-			font-size: 1rem;
+		font-size: 1rem;
 	}
 
   .container {
@@ -786,7 +785,7 @@ input[name='q']::placeholder {
   }
 
 	.display-4.logo-font.text-black {
-			font-size: 3.5rem;
+		font-size: 3.5rem;
 	}
 
 	.footer {
