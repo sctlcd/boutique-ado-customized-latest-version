@@ -2,7 +2,7 @@
 
 <img src="#" alt="Boutique Ado" width="700">
 
-User interface improvements, look and feel, presentation, interactivity, adding features relative to user interface improvements (image gallery, go to page bottom button, highlighting menu/sub-menu items, "Home" icon link on mobile devices, navbar display change on its hover and on window scroll position) to the initial Boutique Ado website version.
+User interface improvements, look and feel, presentation, interactivity, adding features relative to user interface improvements (image gallery, go to page bottom button, highlighting menu/sub-menu items, "Home" icon link on mobile devices, navbar display change on its hover position and on window scroll position) to the initial Boutique Ado website version.
 <br />
 To see [my new version of Boutique Ado website](https://sctlcd-boutique-ado.herokuapp.com/)
 
@@ -45,7 +45,7 @@ To see [my new version of Boutique Ado website](https://sctlcd-boutique-ado.hero
 
 ## About <a name="About"></a>
 
-The purpose of this project is to improve the user interfaces: look and feel, the presentation and the interactivity of the initial Boutique Ado website version and adding features relative to user interface improvements (image gallery, go to page bottom button, highlighting menu/sub-menu items, "Home" icon link on mobile devices, navbar display change on its hover and on window scroll position).
+The purpose of this project is to improve the user interfaces: look and feel, the presentation and the interactivity of the initial Boutique Ado website version and adding features relative to user interface improvements (image gallery, go to page bottom button, highlighting menu/sub-menu items, "Home" icon link on mobile devices, navbar display change on its hover position and on window scroll position).
 
 Back to [top](#TableOfContents)
 
