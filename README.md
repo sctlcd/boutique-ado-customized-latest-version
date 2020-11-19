@@ -107,23 +107,30 @@ Back to [top](#TableOfContents)
 
 - Desktop
 	- Desktop transparent navbar
+
 	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_transparent_navbar-min.png" alt="Desktop transparent navbar" width="700">
+	<br />
 
 	- Desktop white navbar and highlighted menus
 	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_white_navbar_highlighted_menus-min.png" alt="Desktop white navbar and highlighted menus" width="700">
+	<br />
 
 	- Desktop white navbar and blue bottom border
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_white_navbar_blue_bottom_border-min.png" alt="Desktop white navbar and blue bottom border" width="700">
+	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_white_navbar_sky_blue_bottom_border-min.png" alt="Desktop white navbar and blue bottom border" width="700">
+	<br />
 
 - Mobile
 	- Mobile transparent top header
 	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_transparent_top_header-min.png" alt="Mobile transparent top header" width="700">
+	<br />
 
 	- Mobile white top header and highlighted menus
 	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_white_top_header_highlighted_menus-min.png" alt="Mobile white top header and highlighted menus" width="700">
+	<br />
 
 	- Mobile white top header and sky blue bottom border
 	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_white_top_header_sky_blue_bottom_border-min.png" alt="Mobile white top header and sky blue bottom border" width="700">
+	<br />
 
 Back to [top](#TableOfContents)
 
@@ -193,7 +200,7 @@ Back to [top](#TableOfContents)
 - The modal image gallery is autoplayed on page load/refresh
 - When the modal image gallery opens it pauses the cycling of the set of slides gallery. The modal image gallery cycling is maintained.  
 - When the modal image gallery closes it resumes the cycling of the set of slides gallery.
-<br />#TO_UPDATE
+<br />
 
 #### Screenshots <a name="GalleryImageCarouselScreenshots"></a>
 
