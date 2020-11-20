@@ -16,7 +16,9 @@ To visite [ **my new version** ](https://sctlcd-boutique-ado.herokuapp.com/) of 
 
 1. [About](#About)
 
-2. [Adding Features](#AddingFeatures)
+2. [Initial website user interface](#InitialWebsiteUserInterface)
+
+3. [Adding Features](#AddingFeatures)
 	- [Navigation bar](#NavigationBar)
 		- [Description](#NavigationBarDescription)
 		- [Screenshots](#NavigationBarScreenshots)
@@ -39,12 +41,12 @@ To visite [ **my new version** ](https://sctlcd-boutique-ado.herokuapp.com/) of 
 		- [Description](#GoToPageBottomButtonDescription)
 		- [Screenshots](#GoToPageBottomButtonScreenshots)
 
-3. [Technologies Used](#TechnologiesUsed)
+4. [Technologies Used](#TechnologiesUsed)
 
 	- [Front-End Technologies](#Front-end-technologies)
 	- [Back-End Technologies](#Back-end-technologies)
 
-4. [Testing](#Testing)
+5. [Testing](#Testing)
 
 	- [Layout responsiveness](#LayoutResponsiveness)
 	- [Compatibility](#Compatibility)
@@ -52,7 +54,7 @@ To visite [ **my new version** ](https://sctlcd-boutique-ado.herokuapp.com/) of 
 	- [Validators](#Validators)
 	- [Known Issues](#KnownIssues)
 
-5. [Credits](#Credits)
+6. [Credits](#Credits)
 
 	- [Media](#Media)
 	- [Code](#Code)
@@ -65,10 +67,16 @@ The purpose of this project is to **improve the user interfaces: the look and fe
 <br />
 User interface improvements: responsive website using HTML, CSS, Bootstrap 4, JavaScript, jQuery
 
+
+## Initial website user interface <a name="InitialWebsiteUserInterface"></a>
+
+<p>Initial website user interface</p>
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_initial_UI-min.png" alt="Initial website user interface" width="700">
+<br /><br />
+
 Back to [top](#TableOfContents)
 
 ---
-
 ## Adding Features <a name="AddingFeatures"></a>
 
 ### Navigation bar <a name="NavigationBar"></a>
