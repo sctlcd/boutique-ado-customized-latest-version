@@ -1,6 +1,6 @@
 # [Boutique Ado](https://sctlcd-boutique-ado.herokuapp.com/)
 
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_multi_device_website_mockup_presentation-min.png" alt="Boutique Ado" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_multi_device_website_mockup_presentation-min.png" alt="Boutique Ado" width="700">
 
 **User interface improvements, look and feel, presentation, interactivity**, adding features relative to user interface improvements (image gallery, go to page bottom button, highlighting menu/sub-menu items, "Home" icon link on mobile devices, navbar display change on its hover position and on window scroll position) to the initial Boutique Ado website version.
 <br />
@@ -71,7 +71,7 @@ User interface improvements: responsive website using HTML, CSS, Bootstrap 4, Ja
 ## Initial website user interface <a name="InitialWebsiteUserInterface"></a>
 
 <p>Initial website user interface</p>
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_initial_UI-min.png" alt="Initial website user interface" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_initial_UI-min.png" alt="Initial website user interface" width="700">
 <br /><br />
 
 Back to [top](#TableOfContents)
@@ -116,28 +116,28 @@ Back to [top](#TableOfContents)
 
 - Desktop
 	<p>Desktop transparent navbar</p>
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_transparent_navbar-min.png" alt="Desktop transparent navbar" width="700">
+	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_transparent_navbar-min.png" alt="Desktop transparent navbar" width="700">
 	<br /><br />
 
 	<p>Desktop white navbar and highlighted menus</p>
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_white_navbar_highlighted_menus-min.png" alt="Desktop white navbar and highlighted menus" width="700">
+	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_white_navbar_highlighted_menus-min.png" alt="Desktop white navbar and highlighted menus" width="700">
 	<br /><br />
 
 	<p>Desktop white navbar and blue bottom border</p>
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_white_navbar_sky_blue_bottom_border-min.png" alt="Desktop white navbar and blue bottom border" width="700">
+	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_white_navbar_sky_blue_bottom_border-min.png" alt="Desktop white navbar and blue bottom border" width="700">
 	<br /><br />
 
 - Mobile
 	<p>Mobile transparent top header</p>
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_transparent_top_header-min.png" alt="Mobile transparent top header" width="700">
+	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_transparent_top_header-min.png" alt="Mobile transparent top header" width="700">
 	<br /><br />
 
 	<p>Mobile white top header and highlighted menus</p>
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_white_top_header_highlighted_menus-min.png" alt="Mobile white top header and highlighted menus" width="700">
+	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_white_top_header_highlighted_menus-min.png" alt="Mobile white top header and highlighted menus" width="700">
 	<br /><br />
 
 	<p>Mobile white top header and sky blue bottom border</p>
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_white_top_header_sky_blue_bottom_border-min.png" alt="Mobile white top header and sky blue bottom border" width="700">
+	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_white_top_header_sky_blue_bottom_border-min.png" alt="Mobile white top header and sky blue bottom border" width="700">
 	<br /><br />
 
 Back to [top](#TableOfContents)
@@ -155,11 +155,11 @@ Back to [top](#TableOfContents)
 #### Screenshots <a name="FooterScreenshots"></a>
 
 - Desktop
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_footer-min.png" alt="Desktop footer" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_footer-min.png" alt="Desktop footer" width="700">
 <br /><br />
 
 - Mobile
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_footer-min.png" alt="Mobile footer" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_footer-min.png" alt="Mobile footer" width="700">
 <br /><br />
 
 Back to [top](#TableOfContents)
@@ -180,11 +180,11 @@ Back to [top](#TableOfContents)
 #### Screenshots <a name="LandingPageScreenshots"></a>
 
 - Desktop
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_landing_page-min.png" alt="Desktop landing page" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_landing_page-min.png" alt="Desktop landing page" width="700">
 <br /><br />
 
 - Mobile
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_landing_page-min.png" alt="Mobile landing page" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_landing_page-min.png" alt="Mobile landing page" width="700">
 
 Back to [top](#TableOfContents)
 
@@ -200,11 +200,11 @@ Back to [top](#TableOfContents)
 #### Screenshots <a name="GalleryImageCarouselScreenshots"></a>
 
 - Desktop
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_set_of_slides_gallery-min.png" alt="Desktop set of slides gallery" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_set_of_slides_gallery-min.png" alt="Desktop set of slides gallery" width="700">
 <br /><br />
 
 - Mobile
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_set_of_slides_gallery-min.png" alt="Mobile set of slides gallery" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_set_of_slides_gallery-min.png" alt="Mobile set of slides gallery" width="700">
 
 Back to [top](#TableOfContents)
 
@@ -224,11 +224,11 @@ Back to [top](#TableOfContents)
 #### Screenshots <a name="GalleryImageCarouselScreenshots"></a>
 
 - Desktop
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_modal_image_gallery-min.png" alt="Desktop modal image gallery" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_modal_image_gallery-min.png" alt="Desktop modal image gallery" width="700">
 <br /><br />
 
 - Mobile
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_modal_image_gallery-min.png" alt="Mobile modal image gallery" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_modal_image_gallery-min.png" alt="Mobile modal image gallery" width="700">
 
 Back to [top](#TableOfContents)
 
@@ -243,7 +243,7 @@ Back to [top](#TableOfContents)
 
 #### Screenshots <a name="NoResultFoundPageScreenshots"></a>
 
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_no_results_found-min.png" alt="No results found page" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_no_results_found-min.png" alt="No results found page" width="700">
 
 Back to [top](#TableOfContents)
 
@@ -253,11 +253,11 @@ Back to [top](#TableOfContents)
 
 #### Description <a name="GoToPageBottomButtonDescription"></a>
 
-- Adding a page down button, in addition to the page up button
+- Adding a go to page bottom button, in addition to the page up button in products pages in desktop and mobile devices and in bag page in mobile version.
 
 #### Screenshots <a name="GoToPageBottomButtonScreenshots"></a>
 
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_go_to_page_bottom_button-min.png" alt="Go to page bottom button" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_go_to_page_bottom_button-min.png" alt="Go to page bottom button" width="700">
 
 Back to [top](#TableOfContents)
 
