@@ -104,6 +104,8 @@ Back to [top](#TableOfContents)
 	- Dropdown menus: dark grey box shadow
 	- "Gallery" icon link added in the desktop top nav
 	- Navbar item sub-menu closes when the user clicks anywhere in the page
+	- Logo of the website
+	- Favicon
 
 - Specific mobile :
 	- Dropdown menus: light grey box shadow
