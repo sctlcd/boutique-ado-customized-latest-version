@@ -90,6 +90,7 @@ Back to [top](#TableOfContents)
 	- Menu item highlighted when hovered or selected/pulled down
 	- Sub-menu item highlighted when hovered
 	- "My account" menu closes when the user clicks anywhere in the page
+	- Search button color change when hovered or selected
 
 - Specific desktop :
 	- Dropdown menus: dark grey box shadow
@@ -106,33 +107,34 @@ Back to [top](#TableOfContents)
 #### Screenshots <a name="NavigationBarScreenshots"></a>
 
 - Desktop
-	- Desktop transparent navbar
-
+	<p>Desktop transparent navbar</p>
 	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_transparent_navbar-min.png" alt="Desktop transparent navbar" width="700">
-	<br />
+	<br /><br />
 
-	- Desktop white navbar and highlighted menus
+	<p>Desktop white navbar and highlighted menus</p>
 	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_white_navbar_highlighted_menus-min.png" alt="Desktop white navbar and highlighted menus" width="700">
-	<br />
+	<br /><br />
 
-	- Desktop white navbar and blue bottom border
+	<p>Desktop white navbar and blue bottom border</p>
 	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_white_navbar_sky_blue_bottom_border-min.png" alt="Desktop white navbar and blue bottom border" width="700">
-	<br />
+	<br /><br />
 
 - Mobile
-	- Mobile transparent top header
+	<p>Mobile transparent top header</p>
 	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_transparent_top_header-min.png" alt="Mobile transparent top header" width="700">
-	<br />
+	<br /><br />
 
-	- Mobile white top header and highlighted menus
+	<p>Mobile white top header and highlighted menus</p>
 	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_white_top_header_highlighted_menus-min.png" alt="Mobile white top header and highlighted menus" width="700">
-	<br />
+	<br /><br />
 
-	- Mobile white top header and sky blue bottom border
+	<p>Mobile white top header and sky blue bottom border</p>
 	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_white_top_header_sky_blue_bottom_border-min.png" alt="Mobile white top header and sky blue bottom border" width="700">
-	<br />
+	<br /><br />
 
 Back to [top](#TableOfContents)
+
+---
 
 ### Footer <a name="Footer"></a>
 
@@ -146,12 +148,15 @@ Back to [top](#TableOfContents)
 
 - Desktop
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_footer-min.png" alt="Desktop footer" width="700">
+<br /><br />
 
 - Mobile
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_footer-min.png" alt="Mobile footer" width="700">
-
+<br /><br />
 
 Back to [top](#TableOfContents)
+
+---
 
 ### Landing page <a name="LandingPage"></a>
 
@@ -168,11 +173,14 @@ Back to [top](#TableOfContents)
 
 - Desktop
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_landing_page-min.png" alt="Desktop landing page" width="700">
+<br /><br />
 
 - Mobile
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_landing_page-min.png" alt="Mobile landing page" width="700">
 
 Back to [top](#TableOfContents)
+
+---
 
 ### Set of slides gallery <a name="SetOfSlidesGallery"></a>
 
@@ -185,11 +193,14 @@ Back to [top](#TableOfContents)
 
 - Desktop
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_set_of_slides_gallery-min.png" alt="Desktop set of slides gallery" width="700">
+<br /><br />
 
 - Mobile
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_set_of_slides_gallery-min.png" alt="Mobile set of slides gallery" width="700">
 
 Back to [top](#TableOfContents)
+
+---
 
 ### Modal image gallery <a name="ModalImageGallery"></a>
 
@@ -206,11 +217,14 @@ Back to [top](#TableOfContents)
 
 - Desktop
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_desktop_modal_image_gallery-min.png" alt="Desktop modal image gallery" width="700">
+<br /><br />
 
 - Mobile
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_mobile_modal_image_gallery-min.png" alt="Mobile modal image gallery" width="700">
 
 Back to [top](#TableOfContents)
+
+---
 
 ### No result found page <a name="NoResultFoundPage"></a>
 
@@ -224,6 +238,8 @@ Back to [top](#TableOfContents)
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/wireframes/boutique_ado_no_results_found-min.png" alt="No results found page" width="700">
 
 Back to [top](#TableOfContents)
+
+---
 
 ### Go to page bottom button <a name="GoToPageBottomButton"></a>
 
@@ -297,6 +313,8 @@ Back to [top](#TableOfContents)
 
 Back to [top](#TableOfContents)
 
+---
+
 ### Compatibility <a name="Compatibility"></a>
 
 I tested the website across the 6 main browsers in both desktop and mobile configuration to ensure a large number of users can use it successfully.
@@ -318,6 +336,8 @@ I tested the website across the 6 main browsers in both desktop and mobile confi
 - Safari v.5.1.7: It’s an outdated version and lacks many of the features present in the latest version of Safari. The last version of Safari for Windows was released on May 9, 2012.
 
 Back to [top](#TableOfContents)
+
+---
 
 ### Testing left <a name="TestingLeft"></a>
 
@@ -345,7 +365,6 @@ There is no way to install the latest version of the Safari browser on Windows 1
 - [Python validator](http://pep8online.com/)
 	#TO_UPDATE
 
-Back to [top](#TableOfContents)
 
 ### Known Issues <a name="KnownIssues"></a>
 - no issues found so far
@@ -419,3 +438,5 @@ Back to [top](#TableOfContents)
 - Favicon in django app - [stackoverflow](https://stackoverflow.com/questions/21938028/how-can-i-get-a-favicon-to-show-up-in-my-django-app)
 
 Back to [top](#TableOfContents)
+
+---
