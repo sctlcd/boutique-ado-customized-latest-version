@@ -253,7 +253,7 @@ Back to [top](#TableOfContents)
 
 #### Description <a name="GoToPageBottomButtonDescription"></a>
 
-- Adding a page down button, in addition to the page up button
+- Adding a go to page bottom button, in addition to the page up button in products pages in desktop and mobile devices and in bag page in mobile version.
 
 #### Screenshots <a name="GoToPageBottomButtonScreenshots"></a>
 
