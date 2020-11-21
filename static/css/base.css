@@ -64,7 +64,7 @@ form div > input {
 }
 
 .bg-transparent {
-	background-color: transparent !important;
+	background-color: rgba(0,0,0,.2) !important;
 }
 
 .bg-white {
@@ -166,10 +166,6 @@ form div > input {
 .bg-hover-white:hover nav li a p,
 .bg-hover-white nav li a p {
 	color: black !important;
-}
-
-.navbar-toggler {
-  background-color: transparent;
 }
 
 .custom-toggler .navbar-toggler-icon {
