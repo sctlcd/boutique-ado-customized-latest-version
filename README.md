@@ -1,6 +1,6 @@
 # [Boutique Ado](https://sctlcd-boutique-ado.herokuapp.com/)
 
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_multi_device_website_mockup_presentation-min.png" alt="Boutique Ado" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/design/mockup/boutique_ado_multi_device_website_mockup_presentation-min.png" alt="Boutique Ado" width="700">
 
 **User interface improvements, look and feel, presentation, interactivity**, adding features relative to user interface improvements (image gallery, go to page bottom button, highlighting menu/sub-menu items, "Home" icon link on mobile devices, navbar display change on its hover position and on window scroll position) to the initial Boutique Ado website version.
 <br />
@@ -21,25 +21,18 @@ To visite [ **my new version** ](https://sctlcd-boutique-ado.herokuapp.com/) of 
 3. [Adding Features](#AddingFeatures)
 	- [Navigation bar](#NavigationBar)
 		- [Description](#NavigationBarDescription)
-		- [Screenshots](#NavigationBarScreenshots)
 	- [Footer](#Footer)
 		- [Description](#FooterDescription)
-		- [Screenshots](#FooterScreenshots)
 	- [Landing page](#LandingPage)
 		- [Description](#LandingPageDescription)
-		- [Screenshots](#LandingPageScreenshots)
 	- [Set of slides gallery](#SetOfSlidesGallery)
 		- [Description](#SetOfSlidesGalleryDescription)
-		- [Screenshots](#SetOfSlidesGalleryScreenshots)
 	- [Modal image gallery](#ModalImageGallery)
 		- [Description](#ModalImageGalleryDescription)
-		- [Screenshots](#ModalImageGalleryScreenshots)
 	- [No result found page](#NoResultFoundPage)
 		- [Description](#NoResultFoundPageDescription)
-		- [Screenshots](#NoResultFoundPageScreenshots)
 	- [Go to page bottom button](#GoToPageBottomButton)
 		- [Description](#GoToPageBottomButtonDescription)
-		- [Screenshots](#GoToPageBottomButtonScreenshots)
 
 4. [Technologies Used](#TechnologiesUsed)
 
@@ -71,7 +64,7 @@ User interface improvements: responsive website using HTML, CSS, Bootstrap 4, Ja
 ## Initial website user interface <a name="InitialWebsiteUserInterface"></a>
 
 <p>Initial website user interface</p>
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_initial_UI-min.png" alt="Initial website user interface" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/design/original_version/boutique_ado_initial_UI-min.png" alt="Initial website user interface" width="700">
 <br /><br />
 
 Back to [top](#TableOfContents)
@@ -114,34 +107,6 @@ Back to [top](#TableOfContents)
 	- Navbar item sub-menu closes when the user clicks in the header of the page
 	- Navbar collapse menu closes when the user clicks on "Search" or "My Account" icon links and when the user clicks in the body of the page (apart from the header) or in the footer.
 
-#### Screenshots <a name="NavigationBarScreenshots"></a>
-
-- Desktop
-	<p>Desktop transparent navbar</p>
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_transparent_navbar-min.png" alt="Desktop transparent navbar" width="700">
-	<br /><br />
-
-	<p>Desktop white navbar and highlighted menus</p>
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_white_navbar_highlighted_menus-min.png" alt="Desktop white navbar and highlighted menus" width="700">
-	<br /><br />
-
-	<p>Desktop white navbar and blue bottom border</p>
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_white_navbar_sky_blue_bottom_border-min.png" alt="Desktop white navbar and blue bottom border" width="700">
-	<br /><br />
-
-- Mobile
-	<p>Mobile transparent top header</p>
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_transparent_top_header-min.png" alt="Mobile transparent top header" width="700">
-	<br /><br />
-
-	<p>Mobile white top header and highlighted menus</p>
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_white_top_header_highlighted_menus-min.png" alt="Mobile white top header and highlighted menus" width="700">
-	<br /><br />
-
-	<p>Mobile white top header and sky blue bottom border</p>
-	<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_white_top_header_sky_blue_bottom_border-min.png" alt="Mobile white top header and sky blue bottom border" width="700">
-	<br /><br />
-
 Back to [top](#TableOfContents)
 
 ---
@@ -153,16 +118,6 @@ Back to [top](#TableOfContents)
 - Links to additional website pages in the purpose of the website presentation (page links not implemented)
 - Social media links
 - A copyright mention is displayed with my name beside a GitHub icon link which opens my [Github](https://github.com/sctlcd)
-
-#### Screenshots <a name="FooterScreenshots"></a>
-
-- Desktop
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_footer-min.png" alt="Desktop footer" width="700">
-<br /><br />
-
-- Mobile
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_footer-min.png" alt="Mobile footer" width="700">
-<br /><br />
 
 Back to [top](#TableOfContents)
 
@@ -179,15 +134,6 @@ Back to [top](#TableOfContents)
 	- Customer reviews
 	- Share your own fashion style feature
 
-#### Screenshots <a name="LandingPageScreenshots"></a>
-
-- Desktop
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_landing_page-min.png" alt="Desktop landing page" width="700">
-<br /><br />
-
-- Mobile
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_landing_page-min.png" alt="Mobile landing page" width="700">
-
 Back to [top](#TableOfContents)
 
 ---
@@ -197,16 +143,7 @@ Back to [top](#TableOfContents)
 #### Description <a name="SetOfSlidesGalleryDescription"></a>
 
 - Carousel of 4 slides of 3 images each
-- The set of slides gallery is autoplayed on page load/refresh
-
-#### Screenshots <a name="GalleryImageCarouselScreenshots"></a>
-
-- Desktop
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_set_of_slides_gallery-min.png" alt="Desktop set of slides gallery" width="700">
-<br /><br />
-
-- Mobile
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_set_of_slides_gallery-min.png" alt="Mobile set of slides gallery" width="700">
+- The set of slides gallery is auto played on page load/refresh
 
 Back to [top](#TableOfContents)
 
@@ -218,19 +155,9 @@ Back to [top](#TableOfContents)
 
 - On click on each images of the set of slides gallery a modal image gallery opens whose purpose is to display the images in bigger size.
 - The modal image gallery opens on the image selected in the set of slides gallery.
-- The modal image gallery is autoplayed on page load/refresh
+- The modal image gallery is auto played on page load/refresh
 - When the modal image gallery opens it pauses the cycling of the set of slides gallery. The modal image gallery cycling is maintained.  
 - When the modal image gallery closes it resumes the cycling of the set of slides gallery.
-<br />
-
-#### Screenshots <a name="GalleryImageCarouselScreenshots"></a>
-
-- Desktop
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_desktop_modal_image_gallery-min.png" alt="Desktop modal image gallery" width="700">
-<br /><br />
-
-- Mobile
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_mobile_modal_image_gallery-min.png" alt="Mobile modal image gallery" width="700">
 
 Back to [top](#TableOfContents)
 
@@ -243,10 +170,6 @@ Back to [top](#TableOfContents)
 - Displays an humoristic image and a message informing the user
 - Offers a link to go back to Products page.
 
-#### Screenshots <a name="NoResultFoundPageScreenshots"></a>
-
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_no_results_found-min.png" alt="No results found page" width="700">
-
 Back to [top](#TableOfContents)
 
 ---
@@ -256,10 +179,6 @@ Back to [top](#TableOfContents)
 #### Description <a name="GoToPageBottomButtonDescription"></a>
 
 - Adding a go to page bottom button, in addition to the page up button in products pages in desktop and mobile devices and in bag page in mobile version.
-
-#### Screenshots <a name="GoToPageBottomButtonScreenshots"></a>
-
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/media/screenshots/boutique_ado_go_to_page_bottom_button-min.png" alt="Go to page bottom button" width="700">
 
 Back to [top](#TableOfContents)
 
