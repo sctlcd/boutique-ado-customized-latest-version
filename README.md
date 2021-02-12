@@ -390,10 +390,10 @@ Back to [top](#TableOfContents)
 Sources of the images used on this site:
 
 - From static/images sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/static/images)
-	- [favicon.ico](https://www.flaticon.com/free-icon/clothing-store_3486355?term=boutique&page=1&position=3) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.flaticon.com/authors/freepik)
+	- [favicon.ico](https://www.flaticon.com/free-icon/clothing-store_3486372?term=boutique&page=1&position=9&related_item_id=3486372) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.flaticon.com/authors/freepik)
 
 - From media/home sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media/home)
-	- [boutique-min.png](https://pixabay.com/fr/photos/femme-shopping-mode-de-vie-belle-3040029/) - [Pixabay](https://pixabay.com) | copyright [gonghuimin468](https://pixabay.com/fr/users/gonghuimin468-3804290/)
+	- [boutique-min.png](https://www.flaticon.com/free-icon/clothing-store_3486372?term=boutique&page=1&position=9&related_item_id=3486372) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.flaticon.com/authors/freepik)
 
 - From media/home/hero_image sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media/home/hero_image)
 	- [hero-image-background-1920-min.jpg](https://pixabay.com/fr/photos/femme-shopping-mode-de-vie-belle-3040029/) - [Pixabay](https://pixabay.com) | copyright [gonghuimin468](https://pixabay.com/fr/users/gonghuimin468-3804290/)
@@ -411,7 +411,7 @@ Sources of the images used on this site:
 	- [pexels-pixabay-235534-min.jpg](https://www.pexels.com/photo/adolescent-beauty-blur-cute-235534/) - [Pexel](https://www.pexels.com/) | copyright [Daniel Xavier](https://www.pexels.com/@danxavier)
 	- [pexels-tim-savage-903661-min.jpg](https://www.pexels.com/photo/photography-of-a-man-wearing-black-shirt-903661/) - [Pexel](https://www.pexels.com/) | copyright [Tim Savage](https://www.pexels.com/@timsavage)
 
-- From media/home/gallery - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media/home/gallery)
+- From media/gallery - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media/gallery)
 	- [pexels-anastasiya-lobanovskaya-1035682-min.jpg](https://www.pexels.com/photo/woman-holding-flower-bouquet-1035682/) - [Pexel](https://www.pexels.com/) | copyright [Anastasiya Lobanovskaya](https://www.pexels.com/@annetnavi)
 	- [pexels-andrea-piacquadio-3782968-min.jpg](https://www.pexels.com/photo/depth-of-field-photography-of-woman-in-pastel-color-sleeveless-shirt-and-white-sunhat-788567/) - [Pexel](https://www.pexels.com/) | copyright [Andrea Piacquadio](https://www.pexels.com/@olly)
 	- [pexels-andrea-piacquadio-788567-min.jpg](https://www.pexels.com/photo/man-in-green-jacket-3782968/) - [Pexel](https://www.pexels.com/) | copyright [Andrea Piacquadio](https://www.pexels.com/@olly)
