@@ -233,6 +233,7 @@ nav .nav-item a.nav-link:hover {
 
 .navbar-mobile .nav-item a.nav-link {
 	margin-right: 0px !important;
+	padding-top: 3rem;
 }
 
 /* ------------------------------- hero image */
