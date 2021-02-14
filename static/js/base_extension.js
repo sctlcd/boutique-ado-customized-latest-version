@@ -5,6 +5,11 @@ $(document).ready(function() {
     $('.header').addClass('bg-white');
   }
 
+  function bgHoverWhite() {
+    bgWhite();
+    $('.header').addClass('bg-hover-white');
+  }
+
   // Navbar not fixed to the top
   function navbarNotFixedTop() {
     $('.header').removeClass('fixed-top');
@@ -24,7 +29,7 @@ $(document).ready(function() {
 
   // Initialisation (page not scrolled)
   function init() {
-    bgWhite();
+    bgHoverWhite();
     navbarNotFixedTop();
   }
 
