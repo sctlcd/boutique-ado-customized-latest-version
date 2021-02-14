@@ -17,7 +17,8 @@
   {% block corecss %}
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
-  <link rel="stylesheet" href="{% static 'css/base_extended.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base_master.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base_extension.css' %}">
   <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon2.ico' %}" />
   {% endblock %}
 
@@ -122,8 +123,8 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        {% include 'includes/base_extended_mobile_top_header.html' %}
-        {% include 'includes/base_extended_main_nav.html' %}
+        {% include 'includes/base_mobile_top_header.html' %}
+        {% include 'includes/base_main_nav.html' %}
       </nav>
     </div>
   </header>
@@ -215,7 +216,7 @@
   </footer>
 
   {% block postloadjs %}
-  <script src="{% static 'js/base_extended.js' %}"></script>
+  <script src="{% static 'js/base_extension.js' %}"></script>
   {% endblock %}
 
 </body>

@@ -197,8 +197,8 @@ Back to [top](#TableOfContents)
 
 ### Front-End Technologies <a name="Front-end-technologies"></a>
 
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Used as the base for markup text.
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - Used as the base for cascading styles.
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Used as the base_master for markup text.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - Used as the base_master for cascading styles.
 - [Bootstrap 4](https://getbootstrap.com/) - Used as responsive front-end framework, mobile first projects design.
 - [JavaScript](https://www.javascript.com/) - Used for user interactions.
 - [jQuery 3.5.1](https://jquery.com/) - JavaScript library, used to simplify some of the DOM manipulations.
@@ -225,11 +225,11 @@ Back to [top](#TableOfContents)
 | :--- | :--- | :---| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | website is responsive <= 767 px | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | n/a | n/a | n/a | n/a |
 | website is responsive >= 768 px | n/a | n/a | n/a | n/a | n/a | n/a | n/a | n/a | n/a | n/a | Good | Good | Good | Good |
-|**base.html** |
+|**base_master.html** |
 | Navigation bar: logo / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
 | Content page: Images / icons text / links / buttons / text | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
 | Footer: text / links | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
-|**base_extended.html** |
+|**base_extension.html** |
 | Navigation bar: logo / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
 | Content page: Images / icons text / links / buttons / text | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
 | Footer: text / links | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good | Good |
