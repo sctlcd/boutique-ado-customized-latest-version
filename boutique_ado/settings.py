@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'sctlcd-boutique-ado.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'sctlcd-boutique-ado-customized.herokuapp.com']
 
 
 # Application definition
