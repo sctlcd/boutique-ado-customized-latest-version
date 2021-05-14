@@ -1,0 +1,33 @@
+.controls-top {
+	margin-bottom: 1.5rem;
+}
+
+.btn-circle.btn-sm {
+  width: 30px;
+  height: 30px;
+  padding: 9px 0px;
+  border-radius: 50px;
+  font-size: 8px;
+  text-align: center;
+	background-color: #68c6e6;
+	color: #fafafa;
+	-webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+	box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.btn-circle.btn-sm:hover {
+	background-color: #adb5bd;
+	-webkit-box-shadow: 0px 5px 5px 0px #828383;
+	box-shadow: 0px 5px 5px 0px #828383;
+}
+
+.carousel .card, .carousel .card-img {
+	border: 1px solid #eee !important;
+  border-radius: 1rem;
+}
+
+.gallery-container #multi-item-carousel .carousel-item .card-img:hover {
+	-webkit-box-shadow: 0px 5px 5px 0px #828383;
+	box-shadow: 0px 5px 5px 0px #828383;
+	cursor: pointer;
+}
