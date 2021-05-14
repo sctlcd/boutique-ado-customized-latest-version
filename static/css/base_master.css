@@ -11,7 +11,9 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-form div > input {
+form div > input,
+form div > select,
+form div > textarea {
 	background: linear-gradient(rgba(250,250,250,0.3), rgba(250,250,250,0.3)) #fafafa !important;
 }
 

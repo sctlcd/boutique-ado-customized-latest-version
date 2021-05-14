@@ -11,3 +11,4 @@ env
 node_modules/
 templates/includes/base_extended_mobile_top_header.html
 templates/includes/base_extended_main_nav.html
+static/css/base_extension2.css
