@@ -715,24 +715,24 @@ nav .nav-item a.nav-link:hover {
   }
 
 	.display-4.logo-font.text-black {
-			font-size: 3.5rem;
+		font-size: 3.5rem;
 	}
 
 	.features-icons .features-icons-item .features-icons-icon i {
-			font-size: 4.5rem;
+		font-size: 4.5rem;
 	}
 
 	.features-icons .features-icons-item:hover .features-icons-icon i {
-			font-size: 5rem;
+		font-size: 5rem;
 	}
 
 	.shop-now-button {
-			min-width: 12rem;
-			font-size: 1.6rem;
+		min-width: 12rem;
+		font-size: 1.6rem;
 	}
 
 	.gallery h2 {
-			font-size: 2.2rem;
+		font-size: 2.2rem;
 	}
 
 	.gallery .share-now-button {
