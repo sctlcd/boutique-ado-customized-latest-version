@@ -1,6 +1,14 @@
 {% extends "base_extension.html" %}
 {% load static %}
 
+{% block extra_title %}
+- Products
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
 	<div class="row">

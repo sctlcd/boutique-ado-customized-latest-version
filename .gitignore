@@ -8,5 +8,5 @@ __pycache__/
 env
 *.sqlite3
 *.pyc
-templates/includes/base_extended_mobile_top_header.html
-templates/includes/base_extended_main_nav.html
+node_modules/
+static/css/base_extension2.css
