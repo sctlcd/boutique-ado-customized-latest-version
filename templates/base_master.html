@@ -101,7 +101,7 @@
             </div>
           </li>
           <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
+            <a class="{% if grand_total %}text-white font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
               <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg text-white"></i></div>
                 <p class="my-0">
@@ -152,62 +152,138 @@
   {% block content %}
   {% endblock %}
 
-  <footer class="footer bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9 h-100 text-center text-lg-left my-auto">
-          <ul class="list-inline mb-2 menu-items">
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">About us</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">Contact us</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">Shipping</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">Return</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">Refund Policy</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">Terms of use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#" class="text-skyblue">Privacy Policy</a>
-            </li>
-          </ul>
-          <p class="text-muted small mb-4 mb-lg-0"><i class="far fa-copyright"></i> 2021 by Lucinda Souchet <a href="https://github.com/sctlcd" target="_blank"><i class="fab fa-github text-black"></i><span class="sr-only">Github</span></a>
-          </p>
-        </div>
-        <div class="col-lg-3 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0 social-links">
-            <li class="list-inline-item mr-3">
-              <a href="https://www.facebook.com/" target="_blank">
-                <i class="fab fa-facebook fa-2x fa-fw text-skyblue"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="https://twitter.com/" target="_blank">
-                <i class="fab fa-twitter-square fa-2x fa-fw text-skyblue"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.instagram.com/" target="_blank">
-                <i class="fab fa-instagram fa-2x fa-fw text-skyblue"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4">
+      <!-- Social media -->
+      <section class="mb-5 mt-3 social-media">
+        <a class="btn m-1" href="https://www.facebook.com/" target="_blank">
+          <i class="fab fa-facebook fa-2x fa-fw text-skyblue"></i>
+        </a>
+        <a class="btn m-1" href="https://twitter.com/" target="_blank">
+          <i class="fab fa-twitter-square fa-2x fa-fw text-skyblue"></i>
+        </a>
+        <a class="btn m-1" href="https://www.instagram.com/" target="_blank">
+          <i class="fab fa-instagram fa-2x fa-fw text-skyblue"></i>
+        </a>
+      </section>
+
+      <!-- Newsletter form -->
+      <section class="mb-5 newsletter">
+        <form action="#!">
+          <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="email-input" class="form-control" />
+                <label class="form-label text-muted" for="email-input">Email address</label>
+              </div>
+            </div>
+
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- Footer links -->
+      <section class="mb-5 footer-links">
+        <div class="row">
+          <!-- First column -->
+          <div class="col-lg-3 col-md-4 mb-4 mb-md-0 first">
+            <h5 class="text-uppercase">Explore</h5>
+            <hr class="bg-skyblue ml-0 my-3">
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">About us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Our team</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Career</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Second column -->
+          <div class="col-lg-3 col-md-4 d-none d-md-none d-lg-block mb-4 mb-md-0 second">
+            <h5 class="text-uppercase">Shop</h5>
+            <hr class="bg-skyblue mx-auto my-3">
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">For women</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">For men</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">For kids</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Third column -->
+          <div class="col-lg-3 col-md-4 mb-4 mb-md-0 third">
+            <h5 class="text-uppercase">Help</h5>
+            <hr class="bg-skyblue mx-auto my-3">
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Returns & Replacements</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Track packages</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Customer service</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Fourth column -->
+          <div class="col-lg-3 col-md-4 mb-4 mb-md-0 fourth">
+            <h5 class="text-uppercase">Legal</h5>
+            <hr class="bg-skyblue mr-0 my-3">
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Delivery rates</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Refund policy</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Terms & Conditions</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+      </section>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3 copyright">
+      <p class="text-white mb-4 mb-lg-0"><i class="far fa-copyright"></i> 2021 by Lucinda Souchet <a href="https://github.com/sctlcd" target="_blank"><i class="fab fa-github text-skyblue ml-1"></i><span class="sr-only">Github</span></a>
+      </p>
     </div>
   </footer>
 
