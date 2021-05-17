@@ -28,7 +28,8 @@
   <div class="row">
     <div class="bag-container col text-center">
       {% if bag_items %}
-      <div class="d-block d-md-none">
+      <!-- mobile display -->
+      <div class="bag-container-mobile d-block d-lg-none">
         <div class="row pt-4">
           <div class="col">
             {% include "bag/bag-total.html" %}
@@ -42,7 +43,7 @@
         </div>
         {% for item in bag_items %}
         <div class="row">
-          <div class="col-12 col-sm-6 mb-2">
+          <div class="col-12 col-sm-6 mb-2 product-image">
             {% include "bag/product-image.html" %}
           </div>
           <div class="col-12 col-sm-6 mb-2">
@@ -73,7 +74,9 @@
           </a>
         </div>
       </div>
-      <div class="table-responsive rounded d-none d-md-block ">
+
+      <!-- desktop display -->
+      <div class="bag-container-desktop table-responsive rounded d-none d-md-block ">
         <table class="table table-sm table-borderless">
           <thead class="text-black">
             <tr>

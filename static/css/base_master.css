@@ -22,6 +22,7 @@ form div > textarea {
 .btn-black {
   background: black !important;
   color: #fafafa;
+	border: 1.5px solid black;
 }
 
 .shop-now-button:hover,
@@ -47,10 +48,6 @@ form div > textarea {
 
 .text-skyblue {
   color: #68c6e6 !important;
-}
-
-.text-info {
-  color: #fafafa!important;
 }
 
 .border-black {
