@@ -335,12 +335,7 @@ nav .nav-item a.nav-link:hover {
   margin-bottom: -10rem;
 }
 
-.footer {
-	height: 15rem;
-}
-
-.footer {
-  padding-top: 5rem;
+footer {
 	-webkit-box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
 	box-shadow: 2px -2px 3px rgba(104, 198, 230, 0.5);
   bottom: 0px;
@@ -349,15 +344,55 @@ nav .nav-item a.nav-link:hover {
   margin-bottom: 0px;
 }
 
-.footer .menu-items a:hover,
-.footer .social-links i:hover {
+footer .menu-items a:hover,
+footer .social-media i:hover {
 	color: #adb5bd!important;
 }
 
-.footer .fa-github:hover {
+footer .fa-github:hover {
 	color: #adb5bd!important;
 }
 
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgb(248 249 250 / 50%);
+	border-color: #adb5bd;
+}
+
+.btn-outline-light:hover {
+  color: #212529;
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+}
+
+.first {
+	text-align: left;
+}
+
+.second {
+	text-align: center;
+}
+
+.third {
+	text-align: center;
+}
+
+.fourth {
+	text-align: right;
+}
+
+footer hr {
+	width:10%;
+	border-top: 1.8px solid rgba(0,0,0,.1);
+}
+
+footer li a:hover {
+	color: #adb5bd !important;
+	text-decoration: none;
+}
+
+.copyright {
+	background-color: rgba(0, 0, 0, 0.2);
+}
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -486,8 +521,8 @@ nav .nav-item a.nav-link:hover {
 		font-size: .8rem;
 	}
 
-	.footer {
-		padding-top: 3rem;
+	.copyright p {
+		margin-bottom: 0.2rem !important;
 	}
 }
 
@@ -544,8 +579,8 @@ nav .nav-item a.nav-link:hover {
 		font-size: 1rem;
 	}
 
-	.footer {
-		padding-top: 3rem;
+	.copyright p {
+		margin-bottom: 0.2rem !important;
 	}
 }
 
@@ -606,9 +641,6 @@ nav .nav-item a.nav-link:hover {
 		font-size: 1rem;
 	}
 
-	.footer {
-		padding-top: 4rem;
-	}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -647,9 +679,6 @@ nav .nav-item a.nav-link:hover {
 		font-size: 1.2rem;
 	}
 
-  .footer {
-		padding-top: 5rem;
-	}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -685,7 +714,4 @@ nav .nav-item a.nav-link:hover {
 			font-size: 1.4rem;
 	}
 
-	.footer {
-		padding-top: 6rem;
-	}
 }
