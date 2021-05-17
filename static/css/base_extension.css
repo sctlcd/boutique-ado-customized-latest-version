@@ -176,6 +176,10 @@ body {
 	.fa-arrow-down {
 		font-size: 0.6rem;
 	}
+
+	.bag-container {
+		width: 80%;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -213,6 +217,10 @@ body {
 	.fa-arrow-up,
 	.fa-arrow-down {
 		font-size: 0.8rem;
+	}
+
+	.bag-container {
+		width: 80%;
 	}
 }
 

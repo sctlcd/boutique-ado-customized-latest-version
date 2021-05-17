@@ -20,7 +20,7 @@ form div > textarea {
 /* ------------------------------- button */
 
 .btn-black {
-  background: black;
+  background: black !important;
   color: #fafafa;
 }
 
