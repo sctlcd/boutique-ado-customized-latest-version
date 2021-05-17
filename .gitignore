@@ -8,5 +8,5 @@ __pycache__/
 env
 *.sqlite3
 *.pyc
-node_modules/
+node_modules
 static/css/base_extension2.css
