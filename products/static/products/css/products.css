@@ -9,11 +9,12 @@
 }
 
 a.category-badge > span.badge:hover {
-  background: #212529 !important;
-  color: #fafafa!important;
+  background: #68c6e6  !important;
+  color: #fafafa !important;
+	border: #68c6e6;
 }
 
-.btt-button-top,
+/* .btt-button-top,
 .btt-button-down {
 	position: fixed;
 	right: 0.6rem;
@@ -21,7 +22,7 @@ a.category-badge > span.badge:hover {
 
 .btt-button-down {
 	bottom: 0.6rem;
-}
+} */
 
 .btt-link,
 .update-link,
@@ -39,7 +40,8 @@ input[name='q']::placeholder {
 }
 
 .products-container .card {
-	border: 1px solid #eee !important;
+	border: 1px solid #dee2e6 !important;
+	box-shadow: 3px 3px 15px 3px #b6b6b6;
 }
 
 .products-container .card:hover {
@@ -85,4 +87,10 @@ input[name='q']::placeholder {
   background-color: #dc3545;
   border-color: #dc3545;
   border-radius: 0;
+}
+
+/* input-group  */
+
+.input-group {
+	width: 75%;
 }

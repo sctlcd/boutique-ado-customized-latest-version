@@ -1,4 +1,4 @@
-# [Boutique Ado](https://sctlcd-boutique-ado.herokuapp.com/)
+# [Boutique Ado](https://sctlcd-boutique-ado-customized.herokuapp.com/)
 
 <img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/design/mockup/boutique_ado_multi_device_website_mockup_presentation-min.png" alt="Boutique Ado" width="700">
 
@@ -6,7 +6,7 @@
 <br />
 User interface improvements: responsive website using HTML, CSS, Bootstrap 4, JavaScript, jQuery
 <br />
-To visite [ **my new version** ](https://sctlcd-boutique-ado.herokuapp.com/) of Boutique Ado website
+To visite [ **my new version** ](https://sctlcd-boutique-ado-customized.herokuapp.com/) of Boutique Ado website
 
 <br>
 
