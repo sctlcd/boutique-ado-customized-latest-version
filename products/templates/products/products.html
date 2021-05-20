@@ -21,11 +21,11 @@
 <div class="overlay"></div>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col text-center mt-3">
+		<div class="col text-center mt-3 mb-4">
 			<h2 class="logo-font">Products</h2>
 			{% for c in current_categories %}
 			<a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-				<span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+				<span class="p-2 mt-2 badge bg-white text-skyblue rounded-0 border border-skyblue">{{ c.friendly_name }}</span>
 			</a>
 			{% endfor %}
 			<hr class="w-50 mb-1">
@@ -33,7 +33,7 @@
 	</div>
 	<div class="row">
 		<div class="products-container col-10 offset-1">
-			<div class="row mt-1 mb-2">
+			<div class="row mt-1 mb-3">
 				<div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
 					<div class="sort-select-wrapper w-50">
 						<select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %} bg-white">
@@ -82,12 +82,12 @@
 									{% if product.category %}
 									<p class="small mt-1 mb-0">
 										<a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-											<i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+											<i class="fas fa-tag mr-1 text-skyblue"></i>{{ product.category.friendly_name }}
 										</a>
 									</p>
 									{% endif %}
 									{% if product.rating %}
-									<small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+									<small class="text-muted"><i class="fas fa-star mr-1 text-warning"></i>{{ product.rating }} / 5</small>
 									{% else %}
 									<small class="text-muted">No Rating</small>
 									{% endif %}
@@ -103,22 +103,22 @@
 					</div>
 				</div>
 				{% if forloop.counter|divisibleby:1 %}
-				<div class="col-12 d-sm-none mb-5">
+				<div class="col-12 d-sm-none mb-5 mt-5">
 					<hr>
 				</div>
 				{% endif %}
 				{% if forloop.counter|divisibleby:2 %}
-				<div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+				<div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5 mt-5">
 					<hr>
 				</div>
 				{% endif %}
 				{% if forloop.counter|divisibleby:3 %}
-				<div class="col-12 d-none d-lg-block d-xl-none mb-5">
+				<div class="col-12 d-none d-lg-block d-xl-none mb-5 mt-5">
 					<hr>
 				</div>
 				{% endif %}
 				{% if forloop.counter|divisibleby:4 %}
-				<div class="col-12 d-none d-xl-block mb-5">
+				<div class="col-12 d-none d-xl-block mb-5 mt-5">
 					<hr>
 				</div>
 				{% endif %}
