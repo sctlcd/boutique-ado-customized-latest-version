@@ -83,6 +83,16 @@ body {
 	border: 1px solid #adb5bd !important;
 }
 
+/* ------------------------------- image effect */
+
+.zoom {
+	transition: transform 0.2s;
+}
+
+.zoom:hover {
+	transform: scale(1.08);
+}
+
 /* ------------------------------- navbar */
 
  #mobile-home i {
