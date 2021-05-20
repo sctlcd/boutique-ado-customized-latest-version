@@ -115,6 +115,7 @@ Back to [top](#TableOfContents)
 
 #### Description <a name="FooterDescription"></a>
 
+- Newsletter subscription in the purpose of the website presentation (not implemented)
 - Links to additional website pages in the purpose of the website presentation (page links not implemented)
 - Social media links
 - A copyright mention is displayed with my name beside a GitHub icon link which opens my [Github](https://github.com/sctlcd)
@@ -276,23 +277,18 @@ There is no way to install the latest version of the Safari browser on Windows 1
 
 **HTML**
 - [W3C HTML Validator](https://validator.w3.org/)
-	#TO_UPDATE
 
 **CSS**
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-	#TO_UPDATE
 
 **Javascript**
 - [Javascript Validator](https://jshint.com/)
-	#TO_UPDATE
 
 **Chrome DevTools**
 - [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
-	#TO_UPDATE
 
 **Python**
 - [Python validator](http://pep8online.com/)
-	#TO_UPDATE
 
 
 ### Known Issues <a name="KnownIssues"></a>
