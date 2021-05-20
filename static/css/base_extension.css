@@ -49,8 +49,8 @@ body {
 
 .btn-black:hover {
   background: #222 !important;
-  color: #fafafa;
-	border: 1px solid #222;
+  color: #dee0e2;
+	/* border: 1px solid #222; */
 }
 
 .btt-button-top, .btt-button-down {

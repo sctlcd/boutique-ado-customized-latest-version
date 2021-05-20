@@ -6,6 +6,10 @@
 - Bag
 {% endblock %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'bag/css/bag.css' %}">
+{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
   <div class="row">
@@ -26,11 +30,11 @@
   </div>
 
   <div class="row">
-    <div class="bag-container col text-center">
+    <div class="bag-container col text-center mt-5">
       {% if bag_items %}
       <!-- mobile display -->
       <div class="bag-container-mobile d-block d-lg-none">
-        <div class="row pt-4">
+        <div class="row pt-2">
           <div class="col">
             {% include "bag/bag-total.html" %}
           </div>
@@ -49,17 +53,17 @@
           <div class="col-12 col-sm-6 mb-2">
             {% include "bag/product-info.html" %}
           </div>
-          <div class="col-12 col-sm-6 order-sm-last">
+          <div class="col-12 col-sm-6 order-sm-last mt-4">
             <p class="my-0">Price Each: ${{ item.product.price }}</p>
             <p><strong>Subtotal: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
           </div>
-          <div class="col-12 col-sm-6">
+          <div class="col-12 col-sm-6 mt-4">
             {% include "bag/quantity-form.html" %}
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <hr>
+            <hr class="my-5">
           </div>
         </div>
         {% endfor %}
