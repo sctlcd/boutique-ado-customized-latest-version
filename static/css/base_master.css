@@ -378,7 +378,7 @@ footer .fa-github:hover {
 }
 
 footer hr {
-	width:10%;
+	width: 10%;
 	border-top: 1.8px solid rgba(0,0,0,.1);
 }
 
@@ -545,6 +545,10 @@ footer li a:hover {
 	#newsletter-submit {
 		margin-top: 0.8rem;
 	}
+
+	footer hr {
+		width: 5%;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -607,6 +611,10 @@ footer li a:hover {
 
 	#newsletter-submit {
 		margin-top: 0.8rem;
+	}
+
+	footer hr {
+		width: 5%;
 	}
 }
 
@@ -673,6 +681,10 @@ footer li a:hover {
 
 	#newsletter-submit {
 		margin-top: 0rem;
+	}
+
+	footer hr {
+		width: 10%;
 	}
 }
 

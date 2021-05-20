@@ -49,8 +49,8 @@ body {
 
 .btn-black:hover {
   background: #222 !important;
-  color: #fafafa;
-	border: 1px solid #222;
+  color: #dee0e2;
+	/* border: 1px solid #222; */
 }
 
 .btt-button-top, .btt-button-down {
@@ -81,6 +81,16 @@ body {
 
 .border-grey {
 	border: 1px solid #adb5bd !important;
+}
+
+/* ------------------------------- image effect */
+
+.zoom {
+	transition: transform 0.2s;
+}
+
+.zoom:hover {
+	transform: scale(1.06);
 }
 
 /* ------------------------------- navbar */
