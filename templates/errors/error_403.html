@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_title %}
-- Error 404: Page Not Found
+- Error 403: Forbidden access
 {% endblock %}
 
 {% block page_header %}
@@ -17,17 +17,17 @@
 <div class="container text-center text-muted my-5">
 	<div class="row">
 		<div class="col-12">
-			<h1 class="mb-5">Page not found!</h1>
+			<h1 class="mb-5">Forbidden access!</h1>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
-      <img src="{{ MEDIA_URL }}errors/error_404-min.jpg" alt="Error 404" class="error-img responsive-img zoom">
+      <img src="{{ MEDIA_URL }}errors/error_403-min.jpg" alt="Error 403" class="error-img responsive-img zoom">
     </div>
 	</div>
 	<div class="row">
 		<div class="col-12">
-			<h4 class="pt-5 mt-5">Oops! This page doesn't exist!</h4>
+			<h4 class="pt-5 mt-5">Arrrg! You don't have access to this page or resource!</h4>
 			<h4 class="py-3">Let's go back to
 				<span><a id="back-products-home" href="{% url 'products' %}">Products Home</a></span>!
 			</h4>

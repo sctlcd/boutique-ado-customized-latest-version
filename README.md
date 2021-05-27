@@ -340,6 +340,12 @@ Sources of the images used on this site:
 	- [pexels-lucas-pezeta-2529375-min.jpg](https://www.pexels.com/photo/woman-spreading-both-her-arms-2529375/) - [Pexel](https://www.pexels.com/) | copyright [Lucas Pezeta](https://www.pexels.com/@lucaspezeta)
 	- [pexels-toa-heftiba-şinca-1194412-min.jpg](https://www.pexels.com/photo/three-men-sitting-on-veranda-1194412/) - [Pexel](https://www.pexels.com/) | copyright [Toa Heftiba Şinca](https://www.pexels.com/@toa-heftiba-sinca-235378)
 
+- From media/errors sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media/errors)
+	- [error_500-min.jpg](https://www.freepik.com/free-vector/500-internal-server-error-concept-illustration_13416109.htm#page=1&query=server%20error&position=4) - [Freepik](https://www.freepik.com/) | copyright [Stories](https://storyset.com/)
+	- [error_404-min.jpg](https://www.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_7967793.htm#page=1&query=server%20error&position=7) - [Freepik](https://www.freepik.com/) | copyright [Stories](https://storyset.com/)
+	- [error_403-min.jpg](https://www.freepik.com/free-vector/403-error-forbidden-with-police-concept-illustration_8030434.htm#page=1&query=403%20error&position=3) - [Freepik](https://www.freepik.com/) | copyright [Stories](https://storyset.com/)
+	- [error_400-min.jpg](https://www.freepik.com/free-vector/400-error-bad-request-concept-illustration_8030432.htm#page=1&query=400%20error&position=0) - [Freepik](https://www.freepik.com/) | copyright [Stories](https://storyset.com/)
+
 - From media directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media)
 	- [no-results-found-min.jpg](https://all-free-download.com/free-vector/download/exploration-job-background-searching-man-sketch-cartoon-design_6844384.html) - [Free vectors](https://all-free-download.com/free-vector/) | copyright [BSGStudio](http://buysellgraphic.com/)
 	- All product images - Code institute
