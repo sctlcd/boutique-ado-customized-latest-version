@@ -28,3 +28,6 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('gallery/', include('gallery.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = 'boutique_ado.views.handler404'
+handler500 = 'boutique_ado.views.handler500'

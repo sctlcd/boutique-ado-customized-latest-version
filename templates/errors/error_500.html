@@ -1,0 +1,47 @@
+{% extends "base_extension.html" %}
+{% load static %}
+
+{% block extra_title %}
+- Error 500: Internal Server Error
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+	<div class="row">
+		<div class="col"></div>
+	</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container text-center text-muted my-5">
+	<div class="row">
+		<div class="col-12">
+			<h1 class="pb-5 mb-5">Internal Server Error</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
+      <img src="{{ MEDIA_URL }}errors/error_500-min.jpg" alt="Error 500" class="error-500-img responsive-img zoom">
+    </div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<h4 class="pt-5 mt-5">Doops! Well this is unexpected!</h4>
+			<h4 class="pt-3">An error has occured and we're working to fix the problem!</h4>
+			<h4 class="pt-3">We'll be up and running shortly.</h4>
+			<h5 class="py-3">Let's go back to
+				<span><a id="back-products-home" class="text-info" href="{% url 'products' %}">Products Home</a></span>!
+			</h5>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block page_bottom %}
+<div class="container bottom-container">
+	<div class="row">
+		<div class="col"></div>
+	</div>
+</div>
+{% endblock %}
