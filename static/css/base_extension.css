@@ -195,7 +195,7 @@ body {
 /* -------------------------------- Media Queries */
 /* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
-  .footer .container {
+  footer .container {
     max-width: 80%;
   }
 
@@ -245,6 +245,10 @@ body {
 
   footer .container {
     width: 90%;
+  }
+
+  .error-container {
+    max-width: 90%;
   }
 }
 
