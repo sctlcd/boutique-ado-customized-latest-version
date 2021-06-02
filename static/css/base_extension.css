@@ -71,6 +71,20 @@ body {
   box-shadow: 0px 4px 10px #6c757d !important;
 }
 
+.btn.focus,
+.btn:focus,
+button:focus {
+	box-shadow: 0 0 0 0.2rem rgb(173 181 189 / 80%);
+}
+
+.custom-select:focus,
+.btn.focus,
+.btn:focus,
+button:focus {
+	outline: 0;
+	border-color: #adb5bd !important;
+}
+
 /* ------------------------------- text, border, background style */
 .text-grey {
   color: #adb5bd;
