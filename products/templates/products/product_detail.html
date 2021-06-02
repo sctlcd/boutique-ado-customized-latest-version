@@ -24,18 +24,18 @@
     <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
       <div class="image-container my-5 zoom">
         {% if product.image %}
-        <a href="{{ product.image.url }}" target="_blank">
-          <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+        <a href="{{ MEDIA_URL }}products/product_images/{{ product.image }}" target="_blank">
+          <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}products/product_images/{{ product.image }}" alt="{{ product.name }}">
         </a>
         {% else %}
         <a href="">
-          <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+          <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}products/no_image/noimage.png" alt="{{ product.name }}">
         </a>
         {% endif %}
       </div>
     </div>
     <div class="col-12 col-md-6 col-lg-4">
-      <div class="product-details-container mb-5 mt-md-5">
+      <div class="product-details-container mb-5 mt-5 ml-3">
         <p class="mb-0">{{ product.name }}</p>
         <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
         {% if product.category %}
