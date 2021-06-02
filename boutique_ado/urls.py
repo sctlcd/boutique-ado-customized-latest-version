@@ -33,3 +33,8 @@ handler404 = 'boutique_ado.views.handler404'
 handler500 = 'boutique_ado.views.handler500'
 handler403 = 'boutique_ado.views.handler403'
 handler400 = 'boutique_ado.views.handler400'
+
+admin.site.site_header = 'Boutique Ado Administration'
+admin.site.site_title = 'Boutique Ado Admin Portal'
+admin.site.index_title = 'Welcome to Boutique Ado Admin Portal'
+admin.site.site_url = '/admin'
