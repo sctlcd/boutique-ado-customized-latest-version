@@ -81,6 +81,10 @@ form div>textarea {
   background: #fafafa !important;
 }
 
+.bg-light-grey {
+  background: rgba(0,0,0,0.08) !important;
+}
+
 /* ------------------------------- navbar */
 /* from Bulma */
 .icon {
@@ -121,7 +125,10 @@ form div>textarea {
   color: black !important;
 }
 
-.bg-hover-white:hover form input,
+.bg-hover-white:focus:hover form input {
+  border: 1px solid #adb5bd !important;
+}
+
 .bg-hover-white:hover form button,
 .bg-hover-white form input,
 .bg-hover-white form button {
@@ -233,6 +240,15 @@ nav .nav-item a.nav-link:hover {
   padding-top: 3rem;
 }
 
+.dropdown-menu {
+  padding: 0;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgb(173 181 189 / 50%);
+  border-color: #adb5bd !important;
+}
+
 /* ------------------------------- hero image */
 .shop-now-button {
   background: black;
@@ -342,7 +358,7 @@ footer .fa-github:hover {
   color: #adb5bd !important;
 }
 
-.form-control:focus {
+.newsletter .form-control:focus {
   box-shadow: 0 0 0 0.2rem rgb(248 249 250 / 50%);
   border-color: #adb5bd;
 }
