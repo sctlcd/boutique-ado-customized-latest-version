@@ -199,19 +199,19 @@ form div>textarea {
 }
 
 .header .list-inline-item.show a.nav-link {
-  background-color: #dee2e66e;
+  background-color: #cacaca75;
 }
 
 .header .list-inline-item a.nav-link:hover {
-  background-color: #dee2e66e;
+  background-color: #cacaca75;
 }
 
 nav .nav-item.show a.nav-link {
-  background-color: #dee2e66e;
+  background-color: #cacaca75;
 }
 
 nav .nav-item a.nav-link:hover {
-  background-color: #dee2e66e;
+  background-color: #cacaca75;
 }
 
 .header .list-inline-item.show .dropdown-menu.show,
