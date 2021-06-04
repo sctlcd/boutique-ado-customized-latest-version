@@ -2,8 +2,8 @@
 
 {% if widget.is_initial %}
     <p>{{ widget.initial_text }}:</p>
-    <a href="https://sctlcd-boutique-ado-customized.herokuapp.com/media/products/product_images/{{ widget.value }}">
-        <img width="96" height="96" class="rounded shadow-sm" src="https://sctlcd-boutique-ado-customized.herokuapp.com/media/products/product_images/{{ widget.value }}">
+    <a href="https://sctlcd-boutique-ado.s3.amazonaws.com/media/products/product_images/{{ widget.value }}">
+        <img width="96" height="96" class="rounded shadow-sm" src="https://sctlcd-boutique-ado.s3.amazonaws.com/media/products/product_images/{{ widget.value }}">
     </a>
     {% if not widget.required %}
         <div class="custom-control custom-checkbox mt-2">
