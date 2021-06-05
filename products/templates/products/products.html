@@ -95,6 +95,7 @@
 									<small class="ml-3">
 										<!-- Edit product modal trigger -->
 										<a href="#" data-toggle="modal" data-target="#edit-{{ product.id }}">Edit</a> |
+										<!-- Delete product modal trigger -->
 										<a class="text-danger" href="#" data-toggle="modal" data-target="#delete-{{ product.id }}">Delete</a>
 									</small>
 									{% endif %}
@@ -136,7 +137,7 @@
 				    <div class="modal-content text-center">
 							<!-- modal header -->
 				      <div class="modal-header">
-				        <h5 class="modal-title text-danger ml-auto"><i class="fas fa-trash-alt"></i> Edit Product</h5>
+				        <h5 class="modal-title text-danger ml-auto"><i class="fas fa-trash-alt"></i> Delete Product</h5>
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				          <span aria-hidden="true">&times;</span>
 				        </button>

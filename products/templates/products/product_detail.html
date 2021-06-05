@@ -54,7 +54,8 @@
             <small class="ml-3">
 								<!-- Edit product modal trigger -->
                 <a id="edit-product-link" href="#" data-toggle="modal" data-target="#edit-{{ product.id }}">Edit</a> |
-                <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+								<!-- Delete product modal trigger -->
+								<a id="delete-product-link" class="text-danger" href="#" data-toggle="modal" data-target="#delete-{{ product.id }}">Delete</a>
             </small>
         {% endif %}
 
@@ -65,7 +66,7 @@
 				    <div class="modal-content text-center">
 							<!-- modal header -->
 				      <div class="modal-header">
-				        <h5 class="modal-title text-skyblue ml-auto"><i class="fas fa-edit"></i> Edit Product</h5>
+				        <h5 class="modal-title text-warning ml-auto"><i class="fas fa-edit"></i> Edit Product</h5>
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				          <span aria-hidden="true">&times;</span>
 				        </button>
@@ -76,7 +77,32 @@
 				      </div>
 							<!-- modal footer -->
 				      <div class="modal-footer">
-				        <a class="btn btn-skyblue" href="{% url 'edit_product' product.id %}">Yes</a>
+				        <a class="btn btn-warning" href="{% url 'edit_product' product.id %}">Yes</a>
+				        <a class="btn btn-secondary text-white" data-dismiss="modal">Cancel</a>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<!-- Delete product modal confirmation -->
+				<div class="modal fade" id="delete-{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="deleteProductModal" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered modal-danger" role="document">
+						<!-- modal content -->
+				    <div class="modal-content text-center">
+							<!-- modal header -->
+				      <div class="modal-header">
+				        <h5 class="modal-title text-danger ml-auto"><i class="fas fa-trash-alt"></i> Delete Product</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+							<!-- modal body -->
+				      <div class="modal-body my-4">
+				        <p>Are you sure you want to delete {{ product.name }}?</p>
+				      </div>
+							<!-- modal footer -->
+				      <div class="modal-footer">
+				        <a class="btn btn-danger" href="{% url 'delete_product' product.id %}">Yes</a>
 				        <a class="btn btn-secondary text-white" data-dismiss="modal">Cancel</a>
 				      </div>
 				    </div>
