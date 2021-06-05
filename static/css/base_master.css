@@ -249,6 +249,10 @@ nav .nav-item a.nav-link:hover {
   border-color: #adb5bd !important;
 }
 
+.dropdown-menu-desktop-user-account {
+  transform: translate3d(-45px, 53px, 0px)!important;
+}
+
 /* ------------------------------- hero image */
 .shop-now-button {
   background: black;
