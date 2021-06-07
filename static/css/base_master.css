@@ -237,7 +237,7 @@ nav .nav-item a.nav-link:hover {
 
 .navbar-mobile .nav-item a.nav-link {
   margin-right: 0px !important;
-  padding-top: 3rem;
+  margin-top: 3rem;
 }
 
 .dropdown-menu {
@@ -247,6 +247,50 @@ nav .nav-item a.nav-link:hover {
 .form-control:focus {
   box-shadow: 0 0 0 0.2rem rgb(173 181 189 / 50%);
   border-color: #adb5bd !important;
+}
+
+.dropdown-menu-desktop-user-account {
+  transform: translate3d(-45px, 53px, 0px)!important;
+}
+
+.bg-hover-white,
+.bg-hover-white:hover,
+.bg-hover-white .dropdown-menu-mobile-search,
+.bg-hover-white:hover .dropdown-menu-mobile-search {
+  background: #efefef !important;
+}
+
+.bg-hover-white form input,
+.bg-hover-white:hover form input,
+.bg-hover-white .navbar-toggler {
+  background-color: #efefef !important;
+}
+
+.bg-hover-white form button,
+.bg-hover-white:hover form button,
+.bg-hover-white .dropdown-menu-mobile-search form button,
+.bg-hover-white:hover .dropdown-menu-mobile-search form button {
+  color: #efefef !important;
+}
+
+.bg-hover-white.fixed-top,
+.bg-hover-white:hover.fixed-top,
+.bg-hover-white.fixed-top .dropdown-menu-mobile-search,
+.bg-hover-white:hover.fixed-top .dropdown-menu-mobile-search {
+  background: #fafafa !important;
+}
+
+.bg-hover-white.fixed-top form input,
+.bg-hover-white:hover.fixed-top form input,
+.bg-hover-white.fixed-top .navbar-toggler {
+  background-color: #fafafa !important;
+}
+
+.bg-hover-white.fixed-top form button,
+.bg-hover-white:hover.fixed-top form button,
+.bg-hover-white.fixed-top .dropdown-menu-mobile-search form button,
+.bg-hover-white:hover.fixed-top .dropdown-menu-mobile-search form button {
+  color: #fafafa !important;
 }
 
 /* ------------------------------- hero image */
@@ -563,6 +607,11 @@ footer li a:hover {
 
   footer hr {
     width: 5%;
+  }
+
+  .user-options-mobile {
+    left: -2rem;
+    min-width: 8rem;
   }
 }
 
