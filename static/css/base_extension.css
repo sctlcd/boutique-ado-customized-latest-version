@@ -108,46 +108,6 @@ button:focus {
   color: #68c6e6 !important;
 }
 
-.bg-hover-white,
-.bg-hover-white:hover,
-.bg-hover-white .dropdown-menu-mobile-search,
-.bg-hover-white:hover .dropdown-menu-mobile-search {
-  background: #efefef !important;
-}
-
-.bg-hover-white form input,
-.bg-hover-white:hover form input,
-.bg-hover-white .navbar-toggler {
-  background-color: #efefef !important;
-}
-
-.bg-hover-white form button,
-.bg-hover-white:hover form button,
-.bg-hover-white .dropdown-menu-mobile-search form button,
-.bg-hover-white:hover .dropdown-menu-mobile-search form button {
-  color: #efefef !important;
-}
-
-.bg-hover-white.fixed-top,
-.bg-hover-white:hover.fixed-top,
-.bg-hover-white.fixed-top .dropdown-menu-mobile-search,
-.bg-hover-white:hover.fixed-top .dropdown-menu-mobile-search {
-  background: #fafafa !important;
-}
-
-.bg-hover-white.fixed-top form input,
-.bg-hover-white:hover.fixed-top form input,
-.bg-hover-white.fixed-top .navbar-toggler {
-  background-color: #fafafa !important;
-}
-
-.bg-hover-white.fixed-top form button,
-.bg-hover-white:hover.fixed-top form button,
-.bg-hover-white.fixed-top .dropdown-menu-mobile-search form button,
-.bg-hover-white:hover.fixed-top .dropdown-menu-mobile-search form button {
-  color: #fafafa !important;
-}
-
 /* ------------------------------- footer */
 .push {
   height: 13rem;
