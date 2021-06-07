@@ -608,6 +608,11 @@ footer li a:hover {
   footer hr {
     width: 5%;
   }
+
+  .user-options-mobile {
+    left: -2rem;
+    min-width: 8rem;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
