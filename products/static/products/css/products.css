@@ -98,5 +98,44 @@ input[name='q']::placeholder {
 /* input-group  */
 
 .input-group {
-	width: 75%;
+	width: 50%;
+}
+
+/* -------------------------------- Media Queries */
+/* Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 325px) {
+	.input-group {
+		width: 60%;
+	}
+
+	.product-details-container form a {
+		margin-top: 1.8rem!important;
+	}
+
+	.product-details-container form input.btn-black {
+		margin-top: 0.5rem!important;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.product-details-container,
+	.image-container {
+		margin-top: 0.5rem!important;
+	}
+
+	.card-img-top {
+		width: 80%;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+	.product-details-container,
+	.image-container {
+		margin-top: 0.5rem!important;
+	}
+
+	.card-img-top {
+		width: 70%;
+	}
 }
