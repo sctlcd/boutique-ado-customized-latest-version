@@ -35,6 +35,16 @@ form div>textarea {
   border: 1px solid #68c6e6;
 }
 
+.btn-grey {
+  background: #6c757d;
+  color: #fafafa;
+}
+
+.btn-grey:hover {
+  background: #95a0aa;
+  color: #fafafa;
+}
+
 /* ------------------------------- text, border, background style */
 .text-black {
   color: #000 !important;
@@ -375,6 +385,11 @@ nav .nav-item a.nav-link:hover {
   background: black;
   color: #fafafa;
   min-width: 6rem;
+}
+
+/* ------------------------------- forms */
+.form-control {
+  font-size: 0.9rem;
 }
 
 /* ------------------------------- footer */
