@@ -343,6 +343,11 @@ nav .nav-item a.nav-link:hover {
   min-width: 6rem;
 }
 
+/* ------------------------------- forms */
+.form-control {
+  font-size: 0.9rem;
+}
+
 /* ------------------------------- footer */
 /* credit: https://css-tricks.com/couple-takes-sticky-footer/ */
 .wrapper {
