@@ -43,7 +43,7 @@
       <p class="my-0 text-white">My Account</p>
     </div>
   </a>
-  <div class="dropdown-menu border-0 bg-white" aria-labelledby="user-options">
+  <div class="dropdown-menu user-options-mobile border-0 bg-white" aria-labelledby="user-options">
     {% if request.user.is_authenticated %}
     {% if request.user.is_superuser %}
     <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
