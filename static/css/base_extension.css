@@ -208,10 +208,21 @@ button:focus {
 
 /* -------------------------------- Media Queries */
 /* Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 325px) {
+	.checkout-container #submit-button {
+	    margin-top: 0.5rem!important;
+	}
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
   footer .container {
     max-width: 80%;
   }
+
+	.container {
+		width: 90%;	
+	}
 
   .btn.btn-outline-black.rounded-0,
   .btn.btn-black.rounded-0 {
