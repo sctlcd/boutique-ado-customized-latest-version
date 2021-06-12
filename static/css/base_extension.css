@@ -144,7 +144,7 @@ button:focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #000;
+  background: #000 !important;
   border: 1px solid #000;
   padding: .375rem .75rem;
   font-size: 1rem;
@@ -157,7 +157,7 @@ button:focus {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
   color: #dee0e2;
-  background-color: #222;
+  background: #222 !important;
   border-color: #222;
 }
 
@@ -172,6 +172,10 @@ button:focus {
   footer .container {
     max-width: 80%;
   }
+
+	.container {
+		width: 90%;
+	}
 
   .btn.btn-outline-black.rounded-0,
   .btn.btn-black.rounded-0 {

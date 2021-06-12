@@ -20,7 +20,7 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
+<div class="container checkout-container">
 	<div class="row">
 		<div class="col">
 			<hr>
@@ -32,8 +32,8 @@
 	<div class="row mt-5">
 		<div class="col-12 col-lg-6 order-lg-last mb-5">
 			<p class="text-muted mb-4">Order Summary ({{ product_count }})</p>
-			<div class="row">
-				<div class="col-7 offset-2">
+			<div class="row mb-2">
+				<div class="col-7 offset-1 offset-sm-2">
 					<p class="mb-1 mt-0 small text-muted">Item</p>
 				</div>
 				<div class="col-3 text-right">
@@ -41,8 +41,8 @@
 				</div>
 			</div>
 			{% for item in bag_items %}
-			<div class="row">
-				<div class="col-2 mb-1">
+			<div class="row mb-3">
+				<div class="col-2 mb-1 d-none d-sm-block">
 					<a href="{% url 'product_detail' item.product.id %}">
 						{% if item.product.image %}
 						<img class="w-100 checkout-image zoom" src="{{ MEDIA_URL }}products/product_images/{{ item.product.image }}" alt="{{ product.name }}">
@@ -51,7 +51,7 @@
 						{% endif %}
 					</a>
 				</div>
-				<div class="col-7">
+				<div class="col-7 offset-1 offset-sm-0">
 					<p class="my-0"><strong>{{ item.product.name }}</strong></p>
 					<p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
 					<p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
@@ -129,7 +129,7 @@
 							<i class="fas fa-lock"></i>
 						</span>
 					</button>
-					<p class="small text-danger my-0">
+					<p class="small text-danger my-0 mt-1">
 						<span class="icon">
 							<i class="fas fa-exclamation-circle"></i>
 						</span>
