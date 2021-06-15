@@ -249,11 +249,11 @@ Back to [top](#TableOfContents)
 
 I tested the website across the 6 main browsers in both desktop and mobile configuration to ensure a large number of users can use it successfully.
 
-- Chrome v.86.0
-- Edge v.86.0
-- Firefox v.82.0
+- Chrome v.91.0
+- Edge v.91.0
+- Firefox v.89.0
 - Safari v.5.1.7 for Windows 10
-- Opera v.72.0
+- Opera v.76.0
 - Internet Explorer v.11
 
 |All pages | Chrome | Edge | Firefox | Safari | Opera | IE |
