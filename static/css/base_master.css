@@ -24,6 +24,11 @@ form div>textarea {
   border: 1.5px solid black;
 }
 
+.btn-black:hover {
+    background: #222 !important;
+    color: #dee0e2;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
