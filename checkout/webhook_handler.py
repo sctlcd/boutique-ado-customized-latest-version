@@ -24,9 +24,9 @@ class StripeWH_Handler:
             Send the user a confirmation email
         """
         cust_email = order.email
-        subject = render_to_string(
-            'checkout/confirmation_emails/confirmation_email_subject.txt',
-            {'order': order})
+        order_number = order.order_number
+        subject = ' Boutique Ado Confirmation for Order Number {order_number}' \
+                    .format(order_number=order_number)
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
