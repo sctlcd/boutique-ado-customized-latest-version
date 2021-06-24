@@ -1,6 +1,6 @@
 # [Boutique Ado](https://sctlcd-boutique-ado-customized.herokuapp.com/)
 
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/design/mockup/boutique_ado_multi_device_website_mockup_presentation-min.png" alt="Boutique Ado" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-customized-latest-version/blob/master/design/mockup/boutique_ado_multi_device_website_mockup_presentation-min.png" alt="Boutique Ado" width="700">
 
 **User interface improvements, look and feel, presentation, interactivity**, adding features relative to user interface improvements (image gallery, go to page bottom button, highlighting menu/sub-menu items, "Home" icon link on mobile devices, navbar display change on its hover position and on window scroll position) to the initial Boutique Ado website version.
 <br />
@@ -64,7 +64,7 @@ User interface improvements: responsive website using HTML, CSS, Bootstrap 4, Ja
 ## Initial website user interface <a name="InitialWebsiteUserInterface"></a>
 
 <p>Initial website user interface</p>
-<img src="https://github.com/sctlcd/boutique-ado-v1/blob/master/design/original_version/boutique_ado_initial_UI-min.png" alt="Initial website user interface" width="700">
+<img src="https://github.com/sctlcd/boutique-ado-customized-latest-version/blob/master/design/original_version/boutique_ado_initial_UI-min.png" alt="Initial website user interface" width="700">
 <br /><br />
 
 Back to [top](#TableOfContents)
@@ -91,7 +91,7 @@ Back to [top](#TableOfContents)
 	- Menu item highlighted when hovered or selected/pulled down
 	- Sub-menu item highlighted when hovered
 	- "My account" menu closes when the user clicks anywhere in the page
-	- Search button color change when hovered or selected
+	- Search button colour change when hovered or selected
 
 - Specific desktop :
 	- Dropdown menus: dark grey box shadow
@@ -298,37 +298,176 @@ Back to [top](#TableOfContents)
 
 ---
 
+## Deployment <a name="deployment"></a>
+
+### Deployment – Run Locally <a name="deploymentRunLocally"></a>
+
+It's highly recommended to work in a virtual environment, but not absolutely required.
+
+In order to run this project locally on your own system, you will need the following installed (as a bare minimum):
+
+- [Python3](https://www.python.org/downloads) to run the application.
+- [PIP](https://pip.pypa.io/en/stable/installing) to install all app requirements.
+- [GIT](https://www.atlassian.com/git/tutorials/install-git) for cloning and version control.
+
+Next, there's a series of steps to take in order to proceed with local deployment:
+
+- Clone this GitHub repository by either clicking the green "*Clone or download*" button above in order to download the project as a zip-file (remember to unzip it first), or by entering the following command into the Git CLI terminal:
+    - `git clone https://github.com/sctlcd/boutique-ado-customized-latest-version.git`
+- Navigate to the correct file location after unpacking the files.
+    - `cd <path to folder>`
+- Create a `.env` file with your own credentials.
+
+	| **Key** | **Value** |
+	|----------|:-------------:|
+	| AWS_ACCESS_KEY_ID | <your_aws_access_key_id>  |
+	| AWS_SECRET_ACCESS_KEY | <your_aws_secret_access_key> |
+	| DATABASE_URL | <your_database_url> |
+	| EMAIL_HOST_PASS | <your_email_host_pass> |
+	| EMAIL_HOST_USER | <your_email_host_user> |
+	| SECRET_KEY | <your_secret_key> |
+	| STRIPE_PUBLIC_KEY| <your_stripe_public_key> |
+	| STRIPE_SECRET_KEY | <your_stripe_secret_key> |
+	| STRIPE_WH_SECRET | <your_stripe_wh_secret> |
+	| USE_AWS | True |
+	| DEBUG | DEVELOPMENT |
+
+- Install all requirements from the [requirements.txt](https://github.com/sctlcd/boutique-ado-customized-latest-version/blob/master/requirements.txt) file using this command:
+    - `sudo -H pip3 -r requirements.txt`
+- In the IDE terminal, use the following command to launch the Django project:
+    - `python manage.py runserver`
+- The Django server should be running locally now on **http://127.0.0.1:8000** (or similar). If it doesn't automatically open, you can copy/paste it into your browser of choice.
+- When you run the Django server for the first time, it should create a new *SQLite3* database file: **db.sqlite3**
+- Next, you'll need to make migrations to create the database schema:
+    - `python manage.py makemigrations`
+    - `python manage.py migrate`
+- In order to access the Django *Admin Panel*, you must generate a superuser:
+    - `python manage.py createsuperuser`
+    - (assign an admin username, email, and secure password)
+
+Once the database migrations and superuser have been successfully completed, Django should migrate the existing *migrations.py* files from each app to configure the following relational schema:
+
+Back to [top](#tableOfContents)
+
+---
+
+### Deployment – Live Website <a name="deploymentLiveWebsite"></a>
+
+This site is currently deployed on [Heroku](https://www.heroku.com/) using the **master** branch on GitHub. Once you have the project setup locally, you can proceed to deploy it remotely with the following steps:
+
+- Create a **requirements.txt** file so Heroku can install the required dependencies to run the app:
+    - `sudo pip3 freeze --local > requirements.txt`
+    - The *requirements.txt* file for this project can be found here: [requirements.txt](https://github.com/sctlcd/boutique-ado-customized-latest-version/blob/master/requirements.txt)
+- Create a **Procfile** to tell Heroku what type of application is being deployed using *boutique-ado-customized-latest-version*, and how to run it:
+    - `echo web: gunicorn main.wsgi:application > Procfile`
+    - The *Procfile* for this project can be found here: [Procfile](https://github.com/sctlcd/boutique-ado-customized-latest-version/tree/master/profiles)
+- Sign up for a free Heroku account, create your project app, and click the **Deploy** tab, at which point you can *Connect GitHub* as the Deployment Method, and select *Enable Automatic Deployment*.
+- In the Heroku **Resources** tab, navigate to the *Add-Ons* section and search for **Heroku Postgres**. Make sure to select the free *Hobby* level. This will allow you to have a remote database instead of using the local sqlite3 database, and can be found in the Settings tab. You'll need to update your *.env* file with your new *database-url* details.
+- In the Heroku **Settings** tab, click on the *Reveal Config Vars* button to configure environmental variables. You will need to copy/paste all of the *.env* key value pairs into the config variables, but please omit the *development=1* variable; this is only for local deployment.
+
+	| **Key** | **Value** |
+	|----------|:-------------:|
+	| AWS_ACCESS_KEY_ID | <your_aws_access_key_id>  |
+	| AWS_SECRET_ACCESS_KEY | <your_aws_secret_access_key> |
+	| DATABASE_URL | <your_database_url> |
+	| EMAIL_HOST_PASS | <your_email_host_pass> |
+	| EMAIL_HOST_USER | <your_email_host_user> |
+	| SECRET_KEY | <your_secret_key> |
+	| STRIPE_PUBLIC_KEY| <your_stripe_public_key> |
+	| STRIPE_SECRET_KEY | <your_stripe_secret_key> |
+	| STRIPE_WH_SECRET | <your_stripe_wh_secret> |
+	| USE_AWS | True |
+
+- Your app should be successfully deployed to Heroku at this point, but you're not quite finished yet!
+- Update the *settings.py* file to connect the remote database using this Python package: `dj_database_url`
+- Re-build the migrations and create a superuser to your new remote database using the instructions in the *local deployment* section above.
+- Sign up for a free [Amazon AWS](https://aws.amazon.com/) account in order to host your *staticfiles* and *media* files. From the **S3 buckets** section, you'll need to create a new unique bucket. Follow these next steps to complete the setup:
+
+**Permissions** > **CORS configuration**:
+
+```
+[
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
+```
+
+**Permissions** > **Bucket Policy**:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::<x>/*"
+        }
+    ]
+}
+```
+
+*! IMPORTANT ! - on the **Resource** line above, be sure to replace `<x>` with your **AWS bucket arn** details, but retain the `/*` at the end.* It should look similar to this:
+    - `"Resource": "arn:aws:s3:::my-bucket-name/*"`
+
+- From here, you'll need to navigate to the **IAM** section of AWS.
+    - Create a *New Group* and be sure to select your existing S3 Bucket details to attach.
+    - Create a *New Policy* and a *New User* in the IAM section as well, then attach these to the Group you just built.
+- In your CLI-terminal, you should now be able to push the static files to AWS if everything is configured properly using this command:
+    - `python manage.py collectstatic`
+- Sign up for a free [Stripe](https://stripe.com) account. Navigate to the **Developers** section, and click on **API Keys**. You should have two confidential keys which need to be added to your *.env* file, as well as your Heroku config vars. These keys are:
+    - `Publishable Key`: **pk_test_key**
+    - `Secret Key`: **sk_test_key**
+
+Congratulations! Your project should be completely setup and ready for remote deployment!
+
+Back to [top](#tableOfContents)
+
+---
+
 ## Credits <a name="Credits"></a>
 
 ### Media <a name="Media"></a>
 
 Sources of the images used on this site:
 
-- From static/images sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/static/images)
+- From static/images sub-directory - [Github](https://github.com/sctlcd/boutique-ado-customized-latest-version/tree/master/static/images)
 	- [favicon.ico](https://www.flaticon.com/free-icon/clothing-store_3486372?term=boutique&page=1&position=9&related_item_id=3486372) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.flaticon.com/authors/freepik)
 
-- From media/home sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media/home)
+- From media/home sub-directory - [Github](https://github.com/sctlcd/boutique-ado-customized-latest-version/tree/master/media/home)
 	- [boutique-min.png](https://www.flaticon.com/free-icon/clothing-store_3486372?term=boutique&page=1&position=9&related_item_id=3486372) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.flaticon.com/authors/freepik)
 
-- From media/home/hero_image sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media/home/hero_image)
+- From media/home/hero_image sub-directory - [Github](https://github.com/sctlcd/boutique-ado-customized-latest-version/tree/master/media/home/hero_image)
 	- [hero-image-background-1920-min.jpg](https://pixabay.com/fr/photos/femme-shopping-mode-de-vie-belle-3040029/) - [Pixabay](https://pixabay.com) | copyright [gonghuimin468](https://pixabay.com/fr/users/gonghuimin468-3804290/)
 
-- From media/home/gallery sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media/home/gallery)
+- From media/home/gallery sub-directory - [Github](https://github.com/sctlcd/boutique-ado-customized-latest-version/tree/master/media/home/gallery)
 	- [gallery-background-1920-min.jpg](https://www.pexels.com/photo/apple-device-camera-camera-lens-desk-593325/) - [Pexel](https://www.pexels.com/) | copyright [Jessica Lewis](https://www.pexels.com/@thepaintedsquare)
 
-- From media/home/image_showcases sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media/home/image_showcases)
+- From media/home/image_showcases sub-directory - [Github](https://github.com/sctlcd/boutique-ado-customized-latest-version/tree/master/media/home/image_showcases)
 	- [pexels-lucas-da-miranda-1967902-min.jpg](https://www.pexels.com/photo/woman-in-black-spaghetti-strap-top-1967902/) - [Pexel](https://www.pexels.com/) | copyright [lucas da miranda](https://www.pexels.com/@lucas-da-miranda-998015)
 	- [pexels-mentatdgt-1174170-min.jpg](https://www.pexels.com/photo/woman-wearing-jacket-crop-top-and-mini-skirt-1174170/) - [Pexel](https://www.pexels.com/) | copyright [mentatdgt](https://www.pexels.com/@mentatdgt-330508)
 	- [pexels-omar-lópez-1182825-min.jpg](https://www.pexels.com/photo/man-wearing-black-zip-up-leather-jacket-1182825/) - [Pexel](https://www.pexels.com/) | copyright [Omar López](https://www.pexels.com/@omarlopezphil)
 
-- From media/home/testimonials sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media/home/testimonials)
+- From media/home/testimonials sub-directory - [Github](https://github.com/sctlcd/boutique-ado-customized-latest-version/tree/master/media/home/testimonials)
 	- [pexels-daniel-xavier-1239291-min.jpg](https://www.pexels.com/photo/woman-wearing-black-eyeglasses-1239291/) - [Pexel](https://www.pexels.com/) | copyright [Pixabay](https://www.pexels.com/@pixabay)
 	- [pexels-pixabay-235534-min.jpg](https://www.pexels.com/photo/adolescent-beauty-blur-cute-235534/) - [Pexel](https://www.pexels.com/) | copyright [Daniel Xavier](https://www.pexels.com/@danxavier)
 	- [pexels-tim-savage-903661-min.jpg](https://www.pexels.com/photo/photography-of-a-man-wearing-black-shirt-903661/) - [Pexel](https://www.pexels.com/) | copyright [Tim Savage](https://www.pexels.com/@timsavage)
 
-- From media/gallery - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media/gallery)
+- From media/gallery sub-directory - [Github](https://github.com/sctlcd/boutique-ado-customized-latest-version/tree/master/media/gallery)
 	- [pexels-anastasiya-lobanovskaya-1035682-min.jpg](https://www.pexels.com/photo/woman-holding-flower-bouquet-1035682/) - [Pexel](https://www.pexels.com/) | copyright [Anastasiya Lobanovskaya](https://www.pexels.com/@annetnavi)
-	- [pexels-andrea-piacquadio-3782968-min.jpg](https://www.pexels.com/photo/depth-of-field-photography-of-woman-in-pastel-color-sleeveless-shirt-and-white-sunhat-788567/) - [Pexel](https://www.pexels.com/) | copyright [Andrea Piacquadio](https://www.pexels.com/@olly)
+	- [pexels-andrea-piacquadio-3782968-min.jpg](https://www.pexels.com/photo/depth-of-field-photography-of-woman-in-pastel-colour-sleeveless-shirt-and-white-sunhat-788567/) - [Pexel](https://www.pexels.com/) | copyright [Andrea Piacquadio](https://www.pexels.com/@olly)
 	- [pexels-andrea-piacquadio-788567-min.jpg](https://www.pexels.com/photo/man-in-green-jacket-3782968/) - [Pexel](https://www.pexels.com/) | copyright [Andrea Piacquadio](https://www.pexels.com/@olly)
 	- [pexels-cottonbro-4842567-min.jpg](https://www.pexels.com/photo/woman-in-pink-dress-sitting-beside-woman-in-white-shirt-4842567/) - [Pexel](https://www.pexels.com/) | copyright [cottonbro](https://www.pexels.com/@cottonbro)
 	- [pexels-cottonbro-5236991-min.jpg](https://www.pexels.com/photo/4-women-and-2-men-standing-near-gray-wall-5236991/) - [Pexel](https://www.pexels.com/) | copyright [cottonbro](https://www.pexels.com/@cottonbro)
@@ -340,14 +479,19 @@ Sources of the images used on this site:
 	- [pexels-lucas-pezeta-2529375-min.jpg](https://www.pexels.com/photo/woman-spreading-both-her-arms-2529375/) - [Pexel](https://www.pexels.com/) | copyright [Lucas Pezeta](https://www.pexels.com/@lucaspezeta)
 	- [pexels-toa-heftiba-şinca-1194412-min.jpg](https://www.pexels.com/photo/three-men-sitting-on-veranda-1194412/) - [Pexel](https://www.pexels.com/) | copyright [Toa Heftiba Şinca](https://www.pexels.com/@toa-heftiba-sinca-235378)
 
-- From media/errors sub-directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media/errors)
+- From media/errors sub-directory - [Github](https://github.com/sctlcd/boutique-ado-customized-latest-version/tree/master/media/errors)
 	- [error_500-min.jpg](https://www.freepik.com/free-vector/500-internal-server-error-concept-illustration_13416109.htm#page=1&query=server%20error&position=4) - [Freepik](https://www.freepik.com/) | copyright [Stories](https://storyset.com/)
 	- [error_404-min.jpg](https://www.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_7967793.htm#page=1&query=server%20error&position=7) - [Freepik](https://www.freepik.com/) | copyright [Stories](https://storyset.com/)
 	- [error_403-min.jpg](https://www.freepik.com/free-vector/403-error-forbidden-with-police-concept-illustration_8030434.htm#page=1&query=403%20error&position=3) - [Freepik](https://www.freepik.com/) | copyright [Stories](https://storyset.com/)
 	- [error_400-min.jpg](https://www.freepik.com/free-vector/400-error-bad-request-concept-illustration_8030432.htm#page=1&query=400%20error&position=0) - [Freepik](https://www.freepik.com/) | copyright [Stories](https://storyset.com/)
 
-- From media directory - [Github](https://github.com/sctlcd/boutique-ado-v1/tree/master/media)
+- From media/products/no_image sub-directory - [Github](https://github.com/sctlcd/boutique-ado-customized-latest-version/tree/master/media/products/no_image)
+	- noimage.png - Code institute
+
+- From media/products/not_found sub-directory - [Github](https://github.com/sctlcd/boutique-ado-customized-latest-version/tree/master/media/products/not_found)
 	- [no-results-found-min.jpg](https://all-free-download.com/free-vector/download/exploration-job-background-searching-man-sketch-cartoon-design_6844384.html) - [Free vectors](https://all-free-download.com/free-vector/) | copyright [BSGStudio](http://buysellgraphic.com/)
+
+- From media/products/product_images sub-directory - [Github](https://github.com/sctlcd/boutique-ado-customized-latest-version-in-progress/tree/master/media/products/product_images)
 	- All product images - Code institute
 
 Back to [top](#TableOfContents)
@@ -367,6 +511,7 @@ Back to [top](#TableOfContents)
 - Bootstrap show.bs.modal Event - [tutorialspoint](https://www.tutorialspoint.com/Bootstrap-show-bs-modal-Event)
 - hidden.bs.modal Bootstrap Event - [tutorialspoint](https://www.tutorialspoint.com/hidden-bs-modal-Bootstrap-Event)
 - Favicon in django app - [stackoverflow](https://stackoverflow.com/questions/21938028/how-can-i-get-a-favicon-to-show-up-in-my-django-app)
+- Readme file information - [Tim Nelson](https://github.com/TravelTimN) Software Developer and Tutor at [Code Institute](http://codeinstitute.net)
 
 Back to [top](#TableOfContents)
 
