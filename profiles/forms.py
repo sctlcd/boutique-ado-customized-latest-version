@@ -5,6 +5,9 @@ from .models import UserProfile
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
+        # fields = ('full_name', 'default_phone_number', 'default_postcode', \
+        #           'default_town_or_city', 'default_street_address1', \
+        #           'default_street_address2', 'default_county')
         exclude = ('user',)
 
     def __init__(self, *args, **kwargs):
@@ -14,6 +17,7 @@ class UserProfileForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
+            'full_name': 'Full Name',
             'default_phone_number': 'Phone Number',
             'default_postcode': 'Postal Code',
             'default_town_or_city': 'Town or City',
@@ -30,5 +34,5 @@ class UserProfileForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
+            self.fields[field].widget.attrs['class'] = 'border-grey rounded-0 profile-form-input'
             self.fields[field].label = False
