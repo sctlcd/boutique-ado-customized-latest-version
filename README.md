@@ -292,7 +292,7 @@ There is no way to install the latest version of the Safari browser on Windows 1
 
 
 ### Known Issues <a name="KnownIssues"></a>
-- no issues found so far
+-
 
 Back to [top](#TableOfContents)
 
