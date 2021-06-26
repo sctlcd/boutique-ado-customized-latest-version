@@ -512,6 +512,7 @@ Back to [top](#TableOfContents)
 - hidden.bs.modal Bootstrap Event - [tutorialspoint](https://www.tutorialspoint.com/hidden-bs-modal-Bootstrap-Event)
 - Favicon in django app - [stackoverflow](https://stackoverflow.com/questions/21938028/how-can-i-get-a-favicon-to-show-up-in-my-django-app)
 - Readme file information - [Tim Nelson](https://github.com/TravelTimN) Software Developer and Tutor at [Code Institute](http://codeinstitute.net)
+- Sending email [django](https://docs.djangoproject.com/en/3.2/topics/email/)
 
 Back to [top](#TableOfContents)
 

@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.conf import settings
 
@@ -16,6 +17,7 @@ import json
 
 
 @require_POST
+@login_required
 def cache_checkout_data(request):
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
@@ -32,6 +34,7 @@ def cache_checkout_data(request):
         return HttpResponse(content=e, status=400)
 
 
+@login_required
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
@@ -109,7 +112,7 @@ def checkout(request):
             try:
                 profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
-                    'full_name': profile.user.get_full_name(),
+                    'full_name': profile.full_name,
                     'email': profile.user.email,
                     'phone_number': profile.default_phone_number,
                     'country': profile.default_country,
@@ -138,9 +141,10 @@ def checkout(request):
     return render(request, template, context)
 
 
+@login_required
 def checkout_success(request, order_number):
     """
-    Handle successful checkouts
+        Handle successful checkouts
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
@@ -154,6 +158,7 @@ def checkout_success(request, order_number):
         # Save the user's info
         if save_info:
             profile_data = {
+                'full_name': order.full_name,
                 'default_phone_number': order.phone_number,
                 'default_country': order.country,
                 'default_postcode': order.postcode,

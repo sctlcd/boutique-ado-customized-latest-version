@@ -21,16 +21,16 @@
 <div class="overlay"></div>
 <div class="container">
 	<div class="row">
-		<div class="col">
+		<div class="col-12">
 			<hr>
-			<h2 class="logo-font mb-4">Thank You</h2>
+			<h2 class="logo-font my-4 text-center">Thank You</h2>
 			<hr>
-			<p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+			<p class="text-black text-center my-5">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-12 col-lg-7">
+	<div class="row justify-content-center">
+		<div class="col-12 col-lg-9">
 			<div class="order-confirmation-wrapper p-2 border">
 				<div class="row">
 					<div class="col">
@@ -194,10 +194,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-12 col-lg-7 text-right">
+	<div class="row text-center">
+		<div class="col-12 mt-4">
 			{% if from_profile %}
-			<a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
+			<a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2 mt-5">
 				<span class="icon mr-2">
 					<i class="fas fa-angle-left"></i>
 				</span>
