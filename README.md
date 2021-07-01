@@ -368,6 +368,7 @@ Back to [top](#TableOfContents)
 - hidden.bs.modal Bootstrap Event - [tutorialspoint](https://www.tutorialspoint.com/hidden-bs-modal-Bootstrap-Event)
 - Favicon in django app - [stackoverflow](https://stackoverflow.com/questions/21938028/how-can-i-get-a-favicon-to-show-up-in-my-django-app)
 - Sending email [django](https://docs.djangoproject.com/en/3.2/topics/email/)
+- BadHeaderError with Python emails package, how to fix? [stack overflow](https://stackoverflow.com/questions/55903845/badheadererror-with-python-emails-package-how-to-fix)
 
 Back to [top](#TableOfContents)
 

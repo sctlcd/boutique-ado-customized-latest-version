@@ -10,4 +10,3 @@ env
 *.pyc
 node_modules
 static/css/base_extension2.css
-checkout/templates/checkout/confirmation_emails/confirmation_email_subject.txt
