@@ -24,17 +24,17 @@ body {
   color: #fafafa;
 }
 
-.btn-outline-black {
+.btn-outline-grey {
   background: #fafafa;
   color: black !important;
   border: 1px solid black;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus,
-.btn-outline-black:hover i {
-  background: black;
+.btn-outline-grey:hover,
+.btn-outline-grey:active,
+.btn-outline-grey:focus,
+.btn-outline-grey:hover i {
+  background: rgb(173 181 189 / 80%);
   color: #fafafa !important;
 }
 
@@ -114,6 +114,10 @@ button:focus {
   color: #6c757d;
 }
 
+.allauth-form-inner-content label {
+	color: #6c757d;
+}
+
 .allauth-form-inner-content input {
   border-color: #adb5bd;
   border-radius: 0;
@@ -172,12 +176,12 @@ button:focus {
 		width: 90%;
 	}
 
-  .btn.btn-outline-black.rounded-0,
+  .btn.btn-outline-grey.rounded-0,
   .btn.btn-black.rounded-0 {
     padding: .375rem .375rem;
   }
 
-  .btn.btn-outline-black.rounded-0.btn-lg,
+  .btn.btn-outline-grey.rounded-0.btn-lg,
   .btn.btn-black.rounded-0.btn-lg {
     padding: .375rem .375rem;
     font-size: .75rem;
@@ -228,12 +232,12 @@ button:focus {
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) {
 
-  .btn.btn-outline-black.rounded-0,
+  .btn.btn-outline-grey.rounded-0,
   .btn.btn-black.rounded-0 {
     padding: .375rem .375rem;
   }
 
-  .btn.btn-outline-black.rounded-0.btn-lg,
+  .btn.btn-outline-grey.rounded-0.btn-lg,
   .btn.btn-black.rounded-0.btn-lg {
     padding: .375rem .375rem;
     font-size: .75rem;
@@ -266,12 +270,12 @@ button:focus {
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-  .btn.btn-outline-black.rounded-0,
+  .btn.btn-outline-grey.rounded-0,
   .btn.btn-black.rounded-0 {
     padding: .375rem .375rem;
   }
 
-  .btn.btn-outline-black.rounded-0.btn-lg,
+  .btn.btn-outline-grey.rounded-0.btn-lg,
   .btn.btn-black.rounded-0.btn-lg {
     padding: .375rem .375rem;
     font-size: .75rem;
