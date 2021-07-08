@@ -36,6 +36,7 @@ body {
 .btn-outline-grey:hover i {
   background: rgb(173 181 189 / 80%);
   color: #fafafa !important;
+	border-color: rgb(173 181 189 / 80%);
 }
 
 .btn-skyblue:hover,
