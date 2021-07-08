@@ -54,8 +54,8 @@
             {% include "bag/product-info.html" %}
           </div>
           <div class="col-12 col-sm-6 order-sm-last mt-4">
-            <p class="my-0 mx-2">Price Each: ${{ item.product.price }}</p>
-            <p class="mx-2"><strong>Subtotal: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
+            <p class="my-0 mx-2 text-muted">Price Each: ${{ item.product.price }}</p>
+            <p class="mx-2 text-muted"><strong>Subtotal: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
           </div>
           <div class="col-12 col-sm-6 mt-4">
             {% include "bag/quantity-form.html" %}
@@ -94,11 +94,11 @@
         <table class="table table-sm table-borderless">
           <thead class="text-black">
             <tr>
-              <th scope="col">Product Info</th>
-              <th scope="col"></th>
-              <th scope="col">Price</th>
-              <th scope="col">Qty</th>
-              <th scope="col">Subtotal</th>
+              <th scope="col" class="text-muted">Product Info</th>
+              <th scope="col" class="text-muted"></th>
+              <th scope="col" class="text-muted">Price</th>
+              <th scope="col" class="text-muted">Qty</th>
+              <th scope="col" class="text-muted">Subtotal</th>
             </tr>
           </thead>
 
