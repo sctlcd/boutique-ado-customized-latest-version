@@ -3,7 +3,7 @@
 {% if widget.is_initial %}
     <p class="small">{{ widget.initial_text }}:</p>
     <a href="https://sctlcd-boutique-ado.s3.amazonaws.com/media/products/product_images/{{ widget.value }}" target="_blank">
-        <img width="96" height="96" class="rounded shadow-sm" src="https://sctlcd-boutique-ado.s3.amazonaws.com/media/products/product_images/{{ widget.value }}">
+        <img width="96" height="96" class="widget-image rounded zoom mb-1" src="https://sctlcd-boutique-ado.s3.amazonaws.com/media/products/product_images/{{ widget.value }}">
     </a>
     {% if not widget.required %}
         <div class="custom-control custom-checkbox mt-2">
