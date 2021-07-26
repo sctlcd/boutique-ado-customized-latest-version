@@ -29,10 +29,11 @@ urlpatterns = [
     path('gallery/', include('gallery.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+handler400 = 'boutique_ado.views.handler400'
+handler403 = 'boutique_ado.views.handler403'
 handler404 = 'boutique_ado.views.handler404'
 handler500 = 'boutique_ado.views.handler500'
-handler403 = 'boutique_ado.views.handler403'
-handler400 = 'boutique_ado.views.handler400'
+
 
 admin.site.site_header = 'Boutique Ado Administration'
 admin.site.site_title = 'Boutique Ado Admin Portal'
