@@ -4,9 +4,6 @@
 
 **User interface improvements, look and feel, presentation, interactivity**, adding features relative to user interface improvements (image gallery, go to page bottom button, highlighting menu/sub-menu items, "Home" icon link on mobile devices, navbar display change on its hover position and on window scroll position) to the initial Boutique Ado website version.
 
-Responsive website using HTML, CSS, Bootstrap 4, JavaScript, jQuery
-<br />
-
 <!-- To visite [ **my new version** ](https://sctlcd-boutique-ado-customized.herokuapp.com/) of Boutique Ado website -->
 ## **New deployed app coming soom (Heroku has ended its free product plans)**
 <br>
