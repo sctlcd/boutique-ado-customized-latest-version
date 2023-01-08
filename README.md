@@ -1,6 +1,7 @@
 # [Boutique Ado](https://sctlcd-boutique-ado-customized.herokuapp.com/)
 
-## **New deployed app coming soon (Heroku has ended its free product plans)**
+### **New deployed app coming soon (Heroku has ended its free product plans)**
+<br>
 
 <img src="https://github.com/sctlcd/boutique-ado-customized-latest-version/blob/master/design/mockup/boutique_ado_multi_device_website_mockup_presentation-min.png" alt="Boutique Ado" width="700">
 
