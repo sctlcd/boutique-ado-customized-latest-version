@@ -10,3 +10,4 @@ env
 *.pyc
 node_modules
 static/css/base_extension2.css
+package-lock.json
